@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevKit — Privacy-First Developer Toolkit</title>
+  <meta name="description" content="A privacy-first developer toolkit. JSON, JWT, Base64, URL, Regex, Hash, UUID, Timestamp. Everything runs in your browser." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A0%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">DevKit</span>
+      <span class="tagline">Runs entirely in your browser. Nothing leaves this tab.</span>
+    </div>
+    <button id="themeToggle" class="ghost" aria-label="Toggle theme">Theme</button>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tool="json" role="tab">JSON</button>
+    <button class="tab" data-tool="jwt" role="tab">JWT</button>
+    <button class="tab" data-tool="base64" role="tab">Base64</button>
+    <button class="tab" data-tool="url" role="tab">URL</button>
+    <button class="tab" data-tool="regex" role="tab">Regex</button>
+    <button class="tab" data-tool="hash" role="tab">Hash</button>
+    <button class="tab" data-tool="uuid" role="tab">UUID</button>
+    <button class="tab" data-tool="time" role="tab">Timestamp</button>
+  </nav>
+
+  <main>
+    <section class="panel active" id="tool-json">
+      <h2>JSON Formatter</h2>
+      <p class="hint">Pretty-print, minify, or validate JSON. Supports large payloads.</p>
+      <div class="row">
+        <button data-act="json-format">Format</button>
+        <button data-act="json-minify">Minify</button>
+        <button data-act="json-sort">Sort Keys</button>
+        <label>Indent:
+          <select id="json-indent">
+            <option value="2" selected>2 spaces</option>
+            <option value="4">4 spaces</option>
+            <option value="tab">Tab</option>
+          </select>
+        </label>
+      </div>
+      <textarea id="json-input" placeholder='{"hello":"world","n":42}' spellcheck="false"></textarea>
+      <div id="json-status" class="status"></div>
+      <textarea id="json-output" readonly spellcheck="false"></textarea>
+      <div class="row"><button data-copy="json-output">Copy output</button></div>
+    </section>
+
+    <section class="panel" id="tool-jwt">
+      <h2>JWT Decoder</h2>
+      <p class="hint">Decodes header and payload. Signature is shown but not verified — never paste production secrets anywhere.</p>
+      <textarea id="jwt-input" placeholder="Paste a JWT (three base64url parts separated by dots)" spellcheck="false"></textarea>
+      <div id="jwt-status" class="status"></div>
+      <div class="jwt-grid">
+        <div>
+          <label>Header</label>
+          <pre id="jwt-header"></pre>
+        </div>
+        <div>
+          <label>Payload</label>
+          <pre id="jwt-payload"></pre>
+        </div>
+        <div>
+          <label>Signature (raw)</label>
+          <pre id="jwt-sig"></pre>
+        </div>
+        <div>
+          <label>Claims</label>
+          <pre id="jwt-claims"></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="tool-base64">
+      <h2>Base64 Encode / Decode</h2>
+      <p class="hint">Handles UTF-8. Use the URL-safe option for base64url (JWT style).</p>
+      <div class="row">
+        <button data-act="b64-encode">Encode ▶</button>
+        <button data-act="b64-decode">◀ Decode</button>
+        <label><input type="checkbox" id="b64-urlsafe" /> URL-safe (base64url)</label>
+      </div>
+      <div class="two-col">
+        <textarea id="b64-left" placeholder="Plain text" spellcheck="false"></textarea>
+        <textarea id="b64-right" placeholder="Base64" spellcheck="false"></textarea>
+      </div>
+      <div id="b64-status" class="status"></div>
+    </section>
+
+    <section class="panel" id="tool-url">
+      <h2>URL Encode / Decode</h2>
+      <p class="hint">encodeURIComponent on the left, decodeURIComponent on the right.</p>
+      <div class="row">
+        <button data-act="url-encode">Encode ▶</button>
+        <button data-act="url-decode">◀ Decode</button>
+      </div>
+      <div class="two-col">
+        <textarea id="url-left" placeholder="hello world?x=1&y=2" spellcheck="false"></textarea>
+        <textarea id="url-right" placeholder="hello%20world%3Fx%3D1%26y%3D2" spellcheck="false"></textarea>
+      </div>
+      <div id="url-status" class="status"></div>
+    </section>
+
+    <section class="panel" id="tool-regex">
+      <h2>Regex Tester</h2>
+      <p class="hint">Live match highlighting. Uses JavaScript's RegExp engine.</p>
+      <div class="regex-row">
+        <span class="slash">/</span>
+        <input id="regex-pattern" type="text" placeholder="\\b\\w+@\\w+\\.\\w+\\b" spellcheck="false" />
+        <span class="slash">/</span>
+        <input id="regex-flags" type="text" placeholder="gim" value="g" spellcheck="false" />
+      </div>
+      <div id="regex-status" class="status"></div>
+      <textarea id="regex-input" placeholder="Test string…" spellcheck="false"></textarea>
+      <label>Highlighted</label>
+      <div id="regex-highlight" class="highlight"></div>
+      <label>Matches</label>
+      <pre id="regex-matches"></pre>
+    </section>
+
+    <section class="panel" id="tool-hash">
+      <h2>Hash Generator</h2>
+      <p class="hint">SHA family via the browser's SubtleCrypto. MD5 is excluded — it's broken; don't use it.</p>
+      <textarea id="hash-input" placeholder="Text to hash…" spellcheck="false"></textarea>
+      <div class="hash-grid">
+        <div><label>SHA-1</label><pre id="hash-sha1"></pre></div>
+        <div><label>SHA-256</label><pre id="hash-sha256"></pre></div>
+        <div><label>SHA-384</label><pre id="hash-sha384"></pre></div>
+        <div><label>SHA-512</label><pre id="hash-sha512"></pre></div>
+      </div>
+    </section>
+
+    <section class="panel" id="tool-uuid">
+      <h2>UUID Generator</h2>
+      <p class="hint">RFC 4122 v4 UUIDs from crypto.randomUUID().</p>
+      <div class="row">
+        <label>How many:
+          <input id="uuid-count" type="number" value="10" min="1" max="1000" />
+        </label>
+        <button data-act="uuid-gen">Generate</button>
+        <button data-copy="uuid-out">Copy all</button>
+      </div>
+      <textarea id="uuid-out" readonly spellcheck="false"></textarea>
+    </section>
+
+    <section class="panel" id="tool-time">
+      <h2>Timestamp Converter</h2>
+      <p class="hint">Convert between Unix epoch (seconds or ms) and ISO-8601.</p>
+      <div class="row">
+        <button data-act="time-now">Now</button>
+        <span id="time-live" class="live"></span>
+      </div>
+      <div class="time-grid">
+        <div>
+          <label>Unix seconds</label>
+          <input id="time-sec" type="text" placeholder="1700000000" spellcheck="false" />
+        </div>
+        <div>
+          <label>Unix milliseconds</label>
+          <input id="time-ms" type="text" placeholder="1700000000000" spellcheck="false" />
+        </div>
+        <div>
+          <label>ISO-8601 (UTC)</label>
+          <input id="time-iso" type="text" placeholder="2023-11-14T22:13:20.000Z" spellcheck="false" />
+        </div>
+        <div>
+          <label>Local</label>
+          <input id="time-local" type="text" readonly />
+        </div>
+      </div>
+      <div id="time-status" class="status"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Everything runs client-side. Your data never leaves the browser.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
