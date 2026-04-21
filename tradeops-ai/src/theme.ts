@@ -1,0 +1,58 @@
+export const theme = {
+  colors: {
+    bg: '#F8FAFC',
+    surface: '#FFFFFF',
+    surfaceAlt: '#F1F5F9',
+    border: '#E2E8F0',
+    text: '#0F172A',
+    textMuted: '#64748B',
+    textSubtle: '#94A3B8',
+    primary: '#2563EB',
+    primaryDark: '#1D4ED8',
+    primarySoft: '#DBEAFE',
+    success: '#16A34A',
+    successSoft: '#DCFCE7',
+    warning: '#D97706',
+    warningSoft: '#FEF3C7',
+    danger: '#DC2626',
+    dangerSoft: '#FEE2E2',
+    accent: '#7C3AED',
+    accentSoft: '#EDE9FE',
+    dark: '#0F172A',
+  },
+  spacing: {
+    xs: 4,
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 24,
+    xxl: 32,
+  },
+  radius: {
+    sm: 6,
+    md: 10,
+    lg: 14,
+    xl: 20,
+    pill: 999,
+  },
+  font: {
+    xs: 11,
+    sm: 13,
+    md: 15,
+    lg: 17,
+    xl: 20,
+    xxl: 26,
+    huge: 34,
+  },
+  shadow: {
+    card: {
+      shadowColor: '#0F172A',
+      shadowOpacity: 0.06,
+      shadowRadius: 12,
+      shadowOffset: { width: 0, height: 4 },
+      elevation: 2,
+    },
+  },
+} as const;
+
+export type Theme = typeof theme;
