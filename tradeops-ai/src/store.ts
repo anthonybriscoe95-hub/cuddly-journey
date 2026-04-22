@@ -27,8 +27,10 @@ const setState = (updater: (s: State) => State) => {
   emit();
 };
 
-export const useStore = <T,>(selector: (s: State) => T): T =>
-  useSyncExternalStore(subscribe, () => selector(state), () => selector(state));
+export const useStore = <T,>(selector: (s: State) => T): T => {
+  const getSnapshot = () => selector(state);
+  return useSyncExternalStore(subscribe, getSnapshot, getSnapshot);
+};
 
 export const actions = {
   updateJobStatus(jobId: string, status: JobStatus) {

@@ -1,5 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
+import { useMemo } from 'react';
 import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Avatar } from '../../src/components/Avatar';
 import { Card } from '../../src/components/Card';
@@ -11,7 +12,8 @@ import { theme } from '../../src/theme';
 export default function CustomerDetail() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const customer = useStore((s) => s.customers.find((c) => c.id === id));
-  const customerJobs = useStore((s) => s.jobs.filter((j) => j.customerId === id));
+  const allJobs = useStore((s) => s.jobs);
+  const customerJobs = useMemo(() => allJobs.filter((j) => j.customerId === id), [allJobs, id]);
 
   if (!customer) return null;
 
