@@ -15,7 +15,7 @@ frame.BackgroundColor3 = Color3.fromRGB(8, 8, 10)
 frame.BorderSizePixel = 0
 
 local uiScale = Instance.new("UIScale", frame)
-uiScale.Scale = 0.72
+uiScale.Scale = 0.65
 
 local frameCorner = Instance.new("UICorner", frame)
 frameCorner.CornerRadius = UDim.new(0, 28)
