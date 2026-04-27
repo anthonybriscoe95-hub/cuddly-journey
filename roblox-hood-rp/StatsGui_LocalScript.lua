@@ -1,5 +1,4 @@
 -- StatsGui (LocalScript inside StarterGui > StatsGui > StatsFrame)
-
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local TweenService = game:GetService("TweenService")
@@ -25,18 +24,6 @@ frameStroke.Color = Color3.fromRGB(220, 30, 35)
 frameStroke.Thickness = 3
 frameStroke.Transparency = 0.05
 frameStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-
-local glow = Instance.new("ImageLabel", frame)
-glow.AnchorPoint = Vector2.new(0.5, 0.5)
-glow.Position = UDim2.new(0.5, 0, 0.5, 0)
-glow.Size = UDim2.new(1, 60, 1, 60)
-glow.BackgroundTransparency = 1
-glow.Image = "rbxassetid://5028857084"
-glow.ImageColor3 = Color3.fromRGB(220, 30, 35)
-glow.ImageTransparency = 0.55
-glow.ScaleType = Enum.ScaleType.Slice
-glow.SliceCenter = Rect.new(24, 24, 276, 276)
-glow.ZIndex = 0
 
 local moneyRow = Instance.new("Frame", frame)
 moneyRow.Size = UDim2.new(1, -40, 0, 150)
@@ -114,22 +101,12 @@ local function buildBar(yPos, fillColor, icon)
 	bgS.Thickness = 1
 
 	local fill = Instance.new("Frame", barBg)
-	fill.Size = UDim2.new(0.7, 0, 1, 0)
+	fill.Size = UDim2.new(1, 0, 1, 0)
 	fill.BackgroundColor3 = fillColor
 	fill.BorderSizePixel = 0
 
 	local fillC = Instance.new("UICorner", fill)
 	fillC.CornerRadius = UDim.new(1, 0)
-
-	local fillGradient = Instance.new("UIGradient", fill)
-	fillGradient.Color = ColorSequence.new({
-		ColorSequenceKeypoint.new(0, fillColor),
-		ColorSequenceKeypoint.new(1, Color3.new(
-			math.clamp(fillColor.R - 0.2, 0, 1),
-			math.clamp(fillColor.G - 0.2, 0, 1),
-			math.clamp(fillColor.B - 0.2, 0, 1)
-		)),
-	})
 
 	local iconCircle = Instance.new("Frame", row)
 	iconCircle.Size = UDim2.new(0, 44, 0, 44)
@@ -186,20 +163,15 @@ local camera = Instance.new("Camera")
 viewport.CurrentCamera = camera
 
 local function loadAvatar()
-	for _, child in ipairs(viewport:GetChildren()) do
-		child:Destroy()
-	end
-
+	for _, child in ipairs(viewport:GetChildren()) do child:Destroy() end
 	local desc
 	local ok = pcall(function()
 		desc = Players:GetHumanoidDescriptionFromUserId(player.UserId)
 	end)
 	if not ok or not desc then return end
-
 	local model = Players:CreateHumanoidModelFromDescription(desc, Enum.HumanoidRigType.R15)
 	model.Parent = viewport
 	model:PivotTo(CFrame.new(0, 0, 0))
-
 	local center = model:GetPivot().Position
 	camera.CFrame = CFrame.new(center + Vector3.new(0, 1, 7), center + Vector3.new(0, 1, 0))
 end
@@ -248,20 +220,33 @@ local function formatMoney(value)
 	return "$" .. formatted
 end
 
+-- ===== STAT LOGIC =====
 local stats = {
 	stamina = 1,
-	hunger  = 0.6,
+	hunger  = 1,
+	energy  = 1,
 	health  = 1,
-	energy  = 0.5,
-	bank    = 143725,
-	cash    = 384570,
+	bank    = 0,
+	cash    = 0,
 }
 
-local previousMoney = { bank = stats.bank, cash = stats.cash }
+local HUNGER_TICK          = 10    -- seconds between each 1% hunger drop
+local ENERGY_TICK          = 10    -- seconds between each 1% energy drop
+local HUNGER_DROP          = 0.01
+local ENERGY_DROP          = 0.01
+local STAMINA_WALK_DRAIN   = 0.05  -- per second while walking
+local STAMINA_RUN_DRAIN    = 0.15  -- per second while sprinting
+local STAMINA_JUMP_COST    = 0.10  -- flat cost per jump
+local STAMINA_REGEN        = 0.10  -- per second while standing still
+local STARVE_HEALTH_DRAIN  = 1     -- HP per second when hunger or energy = 0
+
+local lastHunger = tick()
+local lastEnergy = tick()
+local previousMoney = { bank = 0, cash = 0 }
 
 local function tweenBar(bar, value)
 	local pct = math.clamp(value, 0, 1)
-	TweenService:Create(bar.fill, TweenInfo.new(0.35, Enum.EasingStyle.Quart), {
+	TweenService:Create(bar.fill, TweenInfo.new(0.25, Enum.EasingStyle.Quart), {
 		Size = UDim2.new(pct, 0, 1, 0)
 	}):Play()
 end
@@ -281,7 +266,6 @@ local function updateUI()
 		flashMoney(bankValue, Color3.fromRGB(255, 255, 255))
 		previousMoney.bank = stats.bank
 	end
-
 	if stats.cash ~= previousMoney.cash then
 		flashMoney(cashValue, Color3.fromRGB(220, 30, 35))
 		previousMoney.cash = stats.cash
@@ -291,13 +275,23 @@ local function updateUI()
 	cashValue.Text = formatMoney(stats.cash)
 end
 
+local currentHumanoid
+
 local function bindCharacter(character)
 	local humanoid = character:WaitForChild("Humanoid")
+	currentHumanoid = humanoid
 	stats.health = humanoid.Health / humanoid.MaxHealth
 
 	humanoid.HealthChanged:Connect(function(h)
 		stats.health = h / humanoid.MaxHealth
 		updateUI()
+	end)
+
+	humanoid.Jumping:Connect(function(active)
+		if active and stats.stamina > 0 then
+			stats.stamina = math.clamp(stats.stamina - STAMINA_JUMP_COST, 0, 1)
+			updateUI()
+		end
 	end)
 
 	loadAvatar()
@@ -319,9 +313,37 @@ if stats_folder then
 end
 
 RunService.Heartbeat:Connect(function(dt)
-	stats.stamina = math.clamp(stats.stamina - dt * 0.01,  0, 1)
-	stats.hunger  = math.clamp(stats.hunger  - dt * 0.005, 0, 1)
-	stats.energy  = math.clamp(stats.energy  - dt * 0.008, 0, 1)
+	local now = tick()
+
+	if now - lastHunger >= HUNGER_TICK then
+		stats.hunger = math.clamp(stats.hunger - HUNGER_DROP, 0, 1)
+		lastHunger = now
+	end
+
+	if now - lastEnergy >= ENERGY_TICK then
+		stats.energy = math.clamp(stats.energy - ENERGY_DROP, 0, 1)
+		lastEnergy = now
+	end
+
+	if currentHumanoid then
+		local root = currentHumanoid.RootPart
+		local speed = root and root.AssemblyLinearVelocity.Magnitude or 0
+
+		if speed > 14 then
+			stats.stamina = math.clamp(stats.stamina - STAMINA_RUN_DRAIN * dt, 0, 1)
+		elseif speed > 1 then
+			stats.stamina = math.clamp(stats.stamina - STAMINA_WALK_DRAIN * dt, 0, 1)
+		else
+			stats.stamina = math.clamp(stats.stamina + STAMINA_REGEN * dt, 0, 1)
+		end
+
+		if stats.hunger <= 0 or stats.energy <= 0 then
+			currentHumanoid:TakeDamage(STARVE_HEALTH_DRAIN * dt)
+		end
+
+		currentHumanoid.WalkSpeed = stats.stamina <= 0 and 8 or 16
+	end
+
 	updateUI()
 end)
 
