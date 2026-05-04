@@ -1,0 +1,30 @@
+{
+  "name": "ai-agent-command-room",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n web,api -c blue,magenta \"npm:dev:web\" \"npm:dev:api\"",
+    "dev:web": "vite",
+    "dev:api": "node server/index.mjs",
+    "build": "vite build",
+    "build:standalone": "vite build --config vite.standalone.config.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite-plugin-singlefile": "^2.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "vite": "^5.4.11"
+  }
+}
