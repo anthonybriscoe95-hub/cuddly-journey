@@ -52,7 +52,26 @@ import {
 
 const HEALTH_POLL_INTERVAL_MS = 60_000;
 const TASK_FILTERS = ["All", "Queued", "Running", "Waiting", "Done", "Failed", "Cancelled", "Rejected"];
+const BACKEND_URL_KEY = "ai-agent-command-room-backend-url";
 const selfTestResults = runSelfTests();
+
+function getDefaultBackendUrl() {
+  if (typeof window === "undefined") return "/api";
+  try {
+    const stored = window.localStorage.getItem(BACKEND_URL_KEY);
+    if (stored !== null) return stored;
+  } catch {}
+  // file:// has no server to proxy to, so default to empty.
+  if (window.location?.protocol === "file:") return "";
+  return "/api";
+}
+
+function joinUrl(base, path) {
+  if (!base) return path;
+  const trimmed = base.replace(/\/+$/, "");
+  const suffix = path.startsWith("/") ? path : `/${path}`;
+  return `${trimmed}${suffix}`;
+}
 
 export default function AIAgentCommandRoom() {
   const savedState = useMemo(() => safeLoadState(), []);
@@ -80,6 +99,7 @@ export default function AIAgentCommandRoom() {
   const [taskFilter, setTaskFilter] = useState("All");
   const [taskSearch, setTaskSearch] = useState("");
   const [now, setNow] = useState(() => new Date());
+  const [backendUrl, setBackendUrl] = useState(() => getDefaultBackendUrl());
 
   const activeTaskRef = useRef(null);
   const cancelRef = useRef({ taskId: null, controller: null });
@@ -127,6 +147,14 @@ export default function AIAgentCommandRoom() {
     return () => clearInterval(id);
   }, []);
 
+  // Persist backend URL
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    try {
+      window.localStorage.setItem(BACKEND_URL_KEY, backendUrl);
+    } catch {}
+  }, [backendUrl]);
+
   // Auto-finalize tasks once all their approvals resolve
   useEffect(() => {
     setTasks((current) => {
@@ -164,9 +192,17 @@ export default function AIAgentCommandRoom() {
 
   const checkBackendHealth = useCallback(
     async ({ silent = false } = {}) => {
+      if (!backendUrl) {
+        setBackendStatus("Offline");
+        if (!silent) {
+          addLog("No backend URL configured. Set one in the header to enable real tasks.", "warn");
+          pushToast("Set a Backend URL in the header to enable real tasks.", "warn");
+        }
+        return false;
+      }
       try {
         setBackendStatus("Checking");
-        const payload = await fetchJsonWithTimeout("/api/health", { method: "GET" }, 8000);
+        const payload = await fetchJsonWithTimeout(joinUrl(backendUrl, "/health"), { method: "GET" }, 8000);
         setBackendStatus("Connected");
         if (!silent) {
           const detail = payload?.openai === false ? " (no OPENAI_API_KEY set)" : "";
@@ -178,12 +214,12 @@ export default function AIAgentCommandRoom() {
         setBackendStatus("Offline");
         if (!silent) {
           addLog(`Backend offline. ${error.message}`, "error");
-          pushToast("Backend is offline. Start the local server.", "error");
+          pushToast("Backend is offline. Start the local server or change the URL.", "error");
         }
         return false;
       }
     },
-    [addLog, pushToast]
+    [addLog, pushToast, backendUrl]
   );
 
   // Initial check + periodic poll
@@ -225,7 +261,7 @@ export default function AIAgentCommandRoom() {
 
   async function callBackendTask(task, signal) {
     const payload = await fetchJsonWithTimeout(
-      "/api/agent-task",
+      joinUrl(backendUrl, "/agent-task"),
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -242,7 +278,7 @@ export default function AIAgentCommandRoom() {
   }
 
   async function callApprovalBackend(approval) {
-    return fetchJsonWithTimeout("/api/approval", {
+    return fetchJsonWithTimeout(joinUrl(backendUrl, "/approval"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ approval, action: "approve" }),
@@ -486,6 +522,8 @@ export default function AIAgentCommandRoom() {
           running={running}
           onToggleRunning={() => setRunning((value) => !value)}
           now={now}
+          backendUrl={backendUrl}
+          setBackendUrl={setBackendUrl}
         />
 
         <StatsBar stats={stats} waitingApprovals={waitingApprovals} backendStatus={backendStatus} />
@@ -562,7 +600,7 @@ export default function AIAgentCommandRoom() {
   );
 }
 
-function Header({ backendStatus, onCheckBackend, running, onToggleRunning, now }) {
+function Header({ backendStatus, onCheckBackend, running, onToggleRunning, now, backendUrl, setBackendUrl }) {
   return (
     <div className="flex flex-col justify-between gap-4 rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl md:flex-row md:items-center">
       <div>
@@ -577,6 +615,18 @@ function Header({ backendStatus, onCheckBackend, running, onToggleRunning, now }
         <p className="mt-2 text-xs text-slate-500">
           {now.toLocaleDateString()} · {now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
         </p>
+        <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center">
+          <label className="text-xs uppercase tracking-[.18em] text-slate-500" htmlFor="backend-url">
+            Backend URL
+          </label>
+          <input
+            id="backend-url"
+            value={backendUrl}
+            onChange={(event) => setBackendUrl(event.target.value)}
+            placeholder="leave empty if you don't have one yet"
+            className="w-full max-w-md rounded-xl border border-white/10 bg-slate-950 px-3 py-2 font-mono text-xs outline-none placeholder:text-slate-600 focus:border-blue-300 sm:w-72"
+          />
+        </div>
       </div>
       <div className="flex flex-col gap-2 sm:flex-row">
         <div className="flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-slate-950/50 px-4 py-2 text-sm">

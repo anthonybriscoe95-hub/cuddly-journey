@@ -3,7 +3,21 @@
 A local-first React command center that routes tasks to specialized AI agents,
 keeps a safety/approval gate on risky actions, and never shows fake task results.
 
-## Quick start
+## Easiest way to use it (no install, no terminal)
+
+1. Go to `agent-command-room.html` in this repo on GitHub.
+2. Click the **Download raw file** button (or right-click "Save as…").
+3. Double-click the downloaded file. Your browser opens the dashboard.
+4. Optional: type a Backend URL in the header (e.g. `http://localhost:5174/api`)
+   if you have a backend running. Leave it empty to just explore the UI.
+
+The whole app is bundled into a single self-contained HTML file. It runs from
+your hard drive — no Node, no npm, no `localhost`.
+
+Open this clickable preview in your browser (no download required):
+https://raw.githack.com/anthonybriscoe95-hub/cuddly-journey/claude/ai-agent-command-room-gj4E5/agent-command-room.html
+
+## Full dev setup (with the mock backend)
 
 ```bash
 git clone <this repo>
@@ -59,6 +73,7 @@ with real integrations when you're ready — the UI doesn't need to change.
 | `npm run dev:web` | Vite dev server only (port 5173) |
 | `npm run dev:api` | Mock backend only (port 5174) |
 | `npm run build` | Production build into `dist/` |
+| `npm run build:standalone` | Build the single-file `standalone/index.html` |
 | `npm run preview` | Serve the production build locally |
 
 ## What changed vs the original component
