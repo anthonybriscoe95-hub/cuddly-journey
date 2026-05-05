@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Snap your fridge, get recipes. Leftover Chef turns what you have into what you can cook." />
+<title>Leftover Chef — Cook what you already have</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A5%95%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">🥕</span>
+    <span class="brand-name">Leftover Chef</span>
+  </div>
+  <button id="settings-btn" class="ghost-btn" aria-label="Settings">⚙︎ Settings</button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Cook what you already have.</h1>
+    <p class="tagline">Snap a photo of your fridge or pantry. Get three recipes you can make right now — ranked by what's about to go bad.</p>
+  </section>
+
+  <section id="capture-section" class="card">
+    <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Upload photo of your ingredients">
+      <input type="file" id="file-input" accept="image/*" capture="environment" hidden />
+      <div class="dropzone-inner">
+        <div class="dropzone-icon">📷</div>
+        <div class="dropzone-title">Tap to take a photo or upload</div>
+        <div class="dropzone-sub">Open your fridge, point, shoot. JPG/PNG/WebP up to 5 MB.</div>
+      </div>
+    </div>
+
+    <div id="preview-wrap" class="preview-wrap hidden">
+      <img id="preview-img" alt="Your ingredients" />
+      <div class="preview-actions">
+        <button id="retake-btn" class="ghost-btn">Retake</button>
+        <button id="cook-btn" class="primary-btn">Find recipes →</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="extras" class="card extras hidden">
+    <h2>Tweak (optional)</h2>
+    <div class="extra-grid">
+      <label>
+        <span>Diet</span>
+        <select id="diet">
+          <option value="any">Any</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+          <option value="pescatarian">Pescatarian</option>
+          <option value="gluten-free">Gluten-free</option>
+        </select>
+      </label>
+      <label>
+        <span>Time available</span>
+        <select id="time">
+          <option value="any">Any</option>
+          <option value="under 15 min">Under 15 min</option>
+          <option value="under 30 min">Under 30 min</option>
+          <option value="under 60 min">Under 60 min</option>
+        </select>
+      </label>
+      <label class="full">
+        <span>Anything else? (allergies, mood, pantry staples not in the photo)</span>
+        <input id="notes" type="text" placeholder="e.g. no nuts, craving something spicy, I have rice and soy sauce" />
+      </label>
+    </div>
+  </section>
+
+  <section id="status" class="status hidden" aria-live="polite"></section>
+
+  <section id="results" class="results hidden">
+    <div class="ingredients-pane card">
+      <h2>What I see</h2>
+      <ul id="ingredients-list" class="ingredients"></ul>
+      <p id="urgency-note" class="urgency-note"></p>
+    </div>
+    <div class="recipes-pane">
+      <h2>Three things you can cook</h2>
+      <div id="recipes" class="recipes"></div>
+    </div>
+  </section>
+</main>
+
+<dialog id="settings-modal" class="modal">
+  <form method="dialog" class="modal-inner">
+    <h2>Settings</h2>
+    <p class="muted">
+      Leftover Chef calls the Anthropic API directly from your browser. Paste your API key below — it's stored only in this browser's local storage and sent only to <code>api.anthropic.com</code>.
+    </p>
+    <label class="stack">
+      <span>Anthropic API key</span>
+      <input id="api-key" type="password" autocomplete="off" placeholder="sk-ant-..." />
+    </label>
+    <p class="muted small">
+      Don't have one? Get a key at <a href="https://console.anthropic.com/" target="_blank" rel="noopener">console.anthropic.com</a>. Usage is billed to your account.
+    </p>
+    <div class="modal-actions">
+      <button id="clear-key" type="button" class="ghost-btn">Clear key</button>
+      <button id="save-key" value="default" class="primary-btn">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<footer class="footer">
+  <span>Built with Claude · <a href="https://github.com/anthonybriscoe95-hub/cuddly-journey" target="_blank" rel="noopener">Source</a></span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
