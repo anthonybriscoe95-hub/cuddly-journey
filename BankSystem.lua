@@ -223,25 +223,38 @@ local function drawBankUI()
 end
 
 ------------------------------------------------------------
--- Money helpers (player wallet)
+-- Money helpers (story-mode wallet)
 ------------------------------------------------------------
-local function getPlayerCash()
-    local ped = PLAYER.PLAYER_PED_ID()
+local CHAR_HASH = {
+    [0x705E61F2] = "SP0_TOTAL_CASH", -- Michael
+    [0x9B22DBAF] = "SP1_TOTAL_CASH", -- Franklin
+    [0x1581FD37] = "SP2_TOTAL_CASH", -- Trevor
+}
+
+local function currentCashStat()
+    local ped   = PLAYER.PLAYER_PED_ID()
     local model = ENTITY.GET_ENTITY_MODEL(ped)
-    local hashes = { 0x705E61F2, 0x9B22DBAF, 0x1581FD37 } -- Michael, Franklin, Trevor
-    for _, h in ipairs(hashes) do
-        if model == h then
-            return STATS.STAT_GET_INT(GAMEPLAY.GET_HASH_KEY(
-                ({"SP0_TOTAL_CASH","SP1_TOTAL_CASH","SP2_TOTAL_CASH"})
-                [({[0x705E61F2]=1,[0x9B22DBAF]=2,[0x1581FD37]=3})[h]]), 0)
-        end
-    end
-    return 0
+    local stat  = CHAR_HASH[model]
+    if not stat then return nil end
+    return GAMEPLAY.GET_HASH_KEY(stat)
+end
+
+local function getPlayerCash()
+    local h = currentCashStat()
+    if not h then return 0 end
+    local ok, val = pcall(STATS.STAT_GET_INT, h, -1)
+    return ok and val or 0
 end
 
 local function changeCash(delta)
-    if delta >= 0 then MONEY.NETWORK_EARN_FROM_PICKUP(delta)
-    else HUD.CHANGE_PLAYER_CASH(math.abs(delta), 0, 0, 0) end
+    local h = currentCashStat()
+    if not h then return false end
+    local ok, cur = pcall(STATS.STAT_GET_INT, h, -1)
+    if not ok then return false end
+    local target = cur + delta
+    if target < 0 then return false end
+    pcall(STATS.STAT_SET_INT, h, target, true)
+    return true
 end
 
 ------------------------------------------------------------
@@ -249,6 +262,8 @@ end
 ------------------------------------------------------------
 local function doDeposit(amount)
     if amount <= 0 then notify("~r~Invalid amount."); return end
+    if amount > getPlayerCash() then notify("~r~Not enough cash on hand."); return end
+    if not changeCash(-amount) then notify("~r~Cash transfer failed."); return end
     state.balance = state.balance + amount
     state.lastDeposit, state.lastWithdraw, state.lastTransfer = amount, 0, 0
     save()
@@ -258,6 +273,7 @@ end
 local function doWithdraw(amount)
     if amount <= 0 then notify("~r~Invalid amount."); return end
     if amount > state.balance then notify("~r~Insufficient bank balance."); return end
+    if not changeCash(amount) then notify("~r~Cash transfer failed."); return end
     state.balance = state.balance - amount
     state.lastWithdraw, state.lastDeposit, state.lastTransfer = amount, 0, 0
     save()

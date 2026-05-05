@@ -1,0 +1,108 @@
+================================================================
+  GTA V Single-Player Bank / ATM Mod - Install Guide
+================================================================
+
+REQUIREMENTS
+------------
+- GTA V (single-player). Do NOT load mods before going online.
+- Script Hook V        http://www.dev-c.com/gtav/scripthookv/
+- LUA Plugin for SHV   https://www.gta5-mods.com/tools/lua-plugin-for-script-hook-v
+
+
+STEP 1 - Install Script Hook V
+------------------------------
+1. Download Script Hook V (match your GTA V version).
+2. Open the zip, go into the "bin" folder.
+3. Copy these files into your GTA V install folder
+   (the folder that contains GTA5.exe):
+       ScriptHookV.dll
+       dinput8.dll
+4. (Optional check) Also copy NativeTrainer.asi.
+   Launch the game, press F4 in story mode -- if a trainer
+   menu appears, Script Hook V is working.
+
+
+STEP 2 - Install the LUA Plugin
+-------------------------------
+1. Download "LUA Plugin for Script Hook V".
+2. Extract the zip. You will get:
+       LUA.asi
+       scripts\ (folder)
+3. Copy BOTH into your GTA V install folder.
+
+Final layout should look like this:
+
+   <GTA V folder>\
+       GTA5.exe
+       ScriptHookV.dll
+       dinput8.dll
+       LUA.asi
+       scripts\
+           LUA\          (plugin's own files)
+           addins\       (your scripts go here)
+
+
+STEP 3 - Install BankSystem.lua
+-------------------------------
+1. Place BankSystem.lua here:
+       <GTA V folder>\scripts\addins\BankSystem.lua
+2. That's it. No compilation, no extra config.
+
+
+STEP 4 - Launch and Test
+------------------------
+1. Start GTA V from your normal launcher (Steam / Rockstar / Epic).
+2. Pick STORY MODE.
+3. Open the map. ATM blips (dollar-sign icons) appear at banks.
+4. Walk up to one. When the "Press E to use ATM" prompt appears,
+   press E.
+5. Use Arrow Left/Right to move the selection,
+   Enter to confirm,
+   number row to type an amount,
+   Backspace to cancel.
+
+
+CONTROLS
+--------
+   Open ATM (when prompted) ........ E
+   Move selection .................. Left / Right Arrow
+   Confirm ......................... Enter
+   Cancel / close .................. Backspace
+   Enter amount .................... 0 - 9 (number row)
+
+
+TROUBLESHOOTING
+---------------
+- No prompt at any ATM:
+    Script Hook V or the LUA Plugin is not loading. Confirm
+    ScriptHookV.dll, dinput8.dll, and LUA.asi are all in the
+    GTA V root folder.
+
+- Game crashes on startup:
+    Script Hook V version does not match your GTA V version.
+    Either downgrade GTA V or wait for an updated SHV release.
+
+- Menu opens but cash does not move:
+    Cash transfer only works while playing as Michael, Franklin,
+    or Trevor. Custom peds will not be detected.
+
+- Where are the logs?
+    ScriptHookV.log -- in the GTA V root folder
+    LUA logs        -- scripts\LUA\logs\
+
+
+SAFETY
+------
+- Single-player only. Never load mods and then go to GTA Online.
+- Back up your saves before installing anything:
+       Documents\Rockstar Games\GTA V\Profiles\
+
+
+CUSTOMIZING
+-----------
+Open BankSystem.lua in any text editor:
+- Change the holder name:        edit  state.holder
+- Add or remove ATM locations:   edit  ATM_LOCATIONS
+- Reset your bank account:       delete BankSystem_save.json
+                                 (in scripts\addins\)
+================================================================
