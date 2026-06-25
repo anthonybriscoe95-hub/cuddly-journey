@@ -1,0 +1,151 @@
+#,Complex Name,Address,City,State,Zip,Phone,Notes/Area
+1,Whitney Apartments,7120 Society Dr,Claymont,DE,19703,302-798-8500,Claymont - Luxury
+2,Harbor House,31-2 Harbor Dr,Claymont,DE,19703,,Claymont
+3,Waterglen Apartments,137 Princeton Ave,Claymont,DE,19703,,Claymont - 2BR heat/hot water included
+4,The Reserve at Darley Green,700 Darley Green,Claymont,DE,19703,,Claymont - Newer Community
+5,Darley Green Townhomes,700 Darley Green,Claymont,DE,19703,,Claymont - Townhomes
+6,Claymont Manor Apartments,,Claymont,DE,19703,,Claymont
+7,The Edge at Greentree,1000 Cedartree Ln,Claymont,DE,19703,,Claymont
+8,Woodacres Apartment Homes,915 Cedartree Ln,Claymont,DE,19703,302-793-9037,Claymont - Morgan Properties
+9,Naamans Village Apartments,,Claymont,DE,19703,,Claymont
+10,Stoneybrook Apartments,,Claymont,DE,19703,,Claymont
+11,Princeton Apartments,137 Princeton Ave,Claymont,DE,19703,,Claymont
+12,Water View Court Apartments,,Claymont,DE,19703,,Claymont
+13,Hillside Pointe,,Claymont,DE,19703,,Claymont
+14,Claymont Street Apartments,,Claymont,DE,19703,,Claymont - HDC Mid Atlantic
+15,Top of the Hill Apartments,2101 Prior Rd,Wilmington,DE,19809,,Near Claymont - 19809
+16,Village at Fox Point Apartments,1436 Kynlyn Dr,Wilmington,DE,19809,,Near Claymont - 19809
+17,The Concord,3575 Silverside Rd,Wilmington,DE,19810,302-600-8634,North Wilmington - Luxury
+18,Valley Run,2601 Carpenter Station Rd,Wilmington,DE,19810,302-600-8727,North Wilmington
+19,Stratford Apartments,3120 Naamans Rd,Wilmington,DE,19810,302-600-8634,North Wilmington
+20,Cedar Tree Village Apartments,2514 Cedar Tree Dr,Wilmington,DE,19810,,North Wilmington
+21,Parklynn Apartments,,Wilmington,DE,19810,302-994-7700,North Wilmington
+22,Brandywine Hundred,400-402 Foulk Rd,Wilmington,DE,19803,,Wilmington - 301 units
+23,200 Brandywine,200 Brandywine Blvd,Talleyville,DE,19803,,Talleyville
+24,Brandywine Hills Apartments,Miller Rd,Wilmington,DE,19802,,Wilmington - Brandywine Hills
+25,Pebble Hill Apartments,3400 Miller Rd,Wilmington,DE,19802,,Wilmington
+26,Arbor Pointe Apartments,4000 Dawnbrook Dr,Wilmington,DE,19804,302-994-4442,Wilmington - Newport area
+27,Westover Pointe,3403 Lancaster Pike,Wilmington,DE,19805,,Wilmington - near Elsmere
+28,Elsmere Gardens Apartments,,Wilmington,DE,19805,,Wilmington - Elsmere area
+29,MKT North,200 W 9th St,Wilmington,DE,19801,302-600-8013,Wilmington Downtown
+30,901 Market Tower,,Wilmington,DE,19801,,Wilmington Downtown
+31,Brandywine Apartments of Wilmington,,Wilmington,DE,19802,,Wilmington - 36 buildings/25 acres
+32,Village at Fox Point,,Wilmington,DE,19809,,Wilmington
+33,Longview Apartment Homes,,Wilmington,DE,19810,,Wilmington - Morgan Properties
+34,William Penn Village Apartment Homes,595 Tulip Ln,New Castle,DE,19720,302-319-2201,New Castle - Morgan Properties
+35,Appleby Apartments,401 Bedford Ln,New Castle,DE,19720,302-600-8160,New Castle
+36,The Garrison,505 W 7th St,New Castle,DE,19720,302-600-7362,New Castle
+37,Castlebrook Apartments,550 S DuPont Pkwy,New Castle,DE,19720,302-278-0698,New Castle - Galman Group
+38,Sophia's Place West,2801 Stonebridge Blvd,New Castle,DE,19720,302-830-8622,New Castle
+39,Windsor Forest Townhomes,101 Paisley Ln,New Castle,DE,19720,302-773-8592,New Castle
+40,Coachman's Manor,,New Castle,DE,19720,302-326-3973,New Castle - Housing Authority
+41,Pine Valley,,New Castle,DE,19720,302-328-7679,New Castle - Housing Authority
+42,Wilton Club Apartments,,New Castle,DE,19720,302-325-4311,New Castle - Housing Authority
+43,Sophia's Place East,,New Castle,DE,19720,,New Castle - Galman Group
+44,Glen Eagle Village Apartments,50 Sandalwood Dr,Newark,DE,19713,302-600-8583,Newark
+45,Lehigh Flats,650 Lehigh Rd,Newark,DE,19711,302-830-8583,Newark
+46,Christina Mill,100 Christina Mill Dr,Newark,DE,19711,302-830-8716,Newark
+47,Compass at The Grove,1001 Compass Way,Newark,DE,19711,302-617-1637,Newark
+48,Cooper's Place,152 Chestnut Crossing Dr,Newark,DE,19702,302-231-3046,Newark - Galman Group
+49,One South Main,,Newark,DE,19711,302-731-1340,Newark
+50,The Lofts at Center Street,,Newark,DE,19711,302-731-1340,Newark
+51,Colonial Garden Apartments,334 E Main St,Newark,DE,19711,302-737-1254,Newark
+52,The Waverly,,Newark,DE,19711,,Newark
+53,Emblem at Christiana,,Newark,DE,19702,,Newark - Christiana area
+54,Abbey Walk Apartments,,Newark,DE,19702,,Newark
+55,Oak Tree Apartments,,Newark,DE,19702,,Newark
+56,Liberty Pointe Apartment Homes,,Newark,DE,19702,,Newark
+57,Apartments at Pike Creek,,Newark,DE,19711,,Pike Creek area
+58,Apartments at Pine Brook,,Newark,DE,19711,,Newark
+59,Buckingham Place Apartments,25B Windsor Circle,Newark,DE,19702,302-508-0538,Newark - Galman Group
+60,Buckingham Place Townhomes,25B Windsor Circle,Newark,DE,19702,302-508-0538,Newark - Galman Group
+61,Berkshire Gardens,1801-1847 Braken Ave,Wilmington,DE,19808,,Wilmington - Galman Group
+62,The Apartments at Pike Creek,,Pike Creek,DE,19808,,Pike Creek Valley
+63,Arundel Apartments,,Pike Creek,DE,19808,,Pike Creek Valley
+64,The Preserve at Deacons Walk,,Newark,DE,19711,,Newark area
+65,Foxwood Apartments,,Newark,DE,19711,,Newark
+66,Fox Run Apartments & Townhomes,900 Woodchuck Pl,Bear,DE,19701,844-583-6570,Bear - Morgan Properties
+67,Meridian Crossing Apartments & Townhomes,1 Kennedy Circle,Bear,DE,19701,302-832-7100,Bear - Reybold
+68,The Crossings at Limestone Apartments,,Bear,DE,19701,302-830-8995,Bear
+69,Huntley Glen,,Bear,DE,19701,,Bear - Morgan Properties
+70,Brandywine Woods Apartment Homes,270 Brandywine Dr,Bear,DE,19701,,Bear
+71,Dodson Court,,Wilmington,DE,19801,,Wilmington - Reybold
+72,St. Andrews,,New Castle,DE,19720,,New Castle - Reybold
+73,Ascot Landing,,Newark,DE,19711,,Newark - Reybold
+74,Middletown Apartments,410 N Ramunno Dr,Middletown,DE,19709,302-378-8714,Middletown
+75,Middletown Manor,,Middletown,DE,19709,302-376-1169,Middletown
+76,Lofts at 2nd and LOMA,,Wilmington,DE,19801,,Wilmington Downtown
+77,The Colony Apartments,,Wilmington,DE,19802,,Wilmington
+78,Cannon & Westover,105 Katrina Way,Dover,DE,19904,302-336-8637,Dover - Morgan Properties
+79,Country Village Apartment Homes,480 Country Dr,Dover,DE,19904,302-669-9336,Dover - Morgan Properties
+80,Mapleton Square Apartment Homes,177 Willis Rd,Dover,DE,19904,302-669-9342,Dover - Morgan Properties
+81,Woodcrest Apartment Homes,892 Woodcrest Dr,Dover,DE,19904,302-613-1083,Dover - Morgan Properties
+82,Columbia Place 55+,,Wilmington,DE,19810,,North Wilmington - Reybold
+83,Brandywine Apartments,,Wilmington,DE,19810,,North Wilmington
+84,Naamans Court Apartments,,Claymont,DE,19703,,Claymont area
+85,Brookside Apartments,,Wilmington,DE,19808,,Wilmington area
+86,Newport Village Apartments,,Newport,DE,19804,,Newport
+87,Greenway Apartments,,Wilmington,DE,19805,,Wilmington
+88,Christiana Meadows,,Newark,DE,19702,,Newark - Christiana area
+89,Millstone Apartments,,Newark,DE,19702,,Newark
+90,Barley Mill Plaza Apartments,,Greenville,DE,19807,,Greenville area
+91,Sherwood Place Apartments,,Wilmington,DE,19802,,Wilmington
+92,Weldin Road Apartments,,Claymont,DE,19703,,Claymont area
+93,Naaman's Creek Apartments,,Claymont,DE,19703,,Claymont
+94,Manor Apartments,,Wilmington,DE,19810,,North Wilmington
+95,Silverbrook Apartments,,Wilmington,DE,19810,,North Wilmington
+96,Fox Hollow Apartments,,Bear,DE,19701,,Bear area
+97,Carriage House Apartments,,New Castle,DE,19720,,New Castle
+98,Chesapeake Landing,,New Castle,DE,19720,,New Castle
+99,Concord Terrace Apartments,,Wilmington,DE,19810,,North Wilmington
+100,Creek Ridge Apartments,,Bear,DE,19701,,Bear area
+101,Eagle Run Apartments,,Bear,DE,19701,,Bear area
+102,Hunting Creek Apartments,,Wilmington,DE,19803,,Talleyville area
+103,Kentshire Apartments,,Wilmington,DE,19810,,North Wilmington
+104,Lincoln Knolls Apartments,,New Castle,DE,19720,,New Castle
+105,Maple Leaf Apartments,,Newark,DE,19711,,Newark
+106,Meadows of Bear,,Bear,DE,19701,,Bear
+107,Mill Creek Apartments,,Bear,DE,19701,,Bear
+108,New Castle Gardens,,New Castle,DE,19720,,New Castle
+109,Northgate Apartments,,Wilmington,DE,19802,,Wilmington
+110,Oak Hill Apartments,,Newark,DE,19711,,Newark
+111,Park Place Apartments,,Wilmington,DE,19805,,Wilmington
+112,Pennwood Crossing,,Wilmington,DE,19806,,Wilmington
+113,Pinewood Apartments,,Bear,DE,19701,,Bear
+114,Quail Run Apartments,,Newark,DE,19711,,Newark
+115,Riverside Apartments,,Wilmington,DE,19801,,Wilmington - Riverfront
+116,Rosemont Court Apartments,,Wilmington,DE,19802,,Wilmington
+117,Sandy Brae Apartments,,Wilmington,DE,19810,,North Wilmington
+118,Seaford Apartments,,Wilmington,DE,19801,,Wilmington
+119,Spring Valley Apartments,,Newark,DE,19711,,Newark
+120,Stone Mill Apartments,,Newark,DE,19702,,Newark
+121,Summit Apartments,,Wilmington,DE,19803,,Wilmington
+122,Tavistock Court Apartments,,Wilmington,DE,19810,,North Wilmington
+123,The Flats at Greenhill,,Wilmington,DE,19805,,Wilmington
+124,The Greene Apartments,,Wilmington,DE,19804,,Wilmington
+125,The Landings at Becks Pond,,Newark,DE,19711,,Newark
+126,The Orchard Apartments,,Wilmington,DE,19803,,Wilmington
+127,The Pines Apartments,,Bear,DE,19701,,Bear
+128,The Retreat at Bear,,Bear,DE,19701,,Bear
+129,The Trails Apartments,,Bear,DE,19701,,Bear
+130,Timber Creek Apartments,,Bear,DE,19701,,Bear
+131,Townsend Village,,Townsend,DE,19734,,Townsend
+132,University Plaza Apartments,,Newark,DE,19711,,Newark - near Univ of Delaware
+133,Valley Green Apartments,,Wilmington,DE,19803,,Wilmington
+134,Westhaven Apartments,,Wilmington,DE,19805,,Wilmington
+135,Whitehall Commons,,Wilmington,DE,19801,,Wilmington
+136,Windmill Knoll Apartments,,Bear,DE,19701,,Bear
+137,Woodbrook Apartments,,Wilmington,DE,19804,,Wilmington
+138,Woodlawn Commons,,Wilmington,DE,19802,,Wilmington
+139,Yorkshire Apartments,,Wilmington,DE,19802,,Wilmington
+140,Zenith Apartments,,Wilmington,DE,19801,,Wilmington - Downtown
+141,Hockessin Village Apartments,,Hockessin,DE,19707,,Hockessin
+142,Kirkwood Highway Apartments,,Newark,DE,19702,,Newark - Kirkwood Hwy
+143,Pike Creek Commons,,Pike Creek,DE,19808,,Pike Creek
+144,Sharpley Commons,,Wilmington,DE,19803,,Wilmington - Sharpley area
+145,Silverside Commons,,Wilmington,DE,19810,,North Wilmington
+146,Stoney Creek Apartments,,Bear,DE,19701,,Bear
+147,Talleyville Commons,,Talleyville,DE,19803,,Talleyville
+148,Twin Pines Apartments,,Wilmington,DE,19809,,Wilmington
+149,Wawaset Park Apartments,,Wilmington,DE,19806,,Wilmington - Historic area
+150,Willow Run Apartments,,Wilmington,DE,19804,,Wilmington
