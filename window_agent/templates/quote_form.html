@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Get a Free Window Cleaning Quote</h1>
+<form method="post" action="{{ url_for('submit_quote') }}" class="row g-3 mt-2">
+  <div class="col-md-6">
+    <label class="form-label">Name</label>
+    <input class="form-control" name="name" required>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Phone</label>
+    <input class="form-control" name="phone">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Email</label>
+    <input class="form-control" type="email" name="email" required>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Address</label>
+    <input class="form-control" name="address">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Number of windows</label>
+    <input class="form-control" type="number" min="1" name="num_windows" required>
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Stories</label>
+    <select class="form-select" name="stories">
+      <option value="1">1 story</option>
+      <option value="2">2+ stories</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label class="form-label d-block">Extras</label>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="screens" id="screens">
+      <label class="form-check-label" for="screens">Screens</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" name="tracks" id="tracks">
+      <label class="form-check-label" for="tracks">Tracks/Sills</label>
+    </div>
+  </div>
+  <input type="hidden" name="source" value="website">
+  <div class="col-12">
+    <label class="form-label">Notes</label>
+    <textarea class="form-control" name="notes"></textarea>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Get My Quote</button>
+  </div>
+</form>
+{% endblock %}
