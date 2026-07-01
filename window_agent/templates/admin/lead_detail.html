@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ lead.name }}</h1>
+<p>
+  Phone: {{ lead.phone or "-" }}<br>
+  Email: {{ lead.email or "-" }}<br>
+  Address: {{ lead.address or "-" }}<br>
+  Source: {{ lead.source }}<br>
+  Windows: {{ lead.num_windows or "-" }}, Stories: {{ lead.stories }}<br>
+  Quote: {{ "$%.2f"|format(lead.quote_amount) if lead.quote_amount else "-" }}<br>
+  Notes: {{ lead.notes or "-" }}
+</p>
+
+<form method="post" action="{{ url_for('admin_update_status', lead_id=lead.id) }}" class="row g-2 align-items-end">
+  <div class="col-auto">
+    <label class="form-label">Status</label>
+    <select class="form-select" name="status">
+      {% for s in ["new", "contacted", "booked", "declined", "completed"] %}
+      <option value="{{ s }}" {% if lead.status == s %}selected{% endif %}>{{ s }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="col-auto">
+    <button class="btn btn-secondary">Update Status</button>
+  </div>
+</form>
+
+<hr>
+<h2>Schedule a Job</h2>
+<form method="post" action="{{ url_for('admin_schedule_job', lead_id=lead.id) }}" class="row g-3">
+  <div class="col-md-4">
+    <label class="form-label">Date &amp; time</label>
+    <input class="form-control" type="datetime-local" name="scheduled_at" required>
+  </div>
+  <div class="col-md-8">
+    <label class="form-label">Notes</label>
+    <input class="form-control" name="notes">
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary">Schedule</button>
+  </div>
+</form>
+
+<hr>
+<h2>Jobs</h2>
+<ul>
+  {% for job in lead.jobs %}
+  <li>{{ job.scheduled_at.strftime("%Y-%m-%d %I:%M %p") }} - {{ job.status }}</li>
+  {% else %}
+  <li>None yet.</li>
+  {% endfor %}
+</ul>
+
+<p><a href="{{ url_for('admin_dashboard') }}">&larr; Back to dashboard</a></p>
+{% endblock %}

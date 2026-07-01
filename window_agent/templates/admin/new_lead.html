@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Add Lead</h1>
+<form method="post" class="row g-3 mt-2">
+  <div class="col-md-6">
+    <label class="form-label">Name</label>
+    <input class="form-control" name="name" required>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Phone</label>
+    <input class="form-control" name="phone">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Email</label>
+    <input class="form-control" type="email" name="email">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label">Address</label>
+    <input class="form-control" name="address">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Source</label>
+    <select class="form-select" name="source">
+      <option value="door_to_door">Door to door</option>
+      <option value="referral">Referral</option>
+      <option value="google_ad">Google/Facebook ad</option>
+      <option value="website">Website</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Number of windows</label>
+    <input class="form-control" type="number" min="1" name="num_windows">
+  </div>
+  <div class="col-md-4">
+    <label class="form-label">Stories</label>
+    <select class="form-select" name="stories">
+      <option value="1">1 story</option>
+      <option value="2">2+ stories</option>
+    </select>
+  </div>
+  <div class="col-12">
+    <label class="form-label">Notes</label>
+    <textarea class="form-control" name="notes"></textarea>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Save Lead</button>
+  </div>
+</form>
+{% endblock %}

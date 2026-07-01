@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Thanks, {{ lead.name }}!</h1>
+<p class="fs-4">Your estimated quote: <strong>${{ "%.2f"|format(lead.quote_amount) }}</strong></p>
+<p>We sent a confirmation to {{ lead.email }}{% if lead.phone %} and a text to {{ lead.phone }}{% endif %}. Reply or call us to book a date.</p>
+<p><a href="{{ url_for('quote_form') }}">Back to quote form</a></p>
+{% endblock %}

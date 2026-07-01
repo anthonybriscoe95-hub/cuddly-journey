@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center">
+  <h1>Dashboard</h1>
+  <div>
+    <a class="btn btn-outline-primary" href="{{ url_for('admin_new_lead') }}">+ Add Lead</a>
+    <a class="btn btn-outline-secondary" href="{{ url_for('admin_logout') }}">Log out</a>
+  </div>
+</div>
+
+<h2 class="mt-4">Leads</h2>
+<table class="table">
+  <thead><tr><th>Name</th><th>Source</th><th>Quote</th><th>Status</th><th>Created</th><th></th></tr></thead>
+  <tbody>
+    {% for lead in leads %}
+    <tr>
+      <td>{{ lead.name }}</td>
+      <td>{{ lead.source }}</td>
+      <td>{{ "$%.2f"|format(lead.quote_amount) if lead.quote_amount else "-" }}</td>
+      <td><span class="badge bg-secondary">{{ lead.status }}</span></td>
+      <td>{{ lead.created_at.strftime("%Y-%m-%d") }}</td>
+      <td><a href="{{ url_for('admin_lead_detail', lead_id=lead.id) }}">View</a></td>
+    </tr>
+    {% else %}
+    <tr><td colspan="6">No leads yet.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2 class="mt-4">Upcoming Jobs</h2>
+<table class="table">
+  <thead><tr><th>Customer</th><th>When</th><th>Price</th><th>Status</th><th></th></tr></thead>
+  <tbody>
+    {% for job in jobs %}
+    <tr>
+      <td>{{ job.lead.name }}</td>
+      <td>{{ job.scheduled_at.strftime("%Y-%m-%d %I:%M %p") }}</td>
+      <td>{{ "$%.2f"|format(job.price) if job.price else "-" }}</td>
+      <td><span class="badge bg-info text-dark">{{ job.status }}</span></td>
+      <td>
+        <form method="post" action="{{ url_for('admin_on_my_way', job_id=job.id) }}" class="d-inline">
+          <button class="btn btn-sm btn-outline-primary">On my way</button>
+        </form>
+        <form method="post" action="{{ url_for('admin_complete_job', job_id=job.id) }}" class="d-inline">
+          <button class="btn btn-sm btn-outline-success">Mark done</button>
+        </form>
+      </td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5">No jobs scheduled.</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

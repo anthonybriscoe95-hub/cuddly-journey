@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Admin Login</h1>
+<form method="post" class="row g-3 mt-2" style="max-width: 320px;">
+  <div class="col-12">
+    <label class="form-label">Password</label>
+    <input class="form-control" type="password" name="password" required>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Log in</button>
+  </div>
+</form>
+{% endblock %}
