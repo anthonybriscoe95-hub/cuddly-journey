@@ -10,7 +10,15 @@ A simple "simulator" game, one of the most popular kinds of game on Roblox:
 
 The whole game is 2 scripts. The GUI is made by code, so you don't have to build any buttons.
 
-## Setup (about 5 minutes)
+## Fastest setup: open the ready-made place file
+
+1. Download [`ClickSimulator.rbxlx`](ClickSimulator.rbxlx) (on GitHub, open the file and click the **Download raw file** button).
+2. In Roblox Studio, go to **File → Open from File** and pick `ClickSimulator.rbxlx`.
+3. Press **Play**. Then follow "Publish it" below.
+
+If you change the scripts, rebuild the place file with `python3 tools/build_place.py`.
+
+## Manual setup (about 5 minutes)
 
 1. Open **Roblox Studio** and pick the **Baseplate** template.
 2. In the **Explorer**, right-click **ServerScriptService** and choose **Insert Object**, then **Script**.
