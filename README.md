@@ -1,5 +1,9 @@
 # Roblox Forge — Claude Code plugin for building Roblox games
 
+## 🎮 Click Simulator (ready-to-play Roblox game)
+
+This repo also has a finished, simple Roblox game. Download [`ClickSimulator.rbxlx`](ClickSimulator.rbxlx), then in Roblox Studio go to **File → Open from File**. The full setup, publishing, and Robux guide is in [`CLICK_SIMULATOR.md`](CLICK_SIMULATOR.md).
+
 This repository is a Claude Code plugin marketplace containing **Roblox Forge**: a team of 12 specialist agents (engineers, designers, researchers, QA, security, performance), 9 Roblox knowledge skills, 8 workflow commands, and an auto-format/lint hook for Luau.
 
 See [`plugins/roblox-forge/README.md`](plugins/roblox-forge/README.md) for everything included.
