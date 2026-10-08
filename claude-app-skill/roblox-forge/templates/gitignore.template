@@ -1,0 +1,16 @@
+# Wally
+Packages/
+ServerPackages/
+DevPackages/
+
+# Rojo / luau-lsp
+sourcemap.json
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/settings.local.json
