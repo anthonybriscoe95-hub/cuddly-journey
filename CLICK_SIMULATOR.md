@@ -7,8 +7,13 @@ A simple "simulator" game, one of the most popular kinds of game on Roblox:
 - **Rebirth** to reset your coins for a permanent coin multiplier
 - **2x Coins Game Pass**, sold for Robux (this is how you earn)
 - **Leaderboard** in the top right, and **saves progress** automatically
+- **Island map** with a stone plaza, a giant spinning gold coin, trees, lamp posts, flowers, benches, a glowing rebirth portal, and bright simulator-style lighting
 
-The whole game is 2 scripts. The GUI is made by code, so you don't have to build any buttons.
+![Map preview](docs/map-preview.png)
+
+*(Preview render of the map. In Roblox it also has glowing lamps, sparkles, and the "CLICK SIMULATOR" title floating above the coin.)*
+
+The GUI is made by code, so you don't have to build any buttons.
 
 ## Fastest setup: open the ready-made place file
 
@@ -26,6 +31,10 @@ If you change the scripts, rebuild the place file with `python3 tools/build_plac
 3. Open **StarterPlayer**, right-click **StarterPlayerScripts** and choose **Insert Object**, then **LocalScript**.
    Paste everything from [`StarterPlayerScripts/GameClient.client.lua`](StarterPlayerScripts/GameClient.client.lua).
 4. Press **Play** to test it.
+
+The manual setup gives you the game on a plain baseplate. The island map only comes with the place file above.
+To get it anyway, open `ClickSimulator.rbxlx` once and copy the **Map** model from its Workspace into your game.
+Also add [`ServerScriptService/MapEffects.server.lua`](ServerScriptService/MapEffects.server.lua) as another Script for the lighting and effects.
 
 ## Publish it and turn on saving
 
