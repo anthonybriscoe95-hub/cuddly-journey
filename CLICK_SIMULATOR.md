@@ -5,7 +5,10 @@ A simple "simulator" game, one of the most popular kinds of game on Roblox:
 - **Click** the big button to get coins (with a bounce and "+10" popups)
 - **Upgrade** to get more coins per click
 - **Rebirth** to reset your coins for a permanent coin multiplier
-- **2x Coins Game Pass**, sold for Robux (this is how you earn)
+- **Coins all over the island**: walk into them to collect bonus coins (they spin and respawn)
+- **Rebirth portal**: walk into the purple portal to rebirth
+- **2 Game Passes** sold for Robux (this is how you earn): **2x Coins** and **Auto Clicker** (2 free clicks every second)
+- **Sounds and messages** like "Not enough coins!" and "+50 💰"
 - **Leaderboard** in the top right, and **saves progress** automatically
 - **Island map** with a stone plaza, a giant spinning gold coin, trees, lamp posts, flowers, benches, a glowing rebirth portal, and bright simulator-style lighting
 
@@ -42,18 +45,22 @@ Also add [`ServerScriptService/MapEffects.server.lua`](ServerScriptService/MapEf
 2. Go to **Home → Game Settings → Security** and turn on **Enable Studio Access to API Services**. Saving needs this.
 3. Go to **Game Settings → Permissions** and set the game to **Public**.
 
-## Make Robux (the 2x Coins Game Pass)
+## Make Robux (the 2 Game Passes)
+
+Do this once for **"2x Coins"** and once for **"Auto Clicker"**:
 
 1. Go to [create.roblox.com](https://create.roblox.com), open your game, then **Monetization → Passes → Create a Pass**.
-   Name it "2x Coins", upload an icon, and save it.
-2. Open the pass, turn on **Item for Sale**, and set a price. 50–150 Robux is typical.
+   Give it the name, upload an icon, and save it.
+2. Open the pass, turn on **Item for Sale**, and set a price.
+   About 99 Robux for 2x Coins and 149 for Auto Clicker is typical.
 3. Copy the pass's **ID** (the number in its URL).
-4. In the server script, change this line:
+4. Open the **GameServer** script in ServerScriptService and put the IDs in these lines at the top:
    ```lua
    local DOUBLE_COINS_GAMEPASS_ID = 0
+   local AUTO_CLICKER_GAMEPASS_ID = 0
    ```
-   to your ID, for example `= 123456789`. Then publish again.
-   The red **⭐ 2x COINS ⭐** button appears in-game after you add the ID.
+   For example, `= 123456789`. Then publish again.
+   The **⭐ 2x COINS ⭐** and **🤖 AUTO CLICKER** buttons appear in-game after you add the IDs.
 
 ## Easy tweaks
 
@@ -65,6 +72,9 @@ At the top of the server script:
 | `UPGRADE_COST_GROWTH` | How much pricier each upgrade gets |
 | `BASE_REBIRTH_COST` | Coins needed to rebirth (goes up each time) |
 | `CLICK_COOLDOWN` | Limits auto-clickers |
+| `AUTO_CLICKS_PER_SECOND` | How strong the Auto Clicker pass is |
+| `MAX_MAP_COINS` | How many coins lie around the island |
+| `MAP_COIN_CLICKS` | How much a map coin is worth (in clicks) |
 
 ## Tips to get players
 

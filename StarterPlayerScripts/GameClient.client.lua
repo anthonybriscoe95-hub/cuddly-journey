@@ -9,10 +9,13 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local TweenService = game:GetService("TweenService")
 local MarketplaceService = game:GetService("MarketplaceService")
+local RunService = game:GetService("RunService")
+local SoundService = game:GetService("SoundService")
 
 local player = Players.LocalPlayer
 local remotes = ReplicatedStorage:WaitForChild("Remotes")
 local gamePassId = remotes:GetAttribute("GamePassId") or 0
+local autoPassId = remotes:GetAttribute("AutoClickerPassId") or 0
 
 ----------------------------------------------------------------
 -- NUMBER FORMATTING (1500 -> 1.5K)
@@ -127,6 +130,25 @@ local rebirthButton = makeButton("Rebirth", Color3.fromRGB(170, 60, 255),
 local passButton = makeButton("⭐ 2x COINS ⭐", Color3.fromRGB(255, 70, 70),
 	UDim2.new(0, 190, 0, 60), UDim2.new(0, 110, 0.5, 70))
 passButton.Visible = gamePassId ~= 0
+local autoButton = makeButton("🤖 AUTO CLICKER", Color3.fromRGB(255, 140, 0),
+	UDim2.new(0, 190, 0, 60), UDim2.new(0, 110, 0.5, 140))
+autoButton.Visible = autoPassId ~= 0
+
+----------------------------------------------------------------
+-- SOUNDS
+----------------------------------------------------------------
+local function makeSound(id, volume, speed)
+	local sound = Instance.new("Sound")
+	sound.SoundId = id
+	sound.Volume = volume
+	sound.PlaybackSpeed = speed
+	sound.Parent = SoundService
+	return sound
+end
+
+local clickSound = makeSound("rbxasset://sounds/electronicpingshort.wav", 0.4, 1.4)
+local goodSound = makeSound("rbxasset://sounds/electronicpingshort.wav", 0.6, 1)
+local badSound = makeSound("rbxasset://sounds/electronicpingshort.wav", 0.5, 0.5)
 
 ----------------------------------------------------------------
 -- "+10" POPUPS WHEN YOU CLICK
@@ -170,6 +192,9 @@ local function refresh()
 	if player:GetAttribute("HasPass") then
 		passButton.Visible = false
 	end
+	if player:GetAttribute("HasAuto") then
+		autoButton.Visible = false
+	end
 end
 
 coins.Changed:Connect(refresh)
@@ -184,6 +209,7 @@ clickButton.Activated:Connect(function()
 	bounce(clickButton)
 	local perClick = (player:GetAttribute("ClickPower") or 1) * (player:GetAttribute("Multiplier") or 1)
 	popup("+" .. short(perClick))
+	clickSound:Play()
 	remotes.Click:FireServer()
 end)
 
@@ -200,4 +226,53 @@ end)
 passButton.Activated:Connect(function()
 	bounce(passButton)
 	MarketplaceService:PromptGamePassPurchase(player, gamePassId)
+end)
+
+autoButton.Activated:Connect(function()
+	bounce(autoButton)
+	MarketplaceService:PromptGamePassPurchase(player, autoPassId)
+end)
+
+----------------------------------------------------------------
+-- MESSAGES FROM THE SERVER ("Not enough coins!", "+50 💰", ...)
+----------------------------------------------------------------
+local toast = Instance.new("TextLabel")
+toast.AnchorPoint = Vector2.new(0.5, 0)
+toast.Position = UDim2.new(0.5, 0, 0, 110)
+toast.Size = UDim2.new(0, 420, 0, 40)
+toast.BackgroundTransparency = 1
+toast.Font = Enum.Font.FredokaOne
+toast.TextScaled = true
+toast.TextStrokeTransparency = 0
+toast.TextTransparency = 1
+toast.Parent = gui
+
+local toastId = 0
+remotes.Notify.OnClientEvent:Connect(function(text, good)
+	toastId += 1
+	local myId = toastId
+	toast.Text = text
+	toast.TextColor3 = good and Color3.fromRGB(120, 255, 120) or Color3.fromRGB(255, 90, 90)
+	toast.TextTransparency = 0
+	toast.TextStrokeTransparency = 0
+	if good then
+		goodSound:Play()
+	else
+		badSound:Play()
+	end
+	task.delay(1.5, function()
+		if toastId == myId then
+			TweenService:Create(toast, TweenInfo.new(0.4), { TextTransparency = 1, TextStrokeTransparency = 1 }):Play()
+		end
+	end)
+end)
+
+----------------------------------------------------------------
+-- SPIN THE COINS LYING AROUND THE MAP
+----------------------------------------------------------------
+local mapCoins = workspace:WaitForChild("MapCoins")
+RunService.RenderStepped:Connect(function(dt)
+	for _, coin in mapCoins:GetChildren() do
+		coin.CFrame *= CFrame.Angles(0, dt * 3, 0)
+	end
 end)
