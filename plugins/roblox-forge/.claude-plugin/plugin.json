@@ -1,0 +1,10 @@
+{
+  "name": "roblox-forge",
+  "version": "1.0.0",
+  "description": "A full Roblox game studio team for Claude: engineers, designers, researchers, QA, security and performance specialists, plus Luau/Rojo knowledge and game-building workflows.",
+  "author": {
+    "name": "anthonybriscoe95-hub"
+  },
+  "keywords": ["roblox", "luau", "game-dev", "rojo", "game-design"],
+  "license": "MIT"
+}

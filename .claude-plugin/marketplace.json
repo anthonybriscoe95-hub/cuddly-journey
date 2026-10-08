@@ -1,0 +1,19 @@
+{
+  "name": "roblox-forge-marketplace",
+  "owner": {
+    "name": "anthonybriscoe95-hub"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for building Roblox games."
+  },
+  "plugins": [
+    {
+      "name": "roblox-forge",
+      "source": "./plugins/roblox-forge",
+      "description": "A full Roblox game studio team for Claude: engineers, designers, researchers, QA, security and performance specialists, plus Luau/Rojo knowledge and game-building workflows.",
+      "version": "1.0.0",
+      "category": "development",
+      "keywords": ["roblox", "luau", "game-dev", "rojo", "game-design"]
+    }
+  ]
+}

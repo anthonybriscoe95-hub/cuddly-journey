@@ -1,0 +1,17 @@
+{
+  "description": "Auto-format Luau with StyLua and lint with Selene after Claude edits .lua/.luau files (skipped when the tools aren't installed).",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/luau-quality.sh\"",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
