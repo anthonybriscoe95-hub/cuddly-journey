@@ -140,12 +140,13 @@ def cash_collector(kit):
           notes="'Expand here' sign: big plus on a post with a blank Face for the price.")  # fmt: skip
 def expansion_sign(kit):
     with kit.part("Body") as b:
-        b.box((-0.25, -0.25, 0), (0.25, 0.25, 7.0), "slate", bevel=0.05)
+        b.box((-0.18, -0.18, 0), (0.18, 0.18, 7.0), "slate", bevel=0.05)
         b.at((0, 0, 8.5), rot_x_deg=90)
         b.cylinder((0, 0, -0.25), exact(2.0, 16), 0.5, "cash_green", segments=16, bevel=0.06)
         b.at()
         b.front_quad(-1.3, 8.2, 1.3, 8.8, -0.262, "offwhite")
-        b.front_quad(-0.3, 7.2, 0.3, 9.8, -0.262, "offwhite")
+        b.front_quad(-0.3, 7.2, 0.3, 8.2, -0.262, "offwhite")  # plus: three pieces, no overlap
+        b.front_quad(-0.3, 8.8, 0.3, 9.8, -0.262, "offwhite")
         b.box((-2.4, -0.2, 4.0), (2.4, 0.2, 5.6), "navy", bevel=0.06)
     with kit.part("Face") as b:
         b.box((-2.2, -0.25, 4.15), (2.2, -0.2, 5.45), "offwhite", bevel=0)

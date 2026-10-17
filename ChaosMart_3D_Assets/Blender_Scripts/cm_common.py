@@ -710,11 +710,26 @@ def _render(path, resolution, samples):
     return path
 
 
+def _solo(objects):
+    """Hide every other object from the render; returns a function that undoes it."""
+    keep = set(objects)
+    hidden = [o for o in bpy.context.scene.objects if o not in keep and not o.name.startswith("_") and not o.hide_render]
+    for o in hidden:
+        o.hide_render = True
+
+    def restore():
+        for o in hidden:
+            o.hide_render = False
+
+    return restore
+
+
 def render_preview(asset_groups, out_name, resolution=(1600, 900), samples=48, direction=(0.5, -1.0, 0.42)):
     """Render each list of objects together in a grid under soft daylight.
 
-    Objects are moved for the shot and put back afterwards.
+    Objects are moved for the shot and put back afterwards; nothing else is visible.
     """
+    restore = _solo([o for objs in asset_groups for o in objs])
     moved = []
     boxes = [world_bbox(objs) for objs in asset_groups]
     gap = 3.0
@@ -743,6 +758,7 @@ def render_preview(asset_groups, out_name, resolution=(1600, 900), samples=48, d
         o.location = loc
     bpy.context.view_layer.update()
     _teardown(tmp, world)
+    restore()
     return path
 
 
@@ -752,19 +768,18 @@ def render_contact_sheet(assets, out_name, tile=(420, 320), samples=24, columns=
 
     tile_dir = os.path.join(PREVIEW_DIR, "tiles")
     os.makedirs(tile_dir, exist_ok=True)
-    all_cols = [a.collection for a in assets]
     tmp, cam, world = _stage()
     paths = []
     for a in assets:
-        for c in all_cols:
-            c.hide_render = c is not a.collection
-        for o in a.objects:
-            o.hide_render = part_name(o) == "Anchor"
+        restore = _solo([o for o in a.objects if part_name(o) != "Anchor"])
         lo, hi = world_bbox(a.sized_objects())
         frame_camera(cam, lo, hi, tile, direction=(0.35, -1.0, 0.4), fill=1.0)
-        paths.append(_render(os.path.join(tile_dir, a.file_name + ".png"), tile, samples))
-    for c in all_cols:
-        c.hide_render = False
+        png = _render(os.path.join(tile_dir, a.file_name + ".png"), tile, samples)
+        restore()
+        jpg = png[:-4] + ".jpg"  # keep the per-asset tiles small
+        Image.open(png).convert("RGB").save(jpg, quality=90)
+        os.remove(png)
+        paths.append(jpg)
     _teardown(tmp, world)
 
     label_h = 26

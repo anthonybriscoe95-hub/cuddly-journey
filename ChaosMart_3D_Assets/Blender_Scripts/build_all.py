@@ -52,7 +52,7 @@ def main():
         for a in assets:
             if all(ok for ok, _ in a.checks):
                 print("exported", cm.export_fbx(a))
-        if assets and not args.no_render:
+        if assets and not args.no_render and not only:
             print("rendered", cm.render_preview([a.objects for a in assets], "preview_%s.png" % fam))
             print("rendered", cm.render_contact_sheet(assets, "catalog_%s.png" % fam))
 
@@ -61,10 +61,12 @@ def main():
     import write_inventory
 
     write_inventory.main()
-    os.makedirs(cm.SOURCE_DIR, exist_ok=True)
-    bpy.ops.wm.save_as_mainfile(filepath=os.path.join(cm.SOURCE_DIR, "ChaosMart_Assets.blend"), compress=True)
+    complete = not only and set(families) == set(FAMILIES)
+    if complete:  # a partial build must not replace the full editable source
+        os.makedirs(cm.SOURCE_DIR, exist_ok=True)
+        bpy.ops.wm.save_as_mainfile(filepath=os.path.join(cm.SOURCE_DIR, "ChaosMart_Assets.blend"), compress=True)
 
-    if not args.no_map and not only and set(MAP_NEEDS) <= set(families):
+    if not args.no_map and complete:
         import map_assembly
 
         col, placer = map_assembly.assemble()

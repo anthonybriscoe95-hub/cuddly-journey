@@ -1,7 +1,7 @@
 {
  "_status": "PROVISIONAL. The overhead blueprint was not supplied, so these numbers are a documented assumption. Edit them to match the blueprint and re-run build_all.py; every map piece and the assembly read from here.",
  "convention": "Blender coordinates; position = asset pivot (bottom centre); rotation_z in degrees about +Z. See Documentation/IMPORT_GUIDE.md.",
- "count": 1014,
+ "count": 1223,
  "placements": [
   {
    "asset": "CM_Ground_Base",
@@ -1200,6 +1200,616 @@
     380,
     64.0,
     0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Fountain",
+   "group": "plaza",
+   "position": [
+    0,
+    0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_LeaderboardStage",
+   "group": "plaza",
+   "position": [
+    0,
+    52,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Tycoon_DailyRewardStand",
+   "group": "plaza",
+   "position": [
+    -70,
+    0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Tycoon_EventCountdown",
+   "group": "plaza",
+   "position": [
+    70,
+    30,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Event_RedCarpet",
+   "group": "plaza",
+   "position": [
+    70,
+    -10,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Prop_SpawnArch",
+   "group": "plaza",
+   "position": [
+    -338.0,
+    0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Prop_BusStop",
+   "group": "plaza",
+   "position": [
+    308.0,
+    -74.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_PlazaKiosk_Teal",
+   "group": "plaza",
+   "position": [
+    -150,
+    40,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_PlazaKiosk_Orange",
+   "group": "plaza",
+   "position": [
+    150,
+    40,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_PlazaKiosk_Blue",
+   "group": "plaza",
+   "position": [
+    -150,
+    -40,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_PlazaKiosk_Purple",
+   "group": "plaza",
+   "position": [
+    150,
+    -40,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_Bench",
+   "group": "plaza",
+   "position": [
+    29.445,
+    17.0,
+    1.0
+   ],
+   "rotation_z": 120.0
+  },
+  {
+   "asset": "CM_Prop_Bench",
+   "group": "plaza",
+   "position": [
+    0.0,
+    34.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bench",
+   "group": "plaza",
+   "position": [
+    -29.445,
+    17.0,
+    1.0
+   ],
+   "rotation_z": 240.0
+  },
+  {
+   "asset": "CM_Prop_Bench",
+   "group": "plaza",
+   "position": [
+    -29.445,
+    -17.0,
+    1.0
+   ],
+   "rotation_z": 300.0
+  },
+  {
+   "asset": "CM_Prop_Bench",
+   "group": "plaza",
+   "position": [
+    -0.0,
+    -34.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bench",
+   "group": "plaza",
+   "position": [
+    29.445,
+    -17.0,
+    1.0
+   ],
+   "rotation_z": 60.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    -300,
+    -55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    -300,
+    55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    -230,
+    -55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    -230,
+    55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    -100,
+    -55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    -100,
+    55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    100,
+    -55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    100,
+    55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plaza",
+   "position": [
+    230,
+    -55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plaza",
+   "position": [
+    230,
+    55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    300,
+    -55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plaza",
+   "position": [
+    300,
+    55,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -336,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -336,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -272,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -272,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -208,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -208,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -144,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -144,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -80,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -80,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -16,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    -16,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    48,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    48,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    112,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    112,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    176,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    176,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    240,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    240,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    304,
+    76.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_StreetLamp",
+   "group": "plaza",
+   "position": [
+    304,
+    -76.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrafficLight",
+   "group": "plaza",
+   "position": [
+    -364,
+    -74.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrafficLight",
+   "group": "plaza",
+   "position": [
+    -364,
+    74.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_TrafficLight",
+   "group": "plaza",
+   "position": [
+    364,
+    -74.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrafficLight",
+   "group": "plaza",
+   "position": [
+    364,
+    74.0,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_TrashCan",
+   "group": "plaza",
+   "position": [
+    -180,
+    72.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrashCan",
+   "group": "plaza",
+   "position": [
+    -220,
+    -72.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrashCan",
+   "group": "plaza",
+   "position": [
+    20,
+    72.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrashCan",
+   "group": "plaza",
+   "position": [
+    -20,
+    -72.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrashCan",
+   "group": "plaza",
+   "position": [
+    220,
+    72.0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_TrashCan",
+   "group": "plaza",
+   "position": [
+    180,
+    -72.0,
+    1.0
    ],
    "rotation_z": 0
   },
@@ -2694,6 +3304,256 @@
    "rotation_z": 0.0
   },
   {
+   "asset": "CM_Prop_PlotBanner",
+   "group": "plot_N1",
+   "position": [
+    -152.0,
+    118.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_PurchasePad",
+   "group": "plot_N1",
+   "position": [
+    -308.0,
+    187.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_UpgradePad",
+   "group": "plot_N1",
+   "position": [
+    -268.0,
+    187.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_DeliveryStation",
+   "group": "plot_N1",
+   "position": [
+    -154.5,
+    220.0,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Prop_DeliveryTruck",
+   "group": "plot_N1",
+   "position": [
+    -154.5,
+    250.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N1",
+   "position": [
+    -355.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N1",
+   "position": [
+    -346.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N1",
+   "position": [
+    -346.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N1",
+   "position": [
+    -310.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N1",
+   "position": [
+    -310.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N1",
+   "position": [
+    -301.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N1",
+   "position": [
+    -256.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N1",
+   "position": [
+    -247.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N1",
+   "position": [
+    -238.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N1",
+   "position": [
+    -366.0,
+    130.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N1",
+   "position": [
+    -366.0,
+    160.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N1",
+   "position": [
+    -366.0,
+    190.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N1",
+   "position": [
+    -366.0,
+    220.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N1",
+   "position": [
+    -366.0,
+    250.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N1",
+   "position": [
+    -366.0,
+    280.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N1",
+   "position": [
+    -346.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N1",
+   "position": [
+    -316.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N1",
+   "position": [
+    -286.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N1",
+   "position": [
+    -256.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N1",
+   "position": [
+    -226.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
    "asset": "CM_Plot_Pad",
    "group": "plot_N2",
    "position": [
@@ -4180,6 +5040,266 @@
     8.0,
     211.0,
     1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_PlotBanner",
+   "group": "plot_N2",
+   "position": [
+    104.0,
+    118.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_PurchasePad",
+   "group": "plot_N2",
+   "position": [
+    -52.0,
+    187.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_UpgradePad",
+   "group": "plot_N2",
+   "position": [
+    -12.0,
+    187.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_DeliveryStation",
+   "group": "plot_N2",
+   "position": [
+    101.5,
+    220.0,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Prop_DeliveryTruck",
+   "group": "plot_N2",
+   "position": [
+    101.5,
+    250.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N2",
+   "position": [
+    -99.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N2",
+   "position": [
+    -90.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N2",
+   "position": [
+    -81.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N2",
+   "position": [
+    -63.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N2",
+   "position": [
+    -45.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N2",
+   "position": [
+    -18.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N2",
+   "position": [
+    -9.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N2",
+   "position": [
+    17.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N2",
+   "position": [
+    26.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N2",
+   "position": [
+    26.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N2",
+   "position": [
+    -110.0,
+    130.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N2",
+   "position": [
+    -110.0,
+    160.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N2",
+   "position": [
+    -110.0,
+    190.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N2",
+   "position": [
+    -110.0,
+    220.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N2",
+   "position": [
+    -110.0,
+    250.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N2",
+   "position": [
+    -110.0,
+    280.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N2",
+   "position": [
+    -90.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N2",
+   "position": [
+    -60.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N2",
+   "position": [
+    -30.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N2",
+   "position": [
+    0.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N2",
+   "position": [
+    30.0,
+    286.0,
+    1.0
    ],
    "rotation_z": 0.0
   },
@@ -5674,6 +6794,246 @@
    "rotation_z": 0.0
   },
   {
+   "asset": "CM_Prop_PlotBanner",
+   "group": "plot_N3",
+   "position": [
+    360.0,
+    118.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_PurchasePad",
+   "group": "plot_N3",
+   "position": [
+    204.0,
+    187.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_UpgradePad",
+   "group": "plot_N3",
+   "position": [
+    244.0,
+    187.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Tycoon_DeliveryStation",
+   "group": "plot_N3",
+   "position": [
+    357.5,
+    220.0,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Prop_DeliveryTruck",
+   "group": "plot_N3",
+   "position": [
+    357.5,
+    250.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N3",
+   "position": [
+    174.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N3",
+   "position": [
+    183.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N3",
+   "position": [
+    183.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_N3",
+   "position": [
+    237.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N3",
+   "position": [
+    237.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_N3",
+   "position": [
+    246.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N3",
+   "position": [
+    273.5,
+    168.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_N3",
+   "position": [
+    282.5,
+    127.5,
+    1.0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N3",
+   "position": [
+    146.0,
+    130.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N3",
+   "position": [
+    146.0,
+    160.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N3",
+   "position": [
+    146.0,
+    190.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N3",
+   "position": [
+    146.0,
+    220.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_N3",
+   "position": [
+    146.0,
+    250.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_N3",
+   "position": [
+    146.0,
+    280.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N3",
+   "position": [
+    166.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N3",
+   "position": [
+    196.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N3",
+   "position": [
+    226.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N3",
+   "position": [
+    256.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_N3",
+   "position": [
+    286.0,
+    286.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
    "asset": "CM_Plot_Pad",
    "group": "plot_S1",
    "position": [
@@ -7160,6 +8520,236 @@
     -264.0,
     -211.0,
     1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_PlotBanner",
+   "group": "plot_S1",
+   "position": [
+    -360.0,
+    -118.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_PurchasePad",
+   "group": "plot_S1",
+   "position": [
+    -204.0,
+    -187.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_UpgradePad",
+   "group": "plot_S1",
+   "position": [
+    -244.0,
+    -187.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_DeliveryStation",
+   "group": "plot_S1",
+   "position": [
+    -357.5,
+    -220.0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Prop_DeliveryTruck",
+   "group": "plot_S1",
+   "position": [
+    -357.5,
+    -250.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S1",
+   "position": [
+    -174.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S1",
+   "position": [
+    -183.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S1",
+   "position": [
+    -192.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S1",
+   "position": [
+    -210.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S1",
+   "position": [
+    -246.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S1",
+   "position": [
+    -255.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S1",
+   "position": [
+    -264.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S1",
+   "position": [
+    -146.0,
+    -130.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S1",
+   "position": [
+    -146.0,
+    -160.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S1",
+   "position": [
+    -146.0,
+    -190.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S1",
+   "position": [
+    -146.0,
+    -220.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S1",
+   "position": [
+    -146.0,
+    -250.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S1",
+   "position": [
+    -146.0,
+    -280.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S1",
+   "position": [
+    -166.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S1",
+   "position": [
+    -196.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S1",
+   "position": [
+    -226.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S1",
+   "position": [
+    -256.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S1",
+   "position": [
+    -286.0,
+    -286.0,
+    1.0
    ],
    "rotation_z": 180.0
   },
@@ -8654,6 +10244,246 @@
    "rotation_z": 180.0
   },
   {
+   "asset": "CM_Prop_PlotBanner",
+   "group": "plot_S2",
+   "position": [
+    -104.0,
+    -118.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_PurchasePad",
+   "group": "plot_S2",
+   "position": [
+    52.0,
+    -187.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_UpgradePad",
+   "group": "plot_S2",
+   "position": [
+    12.0,
+    -187.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_DeliveryStation",
+   "group": "plot_S2",
+   "position": [
+    -101.5,
+    -220.0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Prop_DeliveryTruck",
+   "group": "plot_S2",
+   "position": [
+    -101.5,
+    -250.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S2",
+   "position": [
+    99.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S2",
+   "position": [
+    90.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S2",
+   "position": [
+    63.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S2",
+   "position": [
+    54.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S2",
+   "position": [
+    54.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S2",
+   "position": [
+    0.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S2",
+   "position": [
+    0.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S2",
+   "position": [
+    -8.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S2",
+   "position": [
+    110.0,
+    -130.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S2",
+   "position": [
+    110.0,
+    -160.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S2",
+   "position": [
+    110.0,
+    -190.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S2",
+   "position": [
+    110.0,
+    -220.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S2",
+   "position": [
+    110.0,
+    -250.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S2",
+   "position": [
+    110.0,
+    -280.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S2",
+   "position": [
+    90.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S2",
+   "position": [
+    60.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S2",
+   "position": [
+    30.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S2",
+   "position": [
+    -0.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S2",
+   "position": [
+    -30.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
    "asset": "CM_Plot_Pad",
    "group": "plot_S3",
    "position": [
@@ -10140,6 +11970,266 @@
     248.0,
     -211.0,
     1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_PlotBanner",
+   "group": "plot_S3",
+   "position": [
+    152.0,
+    -118.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_PurchasePad",
+   "group": "plot_S3",
+   "position": [
+    308.0,
+    -187.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_UpgradePad",
+   "group": "plot_S3",
+   "position": [
+    268.0,
+    -187.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Tycoon_DeliveryStation",
+   "group": "plot_S3",
+   "position": [
+    154.5,
+    -220.0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Prop_DeliveryTruck",
+   "group": "plot_S3",
+   "position": [
+    154.5,
+    -250.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S3",
+   "position": [
+    355.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S3",
+   "position": [
+    355.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S3",
+   "position": [
+    346.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S3",
+   "position": [
+    319.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S3",
+   "position": [
+    310.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S3",
+   "position": [
+    301.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Yellow",
+   "group": "plot_S3",
+   "position": [
+    265.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S3",
+   "position": [
+    247.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Blue",
+   "group": "plot_S3",
+   "position": [
+    238.5,
+    -127.5,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_ParkedCar_Red",
+   "group": "plot_S3",
+   "position": [
+    229.5,
+    -168.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S3",
+   "position": [
+    366.0,
+    -130.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S3",
+   "position": [
+    366.0,
+    -160.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S3",
+   "position": [
+    366.0,
+    -190.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S3",
+   "position": [
+    366.0,
+    -220.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Round",
+   "group": "plot_S3",
+   "position": [
+    366.0,
+    -250.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Tree_Pine",
+   "group": "plot_S3",
+   "position": [
+    366.0,
+    -280.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S3",
+   "position": [
+    346.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S3",
+   "position": [
+    316.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S3",
+   "position": [
+    286.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S3",
+   "position": [
+    256.0,
+    -286.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Prop_Bush",
+   "group": "plot_S3",
+   "position": [
+    226.0,
+    -286.0,
+    1.0
    ],
    "rotation_z": 180.0
   }
