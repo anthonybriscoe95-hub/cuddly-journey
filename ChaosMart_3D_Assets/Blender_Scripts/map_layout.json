@@ -1,0 +1,24 @@
+{
+  "_status": "PROVISIONAL. The overhead blueprint was not supplied, so these numbers are a documented assumption. Edit them to match the blueprint and re-run build_all.py; every map piece and the assembly read from here.",
+  "_units": "studs; Blender X/Y ground plane, +Z up. Plot-local coordinates: front (-Y) faces the plaza.",
+  "plot": {
+    "width": 224,
+    "depth": 176,
+    "store": {"x": -32, "y": 40, "w": 134, "d": 88},
+    "stockroom": {"x": 68.5, "y": 46, "w": 51, "d": 76},
+    "parking": {"x0": -104, "x1": 31, "y0": -82, "y1": -22},
+    "owner_pad": {"x": -32, "y": -82}
+  },
+  "rows": {
+    "column_x": [-256, 0, 256],
+    "north_row_y": 200,
+    "south_row_y": -200
+  },
+  "plaza": {"width": 736, "depth": 160},
+  "roads": {
+    "plaza_road_y": 92,
+    "side_road_x": 380,
+    "segment": 32
+  },
+  "ground": {"width": 960, "depth": 720}
+}

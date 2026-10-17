@@ -69,6 +69,9 @@ COLOURS = [
     ("wall_warm", "#F2E6D3"),
     ("wall_shade", "#E2D0B4"),
     ("floor_tile", "#E3F2EF"),
+    ("cash_green", "#4FB36B"),
+    ("gold", "#F2C230"),
+    ("velvet", "#B8344A"),
     # characters
     ("skin_light", "#F1C7A0"),
     ("skin_mid", "#C68B59"),

@@ -161,6 +161,26 @@ class MeshBuilder:
         faces += [(last + i, last + (i + 1) % n, top) for i in range(n)]
         return self._faces(verts, faces, colour, 0.0, smooth_sides=True)
 
+    def star(self, centre, radius, colour, facing="-Y", inner=0.45, points=5):
+        """Flat five-point star decal, one point straight up (or toward +Y on top faces)."""
+        cx, cy, cz = centre
+        pts = []
+        for i in range(points * 2):
+            a = math.pi / 2 + math.pi * i / points
+            r = radius if i % 2 == 0 else radius * inner
+            u, v = r * math.cos(a), r * math.sin(a)
+            if facing == "-Y":
+                pts.append((cx - u, cy, cz + v))
+            elif facing == "+Z":
+                pts.append((cx + u, cy + v, cz))
+            elif facing == "+X":
+                pts.append((cx, cy + u, cz + v))
+            else:  # -X
+                pts.append((cx, cy - u, cz + v))
+        if facing == "-Y":
+            pts.reverse()
+        return self.poly(pts, colour)
+
     def sweep(self, path, radii, colour, sides=6, flat=1.0):
         """Smooth tube along a polyline with a radius per point (0 = pointed tip).
 
@@ -230,6 +250,32 @@ class MeshBuilder:
         faces = self._faces(pts, [tuple(range(segments))], colour, 0.0)
         self.decals.update(faces)
         return faces
+
+    def ring(self, base, r_out, r_in, height, colour, segments=24, exact=True):
+        """Hollow upright ring (basin rim, planter wall). `exact` makes the outer
+        flats reach r_out so the footprint measures exactly 2 * r_out."""
+        bx, by, bz = base
+        n = segments
+        k = 1 / math.cos(math.pi / n) if exact else 1.0
+        angles = [2 * math.pi * (i + 0.5) / n for i in range(n)]
+        verts = []
+        for z in (bz, bz + height):
+            verts += [(bx + r_out * k * math.cos(a), by + r_out * k * math.sin(a), z) for a in angles]
+            verts += [(bx + r_in * k * math.cos(a), by + r_in * k * math.sin(a), z) for a in angles]
+        ob, ib, ot, it = 0, n, 2 * n, 3 * n
+        faces = []
+        for i in range(n):
+            j = (i + 1) % n
+            faces += [(ob + i, ob + j, ot + j, ot + i),  # outer wall
+                      (ib + j, ib + i, it + i, it + j),  # inner wall
+                      (ot + i, ot + j, it + j, it + i),  # top
+                      (ob + j, ob + i, ib + i, ib + j)]  # bottom  # fmt: skip
+        made = self._faces(verts, faces, colour, 0.0, smooth_sides=True)
+        for f in made:  # crisp rims, smooth walls
+            for e in f.edges:
+                if abs(e.verts[0].co.z - e.verts[1].co.z) < 1e-6:
+                    e.smooth = False
+        return made
 
     def poly(self, points, colour):
         """Flat n-gon decal through `points` (counter-clockwise seen from outside)."""
@@ -638,12 +684,21 @@ def frame_camera(cam, lo, hi, resolution, direction=(0.5, -1.0, 0.42), fill=0.75
         dist = radius * 4 + 50
     else:
         cam_data.type = "PERSP"
+        cam_data.lens = 50
         fov_h = 2 * math.atan(cam_data.sensor_width / (2 * cam_data.lens))
         fov_v = 2 * math.atan(math.tan(fov_h / 2) / aspect)
         dist = radius / math.sin(min(fov_h, fov_v) / 2) * fill
     cam.location = centre + direction * dist
     cam.rotation_euler = (-direction).to_track_quat("-Z", "Y").to_euler()
     cam_data.clip_end = dist * 4 + 1000
+
+
+def aim_camera(cam, eye, target, lens=35):
+    """Place `cam` at `eye` looking at `target` (perspective)."""
+    cam.data.type = "PERSP"
+    cam.data.lens = lens
+    cam.location = Vector(eye)
+    cam.rotation_euler = (Vector(target) - Vector(eye)).to_track_quat("-Z", "Y").to_euler()
 
 
 def _render(path, resolution, samples):
@@ -706,7 +761,7 @@ def render_contact_sheet(assets, out_name, tile=(420, 320), samples=24, columns=
         for o in a.objects:
             o.hide_render = part_name(o) == "Anchor"
         lo, hi = world_bbox(a.sized_objects())
-        frame_camera(cam, lo, hi, tile, direction=(0.35, -1.0, 0.4), fill=0.9)
+        frame_camera(cam, lo, hi, tile, direction=(0.35, -1.0, 0.4), fill=1.0)
         paths.append(_render(os.path.join(tile_dir, a.file_name + ".png"), tile, samples))
     for c in all_cols:
         c.hide_render = False
@@ -732,13 +787,16 @@ def render_contact_sheet(assets, out_name, tile=(420, 320), samples=24, columns=
 REGISTRY = {}  # family -> list of spec dicts
 
 
-def asset(family, file_name, folder, size, budget="prop", notes="", measure=None, category=None):
-    """Register a builder `fn(kit)` that creates one exported asset."""
+def asset(family, file_name, folder, size, budget="prop", notes="", measure=None, category=None, recentre=False):
+    """Register a builder `fn(kit)` that creates one exported asset.
+
+    `recentre` shifts the whole asset so its bounding box's bottom centre sits on
+    the origin (for asymmetric props such as a lamp with an arm)."""
 
     def deco(fn):
         REGISTRY.setdefault(family, []).append(
             dict(fn=fn, file_name=file_name, folder=folder, size=size, budget=budget,
-                 notes=notes, measure=measure, category=category or family)
+                 notes=notes, measure=measure, category=category or family, recentre=recentre)
         )  # fmt: skip
         return fn
 
@@ -785,6 +843,14 @@ def build_family(family, mats, only=None):
             continue
         col = new_collection(spec["file_name"])
         extra = spec["fn"](Kit(col, mats))
+        bpy.context.view_layer.update()  # matrix_world of new parts is stale until this
+        if spec["recentre"]:
+            objs = [o for o in col.objects if part_name(o) != "Anchor"]
+            lo, hi = world_bbox(objs)
+            shift = Vector(((lo.x + hi.x) / 2, (lo.y + hi.y) / 2, lo.z))
+            for o in col.objects:
+                o.location -= shift
+            bpy.context.view_layer.update()
         a = Asset(spec["file_name"], spec["category"], col, spec["size"], BUDGETS[spec["budget"]], spec["notes"], spec["folder"])
         a.measure = spec["measure"]
         a.run_checks()
@@ -792,3 +858,44 @@ def build_family(family, mats, only=None):
             extra(a)
         out.append(a)
     return out
+
+
+# ---------------------------------------------------------------------------
+# FBX round-trip validation
+# ---------------------------------------------------------------------------
+
+
+def validate_exports():
+    """Re-import every exported FBX into an empty scene and compare it with the manifest.
+
+    Checks: file exists, the same part names come back (no '.001' suffixes),
+    triangle counts match, the size matches, and the palette texture is embedded.
+    Returns a list of problems (empty when everything round-trips).
+    """
+    with open(MANIFEST_PATH) as f:
+        manifest = json.load(f)["assets"]
+    problems = []
+    for name, entry in sorted(manifest.items()):
+        path = os.path.join(ROOT, entry["file"])
+        if not os.path.exists(path):
+            problems.append("%s: missing %s" % (name, entry["file"]))
+            continue
+        bpy.ops.wm.read_factory_settings(use_empty=True)
+        bpy.ops.import_scene.fbx(filepath=path, use_manual_orientation=True, axis_forward=FBX_FORWARD, axis_up=FBX_UP)
+        objs = [o for o in bpy.context.scene.objects if o.type in ("MESH", "EMPTY")]
+        got = sorted(o.name for o in objs)
+        want = sorted(entry["children"])
+        if got != want:
+            problems.append("%s: parts %s != %s" % (name, got, want))
+            continue
+        tris = sum(tri_count(o) for o in objs)
+        if tris != entry["triangles"]:
+            problems.append("%s: %d tris after import, %d built" % (name, tris, entry["triangles"]))
+        measured = entry["size_measured_on"]
+        sized = [o for o in objs if (o.name in measured if isinstance(measured, list) else o.name != "Anchor")]
+        size = wxh_d(*world_bbox(sized))
+        if any(abs(a - b) > 0.02 for a, b in zip(size, entry["size_wxhxd"])):
+            problems.append("%s: size %s after import, %s built" % (name, fmt3(size), entry["size_wxhxd"]))
+        if not any(img.packed_file or (img.filepath and os.path.exists(bpy.path.abspath(img.filepath))) for img in bpy.data.images):
+            problems.append("%s: palette texture not found after import" % name)
+    return problems

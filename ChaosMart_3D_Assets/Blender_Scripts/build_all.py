@@ -21,7 +21,8 @@ import bpy  # noqa: E402
 import cm_common as cm  # noqa: E402
 import palette  # noqa: E402
 
-FAMILIES = ["products", "fixtures"]
+FAMILIES = ["products", "fixtures", "interiors", "shell", "roads", "props", "gameplay", "npcs"]
+MAP_NEEDS = ["fixtures", "shell", "roads", "props", "gameplay"]
 
 
 def parse_args():
@@ -30,6 +31,8 @@ def parse_args():
     p.add_argument("--families", default=",".join(FAMILIES))
     p.add_argument("--only", default="", help="comma-separated asset names, e.g. SnackShelf")
     p.add_argument("--no-render", action="store_true")
+    p.add_argument("--no-map", action="store_true", help="skip assembling Map_Assembly/ChaosMart_Map.blend")
+    p.add_argument("--no-validate", action="store_true", help="skip re-importing every FBX to verify it")
     return p.parse_args(argv)
 
 
@@ -55,8 +58,28 @@ def main():
 
     failures = cm.print_report(all_assets)
     cm.write_manifest(all_assets)
+    import write_inventory
+
+    write_inventory.main()
     os.makedirs(cm.SOURCE_DIR, exist_ok=True)
     bpy.ops.wm.save_as_mainfile(filepath=os.path.join(cm.SOURCE_DIR, "ChaosMart_Assets.blend"), compress=True)
+
+    if not args.no_map and not only and set(MAP_NEEDS) <= set(families):
+        import map_assembly
+
+        col, placer = map_assembly.assemble()
+        print("map: %d placements" % len(placer.records))
+        if not args.no_render:
+            for name, path in map_assembly.render_views(col).items():
+                print("rendered", path)
+        bpy.ops.wm.save_as_mainfile(filepath=os.path.join(map_assembly.MAP_DIR, "ChaosMart_Map.blend"), compress=True)
+
+    if not args.no_validate:
+        problems = cm.validate_exports()
+        print("\nFBX round-trip: %d problem(s)" % len(problems))
+        for p in problems:
+            print("   FAIL", p)
+        failures += len(problems)
     if failures:
         sys.exit(1)
 

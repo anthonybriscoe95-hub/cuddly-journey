@@ -169,7 +169,7 @@ def frozen_pizza(b):
     b.disc((0, 0, z), 0.85, "pastry", segments=10, facing="+Z")
     b.disc((0, 0, z + 0.02), 0.7, "red", segments=10, facing="+Z")
     for x, y in ((-0.3, 0.2), (0.3, 0.25), (0.0, -0.3), (0.35, -0.2), (-0.35, -0.25)):
-        b.disc((x, y, z + 0.04), 0.1, "yellow", segments=5, facing="+Z")
+        b.disc((x, y, z + 0.04), 0.1, "yellow", segments=6, facing="+Z")
 
 
 def ice_cream_tub(b):
@@ -287,7 +287,7 @@ def toy_box(b):
     b.box((-w, -d, 0), (w, d, h), "toy_purple", bevel=0.08)
     y = -d - 0.01
     b.front_quad(-0.7, 0.3, 0.7, 1.35, y, "mint")  # window
-    b.disc((0, y - 0.02, 0.85), 0.32, "yellow", segments=5)  # star toy
+    b.star((0, y - 0.02, 0.85), 0.32, "yellow")  # star toy
     b.front_quad(-0.7, 1.45, 0.7, 1.6, y, "yellow")
 
 
