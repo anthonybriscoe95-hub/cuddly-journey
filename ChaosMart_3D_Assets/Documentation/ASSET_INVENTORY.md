@@ -12,10 +12,10 @@ is its bottom centre. **Parts** are the objects inside the FBX (they become Mesh
 | Products | 33 | 4,097 |
 | Roads | 9 | 568 |
 | Environment | 35 | 10,306 |
-| Characters | 29 | 8,459 |
+| Characters | 29 | 9,459 |
 | Gameplay | 13 | 4,987 |
 | Events | 10 | 1,550 |
-| **Total** | **194** | **75,054** |
+| **Total** | **194** | **76,054** |
 
 All size, pivot and budget checks passed.
 
@@ -195,11 +195,11 @@ All size, pivot and budget checks passed.
 | `CM_Accessory_Backpack_Delivery.fbx` | 1.7 × 1.65 × 0.87 | 46 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyBackAttachment at the Handle's pivot (0, 0, 0). |
 | `CM_Accessory_Beanie_Red.fbx` | 1.43 × 0.92 × 1.43 | 124 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
 | `CM_Accessory_Beanie_Teal.fbx` | 1.43 × 0.92 × 1.43 | 124 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
-| `CM_Accessory_Cap_Cashier.fbx` | 1.36 × 0.35 × 1.88 | 96 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
-| `CM_Accessory_Cap_Delivery.fbx` | 1.36 × 0.35 × 1.88 | 88 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
-| `CM_Accessory_Cap_Security.fbx` | 1.36 × 0.35 × 1.88 | 96 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
-| `CM_Accessory_Cap_Teal.fbx` | 1.36 × 0.35 × 1.88 | 88 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
-| `CM_Accessory_Cap_Yellow.fbx` | 1.36 × 0.35 × 1.88 | 88 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Cashier.fbx` | 1.44 × 1.05 × 1.99 | 196 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Delivery.fbx` | 1.44 × 1.05 × 1.99 | 188 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Security.fbx` | 1.44 × 1.05 × 1.99 | 196 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Teal.fbx` | 1.44 × 1.05 × 1.99 | 188 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Yellow.fbx` | 1.44 × 1.05 × 1.99 | 188 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
 | `CM_Accessory_GoldChain.fbx` | 0.97 × 0.79 × 0.1 | 44 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0). |
 | `CM_Accessory_Hair_Bun.fbx` | 1.32 × 0.81 × 1.25 | 108 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
 | `CM_Accessory_Hood_Shoplifter.fbx` | 1.5 × 1.37 × 1.27 | 44 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
@@ -210,14 +210,14 @@ All size, pivot and budget checks passed.
 | `CM_NPC_Celebrity.fbx` | 4 × 5.76 × 1.55 | 702 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Glasses, Chain | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Customer_BlueBeanie.fbx` | 4 × 5.75 × 1.43 | 638 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Customer_CoralBun.fbx` | 4 × 5.76 × 1.5 | 622 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
-| `CM_NPC_Customer_TealCap.fbx` | 4 × 5.35 × 1.88 | 602 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
+| `CM_NPC_Customer_TealCap.fbx` | 4 × 5.5 × 1.99 | 702 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Customer_Yellow.fbx` | 4 × 5.25 × 1.27 | 516 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Shoplifter.fbx` | 4 × 5.37 × 1.38 | 558 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Mask | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
-| `CM_NPC_Staff_Cashier.fbx` | 4 × 5.35 × 1.88 | 624 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, NameTag | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
-| `CM_NPC_Staff_Cleaner.fbx` | 4 × 5.35 × 1.88 | 616 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Apron | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
-| `CM_NPC_Staff_Delivery.fbx` | 4 × 5.35 × 2.59 | 650 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Bag | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
+| `CM_NPC_Staff_Cashier.fbx` | 4 × 5.5 × 1.99 | 724 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, NameTag | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
+| `CM_NPC_Staff_Cleaner.fbx` | 4 × 5.5 × 1.99 | 716 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Apron | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
+| `CM_NPC_Staff_Delivery.fbx` | 4 × 5.5 × 2.65 | 750 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Bag | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Staff_Manager.fbx` | 4 × 5.25 × 1.32 | 567 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, NameTag, Glasses | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
-| `CM_NPC_Staff_Security.fbx` | 4 × 5.35 × 1.88 | 636 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Vest | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
+| `CM_NPC_Staff_Security.fbx` | 4 × 5.5 × 1.99 | 736 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Vest | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Staff_Stocker.fbx` | 4 × 5.75 × 1.43 | 666 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Apron, NameTag | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 
 ## Gameplay (13)

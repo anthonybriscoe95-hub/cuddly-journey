@@ -136,15 +136,15 @@
       "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Cashier.fbx",
       "category": "npcs",
       "size_wxhxd": [
-        1.36,
-        0.35,
-        1.88
+        1.44,
+        1.05,
+        1.994
       ],
       "expected_size_wxhxd": null,
       "size_measured_on": "all objects except Anchor",
-      "triangles": 96,
+      "triangles": 196,
       "triangles_per_object": {
-        "Handle": 96
+        "Handle": 196
       },
       "pivot": "HatAttachment",
       "fbx_folder": "Roblox_FBX/Characters",
@@ -162,15 +162,15 @@
       "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Delivery.fbx",
       "category": "npcs",
       "size_wxhxd": [
-        1.36,
-        0.35,
-        1.88
+        1.44,
+        1.05,
+        1.994
       ],
       "expected_size_wxhxd": null,
       "size_measured_on": "all objects except Anchor",
-      "triangles": 88,
+      "triangles": 188,
       "triangles_per_object": {
-        "Handle": 88
+        "Handle": 188
       },
       "pivot": "HatAttachment",
       "fbx_folder": "Roblox_FBX/Characters",
@@ -187,15 +187,15 @@
       "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Security.fbx",
       "category": "npcs",
       "size_wxhxd": [
-        1.36,
-        0.35,
-        1.88
+        1.44,
+        1.05,
+        1.994
       ],
       "expected_size_wxhxd": null,
       "size_measured_on": "all objects except Anchor",
-      "triangles": 96,
+      "triangles": 196,
       "triangles_per_object": {
-        "Handle": 96
+        "Handle": 196
       },
       "pivot": "HatAttachment",
       "fbx_folder": "Roblox_FBX/Characters",
@@ -213,15 +213,15 @@
       "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Teal.fbx",
       "category": "npcs",
       "size_wxhxd": [
-        1.36,
-        0.35,
-        1.88
+        1.44,
+        1.05,
+        1.994
       ],
       "expected_size_wxhxd": null,
       "size_measured_on": "all objects except Anchor",
-      "triangles": 88,
+      "triangles": 188,
       "triangles_per_object": {
-        "Handle": 88
+        "Handle": 188
       },
       "pivot": "HatAttachment",
       "fbx_folder": "Roblox_FBX/Characters",
@@ -238,15 +238,15 @@
       "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Yellow.fbx",
       "category": "npcs",
       "size_wxhxd": [
-        1.36,
-        0.35,
-        1.88
+        1.44,
+        1.05,
+        1.994
       ],
       "expected_size_wxhxd": null,
       "size_measured_on": "all objects except Anchor",
-      "triangles": 88,
+      "triangles": 188,
       "triangles_per_object": {
-        "Handle": 88
+        "Handle": 188
       },
       "pivot": "HatAttachment",
       "fbx_folder": "Roblox_FBX/Characters",
@@ -2490,8 +2490,8 @@
       "category": "npcs",
       "size_wxhxd": [
         4.0,
-        5.35,
-        1.88
+        5.5,
+        1.994
       ],
       "expected_size_wxhxd": [
         null,
@@ -2499,7 +2499,7 @@
         null
       ],
       "size_measured_on": "all objects except Anchor",
-      "triangles": 602,
+      "triangles": 702,
       "triangles_per_object": {
         "Head": 72,
         "Torso": 90,
@@ -2507,7 +2507,7 @@
         "RightArm": 88,
         "LeftLeg": 88,
         "RightLeg": 88,
-        "Hat": 88
+        "Hat": 188
       },
       "pivot": "bottom-centre (0, 0, 0)",
       "fbx_folder": "Roblox_FBX/Characters",
@@ -2625,8 +2625,8 @@
       "category": "npcs",
       "size_wxhxd": [
         4.0,
-        5.35,
-        1.88
+        5.5,
+        1.994
       ],
       "expected_size_wxhxd": [
         null,
@@ -2634,7 +2634,7 @@
         null
       ],
       "size_measured_on": "all objects except Anchor",
-      "triangles": 624,
+      "triangles": 724,
       "triangles_per_object": {
         "Head": 72,
         "Torso": 90,
@@ -2642,7 +2642,7 @@
         "RightArm": 88,
         "LeftLeg": 88,
         "RightLeg": 88,
-        "Hat": 96,
+        "Hat": 196,
         "NameTag": 14
       },
       "pivot": "bottom-centre (0, 0, 0)",
@@ -2673,8 +2673,8 @@
       "category": "npcs",
       "size_wxhxd": [
         4.0,
-        5.35,
-        1.88
+        5.5,
+        1.994
       ],
       "expected_size_wxhxd": [
         null,
@@ -2682,7 +2682,7 @@
         null
       ],
       "size_measured_on": "all objects except Anchor",
-      "triangles": 616,
+      "triangles": 716,
       "triangles_per_object": {
         "Head": 72,
         "Torso": 90,
@@ -2690,7 +2690,7 @@
         "RightArm": 88,
         "LeftLeg": 88,
         "RightLeg": 88,
-        "Hat": 88,
+        "Hat": 188,
         "Apron": 14
       },
       "pivot": "bottom-centre (0, 0, 0)",
@@ -2722,8 +2722,8 @@
       "category": "npcs",
       "size_wxhxd": [
         4.0,
-        5.35,
-        2.592
+        5.5,
+        2.646
       ],
       "expected_size_wxhxd": [
         null,
@@ -2731,7 +2731,7 @@
         null
       ],
       "size_measured_on": "all objects except Anchor",
-      "triangles": 650,
+      "triangles": 750,
       "triangles_per_object": {
         "Head": 72,
         "Torso": 92,
@@ -2739,7 +2739,7 @@
         "RightArm": 88,
         "LeftLeg": 88,
         "RightLeg": 88,
-        "Hat": 88,
+        "Hat": 188,
         "Bag": 46
       },
       "pivot": "bottom-centre (0, 0, 0)",
@@ -2817,8 +2817,8 @@
       "category": "npcs",
       "size_wxhxd": [
         4.0,
-        5.35,
-        1.88
+        5.5,
+        1.994
       ],
       "expected_size_wxhxd": [
         null,
@@ -2826,7 +2826,7 @@
         null
       ],
       "size_measured_on": "all objects except Anchor",
-      "triangles": 636,
+      "triangles": 736,
       "triangles_per_object": {
         "Head": 72,
         "Torso": 90,
@@ -2834,7 +2834,7 @@
         "RightArm": 88,
         "LeftLeg": 88,
         "RightLeg": 88,
-        "Hat": 96,
+        "Hat": 196,
         "Vest": 26
       },
       "pivot": "bottom-centre (0, 0, 0)",

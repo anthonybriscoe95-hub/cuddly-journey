@@ -82,10 +82,14 @@ ATTACH = {
 
 
 def cap(b, colour, look):
-    b.box((-0.68, -0.68, -0.25), (0.68, 0.68, 0.1), colour, bevel=0.12)
-    b.box((-0.6, -1.2, -0.2), (0.6, -0.6, -0.12), colour, bevel=0.04)  # brim
+    """Baseball cap: rounded crown with a top button and a brim tilted down at the front."""
+    b.ellipsoid((0, 0.02, -0.3), (0.72, 0.72, 0.5), colour, segments=12, rings=6)
+    b.ellipsoid((0, 0.02, 0.2), (0.07, 0.07, 0.05), colour, segments=6, rings=3)
+    b.at((0, -0.9, -0.32), rot_x_deg=12)
+    b.box((-0.56, -0.36, -0.03), (0.56, 0.36, 0.03), colour, bevel=0.02)  # brim
+    b.at()
     if look.get("badge"):
-        b.star((0, -0.692, -0.07), 0.14, look["badge"])
+        b.star((0, -0.66, -0.08), 0.15, look["badge"])
 
 
 def beanie(b, colour, look):

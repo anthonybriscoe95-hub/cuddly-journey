@@ -777,6 +777,7 @@ def render_contact_sheet(assets, out_name, tile=(420, 320), samples=24, columns=
     for a in assets:
         restore = _solo([o for o in a.objects if not part_name(o).startswith("Anchor")])
         lo, hi = world_bbox(a.sized_objects())
+        bpy.data.objects["_ground"].location.z = min(0.0, lo.z)  # accessories reach below their pivot
         frame_camera(cam, lo, hi, tile, direction=(0.35, -1.0, 0.4), fill=1.0)
         png = _render(os.path.join(tile_dir, a.file_name + ".png"), tile, samples)
         restore()
