@@ -1,0 +1,10147 @@
+{
+ "_status": "PROVISIONAL. The overhead blueprint was not supplied, so these numbers are a documented assumption. Edit them to match the blueprint and re-run build_all.py; every map piece and the assembly read from here.",
+ "convention": "Blender coordinates; position = asset pivot (bottom centre); rotation_z in degrees about +Z. See Documentation/IMPORT_GUIDE.md.",
+ "count": 1014,
+ "placements": [
+  {
+   "asset": "CM_Ground_Base",
+   "group": "ground",
+   "position": [
+    0,
+    0,
+    -0.2
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Plaza_Pad",
+   "group": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -352.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -352.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -320.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -320.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    -299.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Crosswalk",
+   "group": "roads",
+   "position": [
+    -288.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    -277.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -288.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -256.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -256.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -224.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -224.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -192.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -192.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -160.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -160.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -128.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -128.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -96.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -96.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -64.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -64.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    -43.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Crosswalk",
+   "group": "roads",
+   "position": [
+    -32.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    -21.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -32.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    0.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    0.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    32.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    32.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    64.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    64.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    96.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    96.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    128.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    128.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    160.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    160.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    192.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    192.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    213.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Crosswalk",
+   "group": "roads",
+   "position": [
+    224.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    235.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    224.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    256.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    256.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    288.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    288.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    320.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    320.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    352.0,
+    92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    352.0,
+    108,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Intersection",
+   "group": "roads",
+   "position": [
+    -380,
+    92,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Intersection",
+   "group": "roads",
+   "position": [
+    380,
+    92,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -352.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -352.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -320.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -320.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -288.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -288.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -256.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -256.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    -235.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Crosswalk",
+   "group": "roads",
+   "position": [
+    -224.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    -213.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -224.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -192.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -192.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -160.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -160.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -128.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -128.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -96.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -96.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -64.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -64.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -32.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    -32.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    0.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    0.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    21.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Crosswalk",
+   "group": "roads",
+   "position": [
+    32.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    43.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    32.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    64.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    64.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    96.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    96.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    128.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    128.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    160.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    160.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    192.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    192.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    224.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    224.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    256.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    256.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    277.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Crosswalk",
+   "group": "roads",
+   "position": [
+    288.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Road_Short",
+   "group": "roads",
+   "position": [
+    299.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    288.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    320.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    320.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    352.0,
+    -92,
+    0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Sidewalk_Straight",
+   "group": "sidewalks",
+   "position": [
+    352.0,
+    -108,
+    0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Road_Intersection",
+   "group": "roads",
+   "position": [
+    -380,
+    -92,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Intersection",
+   "group": "roads",
+   "position": [
+    380,
+    -92,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -380,
+    -64.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -380,
+    -32.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -380,
+    0.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -380,
+    32.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    -380,
+    64.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    380,
+    -64.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    380,
+    -32.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    380,
+    0.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    380,
+    32.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Road_Straight",
+   "group": "roads",
+   "position": [
+    380,
+    64.0,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Plot_Pad",
+   "group": "plot_N1",
+   "position": [
+    -256,
+    200,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Floor_Store",
+   "group": "plot_N1",
+   "position": [
+    -288.0,
+    240.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -352.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -346.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -339.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -332.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -327.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -323.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -317.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -310.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -303.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -298.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_DoorFrame",
+   "group": "plot_N1",
+   "position": [
+    -288.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_SlidingDoor",
+   "group": "plot_N1",
+   "position": [
+    -288.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -278.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -272.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -265.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -258.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -253.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -249.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -243.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -236.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N1",
+   "position": [
+    -229.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -224.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -352.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -348.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -344.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -340.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -336.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -332.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -328.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -324.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -320.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -316.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -312.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -308.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -304.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -300.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -296.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -292.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -288.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -284.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -280.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -276.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -272.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -268.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -264.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -260.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -256.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -252.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -248.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -244.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_StaffDoor",
+   "group": "plot_N1",
+   "position": [
+    -238.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -232.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -228.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -224.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    198.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    198.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    202.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    202.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    206.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    206.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    210.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    210.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    214.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    214.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    218.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    218.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    222.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    222.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    226.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    226.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    230.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    230.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    234.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    234.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    238.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    238.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    242.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    242.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    246.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    246.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    250.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    250.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    254.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    254.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    258.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    258.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    262.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    262.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    266.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    266.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    270.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    270.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    274.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    274.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    278.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    278.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -354.5,
+    282.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N1",
+   "position": [
+    -221.5,
+    282.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Roof_Store",
+   "group": "plot_N1",
+   "position": [
+    -288.0,
+    240.0,
+    18.8
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_SignBoard",
+   "group": "plot_N1",
+   "position": [
+    -288.0,
+    195.8,
+    14.3
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -347.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -343.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -339.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -335.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -331.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -318.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -314.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -310.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -306.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -302.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -273.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -269.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -265.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -261.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -257.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -244.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -240.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -236.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -232.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N1",
+   "position": [
+    -228.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N1",
+   "position": [
+    -352.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N1",
+   "position": [
+    -325.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N1",
+   "position": [
+    -298.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N1",
+   "position": [
+    -278.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N1",
+   "position": [
+    -251.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N1",
+   "position": [
+    -224.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_N1",
+   "position": [
+    -298.5,
+    189.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_N1",
+   "position": [
+    -277.5,
+    189.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Stockroom",
+   "group": "plot_N1",
+   "position": [
+    -187.5,
+    246.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Dumpster",
+   "group": "plot_N1",
+   "position": [
+    -156.0,
+    276.0,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N1",
+   "position": [
+    -342.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N1",
+   "position": [
+    -333.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N1",
+   "position": [
+    -324.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N1",
+   "position": [
+    -315.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Decor_CheckoutSign",
+   "group": "plot_N1",
+   "position": [
+    -328.5,
+    213.0,
+    10.9
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_N1",
+   "position": [
+    -326.0,
+    225.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_N1",
+   "position": [
+    -286.0,
+    225.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_PremiumShelf",
+   "group": "plot_N1",
+   "position": [
+    -326.0,
+    241.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ToyShelf",
+   "group": "plot_N1",
+   "position": [
+    -286.0,
+    241.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_N1",
+   "position": [
+    -326.0,
+    257.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_N1",
+   "position": [
+    -286.0,
+    257.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_DrinkCooler",
+   "group": "plot_N1",
+   "position": [
+    -332.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_DairyFridge",
+   "group": "plot_N1",
+   "position": [
+    -302.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceFridge",
+   "group": "plot_N1",
+   "position": [
+    -272.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceStand",
+   "group": "plot_N1",
+   "position": [
+    -239.0,
+    227.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_BakeryCase",
+   "group": "plot_N1",
+   "position": [
+    -239.0,
+    247.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackBin",
+   "group": "plot_N1",
+   "position": [
+    -248.0,
+    211.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Plot_Pad",
+   "group": "plot_N2",
+   "position": [
+    0,
+    200,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Floor_Store",
+   "group": "plot_N2",
+   "position": [
+    -32.0,
+    240.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -96.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -90.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -83.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -76.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -71.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -67.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -61.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -54.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -47.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -42.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_DoorFrame",
+   "group": "plot_N2",
+   "position": [
+    -32.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_SlidingDoor",
+   "group": "plot_N2",
+   "position": [
+    -32.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -22.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -16.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -9.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    -2.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    3.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    7.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    12.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    19.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N2",
+   "position": [
+    26.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    32.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -96.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -92.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -88.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -84.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -80.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -76.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -72.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -68.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -64.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -60.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -56.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -52.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -48.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -44.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -40.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -36.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -32.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -28.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -24.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -20.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -16.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -12.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -8.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -4.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    0.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    4.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    8.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    12.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_StaffDoor",
+   "group": "plot_N2",
+   "position": [
+    18.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    24.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    28.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    32.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    198.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    198.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    202.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    202.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    206.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    206.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    210.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    210.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    214.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    214.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    218.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    218.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    222.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    222.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    226.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    226.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    230.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    230.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    234.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    234.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    238.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    238.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    242.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    242.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    246.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    246.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    250.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    250.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    254.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    254.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    258.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    258.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    262.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    262.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    266.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    266.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    270.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    270.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    274.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    274.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    278.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    278.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    -98.5,
+    282.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N2",
+   "position": [
+    34.5,
+    282.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Roof_Store",
+   "group": "plot_N2",
+   "position": [
+    -32.0,
+    240.0,
+    18.8
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_SignBoard",
+   "group": "plot_N2",
+   "position": [
+    -32.0,
+    195.8,
+    14.3
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -91.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -87.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -83.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -79.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -75.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -62.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -58.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -54.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -50.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -46.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -17.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -13.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -9.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -5.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    -1.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    11.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    15.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    19.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    23.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N2",
+   "position": [
+    27.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N2",
+   "position": [
+    -96.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N2",
+   "position": [
+    -69.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N2",
+   "position": [
+    -42.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N2",
+   "position": [
+    -22.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N2",
+   "position": [
+    5.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N2",
+   "position": [
+    32.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_N2",
+   "position": [
+    -42.5,
+    189.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_N2",
+   "position": [
+    -21.5,
+    189.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Stockroom",
+   "group": "plot_N2",
+   "position": [
+    68.5,
+    246.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Dumpster",
+   "group": "plot_N2",
+   "position": [
+    100.0,
+    276.0,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N2",
+   "position": [
+    -86.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N2",
+   "position": [
+    -77.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N2",
+   "position": [
+    -68.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N2",
+   "position": [
+    -59.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Decor_CheckoutSign",
+   "group": "plot_N2",
+   "position": [
+    -72.5,
+    213.0,
+    10.9
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_N2",
+   "position": [
+    -70.0,
+    225.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_N2",
+   "position": [
+    -30.0,
+    225.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_PremiumShelf",
+   "group": "plot_N2",
+   "position": [
+    -70.0,
+    241.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ToyShelf",
+   "group": "plot_N2",
+   "position": [
+    -30.0,
+    241.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_N2",
+   "position": [
+    -70.0,
+    257.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_N2",
+   "position": [
+    -30.0,
+    257.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_DrinkCooler",
+   "group": "plot_N2",
+   "position": [
+    -76.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_DairyFridge",
+   "group": "plot_N2",
+   "position": [
+    -46.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceFridge",
+   "group": "plot_N2",
+   "position": [
+    -16.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceStand",
+   "group": "plot_N2",
+   "position": [
+    17.0,
+    227.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_BakeryCase",
+   "group": "plot_N2",
+   "position": [
+    17.0,
+    247.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackBin",
+   "group": "plot_N2",
+   "position": [
+    8.0,
+    211.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Plot_Pad",
+   "group": "plot_N3",
+   "position": [
+    256,
+    200,
+    0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Floor_Store",
+   "group": "plot_N3",
+   "position": [
+    224.0,
+    240.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    160.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    165.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    172.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    179.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    185.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    189.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    194.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    201.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    208.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    214.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_DoorFrame",
+   "group": "plot_N3",
+   "position": [
+    224.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_SlidingDoor",
+   "group": "plot_N3",
+   "position": [
+    224.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    234.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    239.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    246.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    253.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    259.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    263.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    268.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    275.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_N3",
+   "position": [
+    282.5,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    288.0,
+    196.5,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    160.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    164.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    168.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    172.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    176.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    180.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    184.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    188.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    192.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    196.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    200.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    204.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    208.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    212.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    216.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    220.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    224.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    228.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    232.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    236.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    240.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    244.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    248.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    252.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    256.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    260.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    264.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    268.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_StaffDoor",
+   "group": "plot_N3",
+   "position": [
+    274.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    280.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    284.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    288.0,
+    283.5,
+    1.4
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    198.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    198.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    202.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    202.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    206.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    206.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    210.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    210.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    214.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    214.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    218.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    218.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    222.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    222.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    226.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    226.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    230.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    230.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    234.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    234.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    238.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    238.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    242.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    242.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    246.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    246.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    250.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    250.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    254.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    254.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    258.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    258.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    262.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    262.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    266.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    266.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    270.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    270.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    274.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    274.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    278.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    278.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    157.5,
+    282.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_N3",
+   "position": [
+    290.5,
+    282.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Roof_Store",
+   "group": "plot_N3",
+   "position": [
+    224.0,
+    240.0,
+    18.8
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_SignBoard",
+   "group": "plot_N3",
+   "position": [
+    224.0,
+    195.8,
+    14.3
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    164.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    168.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    172.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    176.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    180.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    193.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    197.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    201.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    205.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    209.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    238.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    242.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    246.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    250.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    254.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    267.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    271.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    275.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    279.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_N3",
+   "position": [
+    283.5,
+    192.75,
+    10.616
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N3",
+   "position": [
+    160.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N3",
+   "position": [
+    187.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N3",
+   "position": [
+    214.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N3",
+   "position": [
+    234.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N3",
+   "position": [
+    261.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_N3",
+   "position": [
+    288.0,
+    195.55,
+    10.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_N3",
+   "position": [
+    213.5,
+    189.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_N3",
+   "position": [
+    234.5,
+    189.5,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Stockroom",
+   "group": "plot_N3",
+   "position": [
+    324.5,
+    246.0,
+    1.0
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Shell_Dumpster",
+   "group": "plot_N3",
+   "position": [
+    356.0,
+    276.0,
+    1.0
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N3",
+   "position": [
+    170.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N3",
+   "position": [
+    179.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N3",
+   "position": [
+    188.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_N3",
+   "position": [
+    197.0,
+    207.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Decor_CheckoutSign",
+   "group": "plot_N3",
+   "position": [
+    183.5,
+    213.0,
+    10.9
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_N3",
+   "position": [
+    186.0,
+    225.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_N3",
+   "position": [
+    226.0,
+    225.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_PremiumShelf",
+   "group": "plot_N3",
+   "position": [
+    186.0,
+    241.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ToyShelf",
+   "group": "plot_N3",
+   "position": [
+    226.0,
+    241.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_N3",
+   "position": [
+    186.0,
+    257.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_N3",
+   "position": [
+    226.0,
+    257.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_DrinkCooler",
+   "group": "plot_N3",
+   "position": [
+    180.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_DairyFridge",
+   "group": "plot_N3",
+   "position": [
+    210.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceFridge",
+   "group": "plot_N3",
+   "position": [
+    240.0,
+    279.9,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceStand",
+   "group": "plot_N3",
+   "position": [
+    273.0,
+    227.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_BakeryCase",
+   "group": "plot_N3",
+   "position": [
+    273.0,
+    247.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Fixture_SnackBin",
+   "group": "plot_N3",
+   "position": [
+    264.0,
+    211.0,
+    1.4
+   ],
+   "rotation_z": 0.0
+  },
+  {
+   "asset": "CM_Plot_Pad",
+   "group": "plot_S1",
+   "position": [
+    -256,
+    -200,
+    0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Floor_Store",
+   "group": "plot_S1",
+   "position": [
+    -224.0,
+    -240.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -160.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -165.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -172.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -179.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -185.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -189.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -194.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -201.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -208.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -214.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_DoorFrame",
+   "group": "plot_S1",
+   "position": [
+    -224.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_SlidingDoor",
+   "group": "plot_S1",
+   "position": [
+    -224.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -234.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -239.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -246.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -253.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -259.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -263.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -268.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -275.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S1",
+   "position": [
+    -282.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -288.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -160.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -164.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -168.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -172.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -176.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -180.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -184.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -188.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -192.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -196.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -200.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -204.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -208.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -212.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -216.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -220.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -224.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -228.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -232.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -236.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -240.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -244.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -248.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -252.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -256.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -260.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -264.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -268.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_StaffDoor",
+   "group": "plot_S1",
+   "position": [
+    -274.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -280.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -284.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -288.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -198.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -198.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -202.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -202.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -206.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -206.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -210.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -210.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -214.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -214.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -218.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -218.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -222.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -222.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -226.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -226.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -230.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -230.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -234.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -234.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -238.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -238.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -242.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -242.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -246.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -246.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -250.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -250.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -254.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -254.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -258.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -258.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -262.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -262.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -266.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -266.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -270.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -270.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -274.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -274.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -278.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -278.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -157.5,
+    -282.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S1",
+   "position": [
+    -290.5,
+    -282.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Roof_Store",
+   "group": "plot_S1",
+   "position": [
+    -224.0,
+    -240.0,
+    18.8
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_SignBoard",
+   "group": "plot_S1",
+   "position": [
+    -224.0,
+    -195.8,
+    14.3
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -164.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -168.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -172.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -176.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -180.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -193.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -197.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -201.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -205.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -209.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -238.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -242.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -246.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -250.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -254.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -267.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -271.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -275.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -279.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S1",
+   "position": [
+    -283.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S1",
+   "position": [
+    -160.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S1",
+   "position": [
+    -187.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S1",
+   "position": [
+    -214.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S1",
+   "position": [
+    -234.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S1",
+   "position": [
+    -261.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S1",
+   "position": [
+    -288.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_S1",
+   "position": [
+    -213.5,
+    -189.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_S1",
+   "position": [
+    -234.5,
+    -189.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Stockroom",
+   "group": "plot_S1",
+   "position": [
+    -324.5,
+    -246.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Dumpster",
+   "group": "plot_S1",
+   "position": [
+    -356.0,
+    -276.0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S1",
+   "position": [
+    -170.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S1",
+   "position": [
+    -179.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S1",
+   "position": [
+    -188.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S1",
+   "position": [
+    -197.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Decor_CheckoutSign",
+   "group": "plot_S1",
+   "position": [
+    -183.5,
+    -213.0,
+    10.9
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_S1",
+   "position": [
+    -186.0,
+    -225.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_S1",
+   "position": [
+    -226.0,
+    -225.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_PremiumShelf",
+   "group": "plot_S1",
+   "position": [
+    -186.0,
+    -241.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ToyShelf",
+   "group": "plot_S1",
+   "position": [
+    -226.0,
+    -241.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_S1",
+   "position": [
+    -186.0,
+    -257.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_S1",
+   "position": [
+    -226.0,
+    -257.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_DrinkCooler",
+   "group": "plot_S1",
+   "position": [
+    -180.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_DairyFridge",
+   "group": "plot_S1",
+   "position": [
+    -210.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceFridge",
+   "group": "plot_S1",
+   "position": [
+    -240.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceStand",
+   "group": "plot_S1",
+   "position": [
+    -273.0,
+    -227.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_BakeryCase",
+   "group": "plot_S1",
+   "position": [
+    -273.0,
+    -247.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackBin",
+   "group": "plot_S1",
+   "position": [
+    -264.0,
+    -211.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Plot_Pad",
+   "group": "plot_S2",
+   "position": [
+    0,
+    -200,
+    0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Floor_Store",
+   "group": "plot_S2",
+   "position": [
+    32.0,
+    -240.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    96.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    90.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    83.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    76.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    71.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    67.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    61.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    54.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    47.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    42.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_DoorFrame",
+   "group": "plot_S2",
+   "position": [
+    32.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_SlidingDoor",
+   "group": "plot_S2",
+   "position": [
+    32.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    22.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    16.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    9.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    2.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -3.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -7.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    -12.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    -19.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S2",
+   "position": [
+    -26.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -32.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    96.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    92.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    88.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    84.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    80.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    76.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    72.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    68.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    64.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    60.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    56.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    52.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    48.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    44.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    40.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    36.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    32.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    28.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    24.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    20.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    16.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    12.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    8.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    4.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -0.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -4.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -8.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -12.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_StaffDoor",
+   "group": "plot_S2",
+   "position": [
+    -18.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -24.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -28.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -32.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -198.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -198.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -202.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -202.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -206.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -206.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -210.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -210.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -214.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -214.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -218.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -218.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -222.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -222.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -226.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -226.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -230.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -230.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -234.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -234.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -238.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -238.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -242.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -242.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -246.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -246.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -250.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -250.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -254.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -254.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -258.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -258.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -262.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -262.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -266.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -266.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -270.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -270.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -274.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -274.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -278.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -278.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    98.5,
+    -282.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S2",
+   "position": [
+    -34.5,
+    -282.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Roof_Store",
+   "group": "plot_S2",
+   "position": [
+    32.0,
+    -240.0,
+    18.8
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_SignBoard",
+   "group": "plot_S2",
+   "position": [
+    32.0,
+    -195.8,
+    14.3
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    91.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    87.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    83.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    79.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    75.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    62.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    58.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    54.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    50.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    46.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    17.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    13.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    9.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    5.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    1.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    -11.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    -15.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    -19.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    -23.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S2",
+   "position": [
+    -27.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S2",
+   "position": [
+    96.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S2",
+   "position": [
+    69.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S2",
+   "position": [
+    42.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S2",
+   "position": [
+    22.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S2",
+   "position": [
+    -5.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S2",
+   "position": [
+    -32.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_S2",
+   "position": [
+    42.5,
+    -189.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_S2",
+   "position": [
+    21.5,
+    -189.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Stockroom",
+   "group": "plot_S2",
+   "position": [
+    -68.5,
+    -246.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Dumpster",
+   "group": "plot_S2",
+   "position": [
+    -100.0,
+    -276.0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S2",
+   "position": [
+    86.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S2",
+   "position": [
+    77.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S2",
+   "position": [
+    68.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S2",
+   "position": [
+    59.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Decor_CheckoutSign",
+   "group": "plot_S2",
+   "position": [
+    72.5,
+    -213.0,
+    10.9
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_S2",
+   "position": [
+    70.0,
+    -225.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_S2",
+   "position": [
+    30.0,
+    -225.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_PremiumShelf",
+   "group": "plot_S2",
+   "position": [
+    70.0,
+    -241.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ToyShelf",
+   "group": "plot_S2",
+   "position": [
+    30.0,
+    -241.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_S2",
+   "position": [
+    70.0,
+    -257.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_S2",
+   "position": [
+    30.0,
+    -257.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_DrinkCooler",
+   "group": "plot_S2",
+   "position": [
+    76.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_DairyFridge",
+   "group": "plot_S2",
+   "position": [
+    46.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceFridge",
+   "group": "plot_S2",
+   "position": [
+    16.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceStand",
+   "group": "plot_S2",
+   "position": [
+    -17.0,
+    -227.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_BakeryCase",
+   "group": "plot_S2",
+   "position": [
+    -17.0,
+    -247.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackBin",
+   "group": "plot_S2",
+   "position": [
+    -8.0,
+    -211.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Plot_Pad",
+   "group": "plot_S3",
+   "position": [
+    256,
+    -200,
+    0
+   ],
+   "rotation_z": 180
+  },
+  {
+   "asset": "CM_Shell_Floor_Store",
+   "group": "plot_S3",
+   "position": [
+    288.0,
+    -240.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    352.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    346.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    339.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    332.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    327.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    323.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    317.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    310.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    303.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    298.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_DoorFrame",
+   "group": "plot_S3",
+   "position": [
+    288.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_SlidingDoor",
+   "group": "plot_S3",
+   "position": [
+    288.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    278.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    272.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    265.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    258.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    253.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    249.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    243.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    236.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Storefront",
+   "group": "plot_S3",
+   "position": [
+    229.5,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    224.0,
+    -196.5,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    352.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    348.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    344.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    340.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    336.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    332.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    328.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    324.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    320.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    316.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    312.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    308.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    304.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    300.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    296.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    292.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    288.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    284.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    280.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    276.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    272.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    268.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    264.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    260.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    256.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    252.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    248.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    244.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_StaffDoor",
+   "group": "plot_S3",
+   "position": [
+    238.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    232.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    228.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    224.0,
+    -283.5,
+    1.4
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -198.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -198.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -202.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -202.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -206.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -206.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -210.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -210.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -214.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -214.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -218.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -218.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -222.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -222.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -226.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -226.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -230.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -230.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -234.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -234.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -238.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -238.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -242.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -242.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -246.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -246.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -250.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -250.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -254.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -254.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -258.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -258.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -262.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -262.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -266.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -266.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -270.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -270.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -274.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -274.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -278.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -278.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    354.5,
+    -282.0,
+    1.4
+   ],
+   "rotation_z": 90
+  },
+  {
+   "asset": "CM_Shell_Wall_Solid",
+   "group": "plot_S3",
+   "position": [
+    221.5,
+    -282.0,
+    1.4
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Shell_Roof_Store",
+   "group": "plot_S3",
+   "position": [
+    288.0,
+    -240.0,
+    18.8
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_SignBoard",
+   "group": "plot_S3",
+   "position": [
+    288.0,
+    -195.8,
+    14.3
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    347.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    343.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    339.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    335.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    331.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    318.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    314.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    310.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    306.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    302.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    273.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    269.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    265.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    261.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    257.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    244.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    240.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    236.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    232.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Awning",
+   "group": "plot_S3",
+   "position": [
+    228.5,
+    -192.75,
+    10.616
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S3",
+   "position": [
+    352.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S3",
+   "position": [
+    325.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S3",
+   "position": [
+    298.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S3",
+   "position": [
+    278.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S3",
+   "position": [
+    251.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_WallLight",
+   "group": "plot_S3",
+   "position": [
+    224.0,
+    -195.55,
+    10.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_S3",
+   "position": [
+    298.5,
+    -189.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Planter",
+   "group": "plot_S3",
+   "position": [
+    277.5,
+    -189.5,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Stockroom",
+   "group": "plot_S3",
+   "position": [
+    187.5,
+    -246.0,
+    1.0
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Shell_Dumpster",
+   "group": "plot_S3",
+   "position": [
+    156.0,
+    -276.0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S3",
+   "position": [
+    342.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S3",
+   "position": [
+    333.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S3",
+   "position": [
+    324.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_CheckoutLane",
+   "group": "plot_S3",
+   "position": [
+    315.0,
+    -207.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Decor_CheckoutSign",
+   "group": "plot_S3",
+   "position": [
+    328.5,
+    -213.0,
+    10.9
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_S3",
+   "position": [
+    326.0,
+    -225.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_S3",
+   "position": [
+    286.0,
+    -225.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_PremiumShelf",
+   "group": "plot_S3",
+   "position": [
+    326.0,
+    -241.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ToyShelf",
+   "group": "plot_S3",
+   "position": [
+    286.0,
+    -241.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackShelf",
+   "group": "plot_S3",
+   "position": [
+    326.0,
+    -257.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_WaterShelf",
+   "group": "plot_S3",
+   "position": [
+    286.0,
+    -257.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_DrinkCooler",
+   "group": "plot_S3",
+   "position": [
+    332.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_DairyFridge",
+   "group": "plot_S3",
+   "position": [
+    302.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceFridge",
+   "group": "plot_S3",
+   "position": [
+    272.0,
+    -279.9,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ProduceStand",
+   "group": "plot_S3",
+   "position": [
+    239.0,
+    -227.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_BakeryCase",
+   "group": "plot_S3",
+   "position": [
+    239.0,
+    -247.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_SnackBin",
+   "group": "plot_S3",
+   "position": [
+    248.0,
+    -211.0,
+    1.4
+   ],
+   "rotation_z": 180.0
+  }
+ ]
+}
