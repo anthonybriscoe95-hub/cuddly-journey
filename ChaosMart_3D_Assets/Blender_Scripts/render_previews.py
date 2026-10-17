@@ -1,7 +1,7 @@
 """Re-render the family previews and contact sheets from Blender_Source/ChaosMart_Assets.blend.
 
 Use it after changing only lighting or framing, without rebuilding any geometry:
-  blender --background --python render_previews.py -- [--families props,npcs]
+  blender --background --python render_previews.py -- [--families props,npcs] [--map]
 """
 
 import argparse
@@ -20,6 +20,7 @@ def main():
     argv = sys.argv[sys.argv.index("--") + 1 :] if "--" in sys.argv else sys.argv[1:]
     p = argparse.ArgumentParser()
     p.add_argument("--families", default=",".join(build_all.FAMILIES))
+    p.add_argument("--map", action="store_true", help="also render the map views from Map_Assembly/ChaosMart_Map.blend")
     args = p.parse_args(argv)
 
     bpy.ops.wm.open_mainfile(filepath=os.path.join(cm.SOURCE_DIR, "ChaosMart_Assets.blend"))
@@ -38,6 +39,13 @@ def main():
         if assets:
             print("rendered", cm.render_preview([a.objects for a in assets], "preview_%s.png" % fam))
             print("rendered", cm.render_contact_sheet(assets, "catalog_%s.png" % fam))
+
+    if args.map:
+        import map_assembly
+
+        bpy.ops.wm.open_mainfile(filepath=os.path.join(map_assembly.MAP_DIR, "ChaosMart_Map.blend"))
+        for path in map_assembly.render_views(bpy.data.collections["ChaosMart_Map"]).values():
+            print("rendered", path)
 
 
 if __name__ == "__main__":

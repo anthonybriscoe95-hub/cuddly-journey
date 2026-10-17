@@ -5,7 +5,7 @@ Blender Python scripts so any number can be changed and the whole pack rebuilt i
 
 | | |
 |---|---|
-| Assets | 157 FBX files (see [`Documentation/ASSET_INVENTORY.md`](Documentation/ASSET_INVENTORY.md)) |
+| Assets | 194 FBX files (see [`Documentation/ASSET_INVENTORY.md`](Documentation/ASSET_INVENTORY.md)) |
 | Editable source | `Blender_Source/ChaosMart_Assets.blend` (every asset in its own collection) |
 | Assembled map | `Map_Assembly/ChaosMart_Map.blend` + `Map_Assembly/placements.json` (**provisional layout**, see below) |
 | Texture | one 256 × 256 palette atlas, `Textures/CM_Palette.png`, embedded in every FBX |
@@ -18,12 +18,12 @@ ChaosMart_3D_Assets/
 ├── Blender_Source/        ChaosMart_Assets.blend (all assets, editable)
 ├── Blender_Scripts/       the generators (run build_all.py)
 ├── Roblox_FBX/
-│   ├── Buildings/         store shell kit, stockroom, roof, signage, facade dressing
+│   ├── Buildings/         store shell kit, luxury facade, per-stage floors and roofs, stockroom, signage
 │   ├── Interiors/         shelves, coolers, checkouts, carts, stockroom, staff, security
 │   ├── Products/          every product as its own file (+ the carried shopping bag)
 │   ├── Roads/             road, crosswalk, parking and sidewalk modules
-│   ├── Environment/       plot and plaza pads, trees, lamps, vehicles, kiosks, landmarks
-│   ├── Characters/        R6-proportioned NPCs (customers and staff)
+│   ├── Environment/       per-stage plot pads, plaza pad, trees, lamps, vehicles, kiosks, landmarks
+│   ├── Characters/        R6-proportioned NPCs, and their outfits as Roblox accessories
 │   ├── Gameplay/          purchase / upgrade pads, stations, terminals, rewards
 │   └── Events/            chaos-event props
 ├── Textures/              CM_Palette.png
@@ -67,7 +67,8 @@ It exits with an error if any check fails.
 | A fixture's size, item count or product | `fixtures.py` (`GONDOLAS`, `COOLERS`, the `@cm.asset` sizes) |
 | What a stock slot holds | `fixtures.py` (`ITEMS`) |
 | A product's look | its function in `products.py` |
-| Map layout: plot size, store and parking position, plaza, roads | `map_layout.json` |
+| Map layout: plot size, entrance position, plaza, roads, which stage is on which plot | `map_layout.json` |
+| A stage's size, front modules or interior | `stages.py` (`STAGES`, `interior()`) |
 | Bevel size, triangle budgets, FBX axes, Anchor as mesh or empty | top of `cm_common.py` |
 
 ## Status
@@ -79,15 +80,17 @@ Done and verified in Blender (built, checked, exported, re-imported):
   floor, roof, stockroom, planters, lights, bins),
 - roads, sidewalks, crosswalks, parking, plot and plaza pads,
 - lot and plaza props, vehicles and landmarks, tycoon gameplay objects, event props,
-- 12 R6-proportioned NPCs,
-- a provisional map: six plots around a central plaza, each with a full store and interior.
+- 12 R6-proportioned NPCs, and 17 outfit accessories (caps, beanies, aprons, badges, vest, backpack...)
+  pivoted on Roblox avatar attachment points so standard avatars can wear them,
+- a double-sided aisle (used in the Mega Mart and Luxury stores), and T-junction and curved road pieces,
+- the five store progression stages (Corner Store, Mini Mart, Supermarket, Mega Mart, Luxury Shopping
+  Center), each built from the modular kit with its own floor, roof and plot pad, and checked for
+  overlaps inside and outside the store,
+- a provisional map: six plots around a central plaza showing all five stages.
 
 Not done yet (next milestones):
 - **The blueprint and Developer Bible were not supplied**, so the map is a documented assumption:
   `map_layout.json` holds every layout number and is marked provisional.
-- The five store progression stages (Corner Store → Luxury Shopping Center): one full-size store
-  exists; the smaller and larger stage variants are not built yet.
-- Double-sided aisles, curved roads and T-junctions, LOD variants, and Roblox Accessory versions of
-  the NPC outfits.
+- LOD (distance) variants for the biggest assets.
 - **Nothing has been imported into Roblox Studio yet** (Studio isn't available in this environment).
   [`Documentation/IMPORT_GUIDE.md`](Documentation/IMPORT_GUIDE.md) lists what to check on the first import.

@@ -71,10 +71,30 @@ is the classic rounded R6 look (1.25 across, sitting on the torso). If your code
 `Head.Size = Vector3.new(2, 1, 1)`, the mesh will be stretched to that box, so keep the MeshPart's
 own size instead. These have **not** been tested with Roblox animations or the avatar system.
 
+## Accessories for standard Roblox avatars
+
+Every outfit piece is also exported on its own as `Roblox_FBX/Characters/CM_Accessory_*.fbx`, so staff
+and customers can be standard Roblox avatars wearing Chaos Mart gear. Each file holds one mesh named
+`Handle`, sized for a standard head (about 1.2 across) and pivoted exactly on the avatar attachment
+point it belongs to:
+
+| Files | Attachment to add |
+|---|---|
+| `Cap_*`, `Beanie_*`, `Hair_Bun`, `Hood_Shoplifter` | `HatAttachment` |
+| `Sunglasses`, `Mask_Shoplifter` | `FaceFrontAttachment` |
+| `NameBadge`, `Apron_*`, `Vest_Security`, `GoldChain` | `BodyFrontAttachment` |
+| `Backpack_Delivery` | `BodyBackAttachment` |
+
+To make one: import the FBX, put the `Handle` MeshPart inside a new `Accessory`, set
+`Handle.CanCollide = false` and `Massless = true`, and insert an `Attachment` into the Handle with the
+name from the table at position (0, 0, 0). `Humanoid:AddAccessory(accessory)` then fits it to any R6 or
+R15 rig. The manifest's `pivot` field names the attachment for each file.
+
 ## Still to verify in Studio (not tested here)
 
 - the axis setting above (one test import),
 - embedded textures appear without a manual `TextureID`,
 - part names come through unchanged (they do in Blender's own re-import, which `build_all.py` checks),
 - triangle counts as reported by Studio match the manifest,
-- the NPC parts weld and animate as expected.
+- the NPC parts weld and animate as expected,
+- the accessories sit correctly on a default avatar (the head size is assumed to be about 1.2).

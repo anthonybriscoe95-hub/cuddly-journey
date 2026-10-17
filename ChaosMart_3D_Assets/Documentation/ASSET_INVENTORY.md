@@ -7,39 +7,52 @@ is its bottom centre. **Parts** are the objects inside the FBX (they become Mesh
 
 | Folder | Assets | Triangles |
 |---|---:|---:|
-| Buildings | 15 | 5,940 |
-| Interiors | 36 | 30,709 |
+| Buildings | 28 | 11,488 |
+| Interiors | 37 | 33,599 |
 | Products | 33 | 4,097 |
-| Roads | 7 | 480 |
-| Environment | 31 | 9,644 |
-| Characters | 12 | 7,397 |
+| Roads | 9 | 568 |
+| Environment | 35 | 10,306 |
+| Characters | 29 | 8,459 |
 | Gameplay | 13 | 4,987 |
 | Events | 10 | 1,550 |
-| **Total** | **157** | **64,804** |
+| **Total** | **194** | **75,054** |
 
 All size, pivot and budget checks passed.
 
-## Buildings (15)
+## Buildings (28)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
 | `CM_Shell_Awning.fbx` | 4 × 2.78 × 6.5 | 252 | Body | 4-wide awning projecting 6.5, tilted 16 degrees down; eight alternating teal / off-white stripes so modules tile seamlessly. The back edge (+Y) mounts on the wall. |
 | `CM_Shell_DoorFrame.fbx` | 16 × 18 × 1 | 328 | Body | 16-wide module with a 14.4 x 12 clear opening (0.8 jambs) for CM_Shell_SlidingDoor. |
+| `CM_Shell_DoorFrame_Luxury.fbx` | 16 × 18 × 1 | 326 | Body | Luxury entrance module: gold jambs, same 14.4 x 12 opening as the standard door frame. |
 | `CM_Shell_Dumpster.fbx` | 6 × 4.4 × 4 | 138 | Body, Lid | Exterior trash container with a separate Lid (hinged at the back). |
-| `CM_Shell_Floor_Store.fbx` | 134 × 0.4 × 88 | 708 | Floor | Store floor slab under the full 134 x 88 shell (132 x 86 interior + walls); 4-stud tiles. |
+| `CM_Shell_EntranceCanopy.fbx` | 24 × 13 × 10 | 320 | Body, Light | Luxury entrance canopy: 24 wide, projects 10 from the wall (+Y edge mounts on the wall), underside at 12 on two gold columns. Light is the soffit strip. |
+| `CM_Shell_Floor_CornerStore.fbx` | 54 × 0.4 × 40 | 132 | Floor | Corner Store floor slab under the whole 54 x 40 shell; 4-stud tiles. |
+| `CM_Shell_Floor_LuxuryCenter.fbx` | 186 × 0.4 × 112 | 1,256 | Floor | Luxury Shopping Center floor slab under the whole 186 x 112 shell; 4-stud tiles. |
+| `CM_Shell_Floor_MegaMart.fbx` | 186 × 0.4 × 104 | 1,164 | Floor | Mega Mart floor slab under the whole 186 x 104 shell; 4-stud tiles. |
+| `CM_Shell_Floor_MiniMart.fbx` | 90 × 0.4 × 56 | 300 | Floor | Mini Mart floor slab under the whole 90 x 56 shell; 4-stud tiles. |
+| `CM_Shell_Floor_Supermarket.fbx` | 134 × 0.4 × 88 | 708 | Floor | Supermarket floor slab under the whole 134 x 88 shell; 4-stud tiles. |
+| `CM_Shell_GlassCurtain.fbx` | 8 × 18 × 1 | 172 | Body, Glass | Full-height glass curtain wall module (8 wide) with slim gold mullions; Glass is separate. |
 | `CM_Shell_Pillar.fbx` | 2 × 18 × 2 | 224 | Body | Decorative corner pillar matching the wall banding. |
 | `CM_Shell_Planter.fbx` | 2.6 × 2 × 12 | 430 | Body, Shrub | Planter box 2.6 x 2 x 12 (long along Y); Shrub sits on the soil above it. |
 | `CM_Shell_RoofAC.fbx` | 5 × 3 × 4 | 112 | Body, Fan | Rooftop HVAC unit. |
-| `CM_Shell_Roof_Store.fbx` | 132 × 3.6 × 86 | 560 | Roof, Glass | Roof for the 132 x 86 interior; place its pivot at z = 17.4 inside the walls. Separate asset so the game can hide it. Skylight panes are the Glass part. |
+| `CM_Shell_Roof_CornerStore.fbx` | 52 × 3.6 × 38 | 180 | Roof, Glass | Corner Store roof; pivot at z = 17.4 inside the walls. Glass is the skylights. |
+| `CM_Shell_Roof_LuxuryCenter.fbx` | 184 × 3.6 × 110 | 584 | Roof, Glass | Luxury Shopping Center roof; pivot at z = 17.4 inside the walls. Glass is the skylights. |
+| `CM_Shell_Roof_MegaMart.fbx` | 184 × 3.6 × 102 | 584 | Roof, Glass | Mega Mart roof; pivot at z = 17.4 inside the walls. Glass is the skylights. |
+| `CM_Shell_Roof_MiniMart.fbx` | 88 × 3.6 × 54 | 248 | Roof, Glass | Mini Mart roof; pivot at z = 17.4 inside the walls. Glass is the skylights. |
+| `CM_Shell_Roof_Supermarket.fbx` | 132 × 3.6 × 86 | 416 | Roof, Glass | Supermarket roof; pivot at z = 17.4 inside the walls. Glass is the skylights. |
 | `CM_Shell_SignBoard.fbx` | 34 × 4.6 × 0.4 | 120 | Body, Face, Neon | Main store sign. Face is blank (the game draws the store name); Neon is the outline tube. |
+| `CM_Shell_SignBoard_Small.fbx` | 20 × 3.6 × 0.4 | 120 | Body, Face, Neon | Corner-store sign 20 x 3.6; Face is blank, Neon is the outline. |
 | `CM_Shell_SlidingDoor.fbx` | 14.4 × 12 × 0.6 | 464 | Track, DoorLeft, DoorLeftGlass, DoorRight, DoorRightGlass | Fits the DoorFrame opening. DoorLeft/DoorRight (+Glass) pivot at their own bottom centre so the game can tween them sideways. |
 | `CM_Shell_StaffDoor.fbx` | 8 × 18 × 1 | 508 | Body, Door, SignPlate | 8-wide wall module holding the 8 x 10 metal staff door (frame included). Door pivots at its hinge side bottom; SignPlate is blank for 'STAFF ONLY'. |
 | `CM_Shell_Stockroom.fbx` | 51 × 16 × 76 | 1,298 | Body, RollUpDoor, LightStrip, Roof | Loading-dock building 51 x 16 x 76. RollUpDoor (22 x 12) is on the +X long side with the LightStrip above it; Roof is separate so the game can hide it. |
 | `CM_Shell_Storefront.fbx` | 7 × 18 × 1 | 382 | Body, Glass | Glass storefront: navy kick plate 0-2.5, glass 2.5-12 (separate Glass mesh), header 12-18. |
 | `CM_Shell_WallLight.fbx` | 1 × 1.4 × 0.9 | 112 | Body, Light | Exterior wall sconce; mount the back (+Y) on the wall. Light is the warm lamp part (set Neon). |
+| `CM_Shell_Wall_Luxury.fbx` | 4 × 18 × 1 | 306 | Body | Luxury 4-wide wall: navy plinth, cream stone field with a gold-framed panel, gold band. |
 | `CM_Shell_Wall_Solid.fbx` | 4 × 18 × 1 | 304 | Body | 4-stud solid wall module; exterior -Y with a recessed panel. |
 
-## Interiors (36)
+## Interiors (37)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
@@ -79,6 +92,7 @@ All size, pivot and budget checks passed.
 | `CM_Interior_VendingMachine.fbx` | 4 × 8 × 3 | 836 | Body, Glass | Drinks vending machine; Glass front over six rows of cans, keypad and pickup slot. |
 | `CM_Interior_WallDecal.fbx` | 6 × 4 × 0.24 | 78 | Body | Framed wall decoration (fresh-produce motif) for interior walls. |
 | `CM_Interior_WetFloorSign.fbx` | 1.59 × 2.6 × 1.38 | 101 | Body | Yellow A-frame caution sign (Supermarket Cleanup event). |
+| `CM_Shelf_Double_Aisle.fbx` | 28 × 7.6 × 10 | 2,890 | Body, PriceTag, PriceTagBack, Anchor, AnchorBack, Item1…Item20 | Double-sided gondola 28 x 7.6 x 10: Item1-10 face the front (-Y, chips), Item11-20 face the back (+Y, cereal). Anchor is in front, AnchorBack behind; PriceTag and PriceTagBack likewise. |
 
 ## Products (33)
 
@@ -118,27 +132,33 @@ All size, pivot and budget checks passed.
 | `CM_Product_WaterBottle.fbx` | 0.58 × 1.7 × 0.58 | 92 | WaterBottle |  |
 | `CM_Prop_ShoppingBag.fbx` | 1.1 × 1.3 × 0.7 | 110 | Bag, Handles | Carried bag 1.1 x 1.3 x 0.7 (Bag); Handles arch above it. |
 
-## Roads (7)
+## Roads (9)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
+| `CM_Road_Corner.fbx` | 24 × 0.4 × 24 | 56 | Road | 90-degree bend joining a road from -Y to a road toward +X, with curved lane markings. |
 | `CM_Road_Crosswalk.fbx` | 24 × 0.4 × 12 | 32 | Road | 12-long segment with zebra bars and stop lines; put it where shoppers cross to a plot. |
 | `CM_Road_Intersection.fbx` | 24 × 0.41 × 24 | 32 | Road | Plain 24 x 24 junction square with a manhole; joins four straights. |
 | `CM_Road_Parking.fbx` | 32 × 0.75 × 20 | 198 | Road | Asphalt parking strip: four 8 x 18 bays opening to -Y, with wheel stops. |
 | `CM_Road_Short.fbx` | 24 × 0.4 × 10 | 18 | Road | 10-long filler: Short + Crosswalk (12) + Short = one 32 segment. |
 | `CM_Road_Straight.fbx` | 24 × 0.4 × 32 | 24 | Road | Two-lane segment along Y: dashed yellow centre line, white edge lines. |
+| `CM_Road_TJunction.fbx` | 24 × 0.4 × 24 | 32 | Road | T-junction: the road runs along Y, a branch leaves toward +X (stop line on its inbound lane). |
 | `CM_Sidewalk_Corner.fbx` | 8 × 1 × 8 | 106 | Sidewalk | 8 x 8 corner with curbs on -X and -Y (the two road sides). |
 | `CM_Sidewalk_Straight.fbx` | 8 × 1 × 32 | 70 | Sidewalk | 8 x 32 sidewalk; the curb (lighter, bevelled) is on the -X side facing the road. |
 
-## Environment (31)
+## Environment (35)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
-| `CM_Ground_Base.fbx` | 960 × 0.2 × 720 | 12 | Ground | One grass slab under the whole map (sized by map_layout.json); place it at z = -0.2. |
+| `CM_Ground_Base.fbx` | 1200 × 0.2 × 760 | 12 | Ground | One grass slab under the whole map (sized by map_layout.json); place it at z = -0.2. |
 | `CM_Ground_Grass.fbx` | 32 × 0.6 × 32 | 20 | Grass | 32 x 32 lawn tile with a few darker mowing stripes. |
 | `CM_Ground_PaverTile.fbx` | 16 × 1.01 × 16 | 24 | Paving | Decorative plaza paving: sand field, terracotta border and a diamond inlay. |
-| `CM_Plaza_Pad.fbx` | 736 × 1.01 × 160 | 160 | Paving | Central plaza paving sized by map_layout.json, with a lawn ring around the fountain spot. |
-| `CM_Plot_Pad.fbx` | 224 × 1.4 × 176 | 384 | Pad, OwnerPad | Player plot foundation sized by map_layout.json. Front (-Y) faces the plaza. Painted outlines show where the store shell and stockroom go; OwnerPad is the claim spot. |
+| `CM_Plaza_Pad.fbx` | 960 × 1.01 × 160 | 174 | Paving | Central plaza paving sized by map_layout.json, with a lawn ring around the fountain spot. |
+| `CM_Plot_Pad_CornerStore.fbx` | 288 × 1.01 × 208 | 202 | Pad | Corner Store plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone. |
+| `CM_Plot_Pad_LuxuryCenter.fbx` | 288 × 1.01 × 208 | 150 | Pad | Luxury Shopping Center plot foundation 288 x 208: parking, walkway to the door, loading apron. |
+| `CM_Plot_Pad_MegaMart.fbx` | 288 × 1.01 × 208 | 202 | Pad | Mega Mart plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone. |
+| `CM_Plot_Pad_MiniMart.fbx` | 288 × 1.01 × 208 | 228 | Pad | Mini Mart plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone. |
+| `CM_Plot_Pad_Supermarket.fbx` | 288 × 1.01 × 208 | 250 | Pad | Supermarket plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone. |
 | `CM_Prop_AdBillboard.fbx` | 16 × 14 × 1 | 192 | Body, Face | Roadside billboard on two legs; Face is blank for in-game adverts. |
 | `CM_Prop_Bench.fbx` | 10 × 2 × 3 | 352 | Body | Backless plaza bench, 10 x 2 x 3: wooden slats on two slate frames. |
 | `CM_Prop_BikeRack.fbx` | 8 × 3 × 1.2 | 444 | Body | Five hoop bike rack on a rail. |
@@ -166,10 +186,27 @@ All size, pivot and budget checks passed.
 | `CM_Prop_Tree_Pine.fbx` | 10 × 16 × 10 | 94 | Trunk, Canopy | Tiered pine: three stacked cones, 10 across at the base, 16 tall. |
 | `CM_Prop_Tree_Round.fbx` | 10 × 16 × 10 | 488 | Trunk, Canopy | Broadleaf tree: canopy 10 across, 16 tall overall. |
 
-## Characters (12)
+## Characters (29)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
+| `CM_Accessory_Apron_Cleaner.fbx` | 1.7 × 2.2 × 0.07 | 14 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Apron_Stocker.fbx` | 1.7 × 2.2 × 0.07 | 14 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Backpack_Delivery.fbx` | 1.7 × 1.65 × 0.87 | 46 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyBackAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Beanie_Red.fbx` | 1.43 × 0.92 × 1.43 | 124 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Beanie_Teal.fbx` | 1.43 × 0.92 × 1.43 | 124 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Cashier.fbx` | 1.36 × 0.35 × 1.88 | 96 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Delivery.fbx` | 1.36 × 0.35 × 1.88 | 88 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Security.fbx` | 1.36 × 0.35 × 1.88 | 96 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Teal.fbx` | 1.36 × 0.35 × 1.88 | 88 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Cap_Yellow.fbx` | 1.36 × 0.35 × 1.88 | 88 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_GoldChain.fbx` | 0.97 × 0.79 × 0.1 | 44 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Hair_Bun.fbx` | 1.32 × 0.81 × 1.25 | 108 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Hood_Shoplifter.fbx` | 1.5 × 1.37 × 1.27 | 44 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Mask_Shoplifter.fbx` | 1.2 × 0.3 × 0.04 | 12 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named FaceFrontAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_NameBadge.fbx` | 0.6 × 0.24 × 0.06 | 14 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Sunglasses.fbx` | 0.88 × 0.2 × 0.06 | 36 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named FaceFrontAttachment at the Handle's pivot (0, 0, 0). |
+| `CM_Accessory_Vest_Security.fbx` | 2 × 1.65 × 0.05 | 26 | Handle | Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0). |
 | `CM_NPC_Celebrity.fbx` | 4 × 5.76 × 1.55 | 702 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat, Glasses, Chain | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Customer_BlueBeanie.fbx` | 4 × 5.75 × 1.43 | 638 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |
 | `CM_NPC_Customer_CoralBun.fbx` | 4 × 5.76 × 1.5 | 622 | Head, Torso, LeftArm, RightArm, LeftLeg, RightLeg, Hat | R6-proportioned character (6 parts + accessories), each part pivoted at its own centre. |

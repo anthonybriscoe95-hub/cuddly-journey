@@ -2,6 +2,441 @@
   "units": "1 Blender unit = 1 Roblox stud; +Z up; front faces -Y",
   "palette": "Textures/CM_Palette.png",
   "assets": {
+    "CM_Accessory_Apron_Cleaner": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Apron_Cleaner.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.7,
+        2.2,
+        0.072
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 14,
+      "triangles_per_object": {
+        "Handle": 14
+      },
+      "pivot": "BodyFrontAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "offwhite": "#F4F7FB",
+        "water": "#9FD4F5"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Apron_Stocker": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Apron_Stocker.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.7,
+        2.2,
+        0.072
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 14,
+      "triangles_per_object": {
+        "Handle": 14
+      },
+      "pivot": "BodyFrontAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Backpack_Delivery": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Backpack_Delivery.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.7,
+        1.65,
+        0.872
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 46,
+      "triangles_per_object": {
+        "Handle": 46
+      },
+      "pivot": "BodyBackAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "kiosk_orange": "#E8924A",
+        "offwhite": "#F4F7FB"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyBackAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Beanie_Red": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Beanie_Red.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.43,
+        0.92,
+        1.43
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 124,
+      "triangles_per_object": {
+        "Handle": 124
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "offwhite": "#F4F7FB",
+        "red": "#E67565"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Beanie_Teal": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Beanie_Teal.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.43,
+        0.92,
+        1.43
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 124,
+      "triangles_per_object": {
+        "Handle": 124
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "offwhite": "#F4F7FB",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Cap_Cashier": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Cashier.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.36,
+        0.35,
+        1.88
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 96,
+      "triangles_per_object": {
+        "Handle": 96
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "navy": "#12243C",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Cap_Delivery": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Delivery.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.36,
+        0.35,
+        1.88
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 88,
+      "triangles_per_object": {
+        "Handle": 88
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "kiosk_orange": "#E8924A"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Cap_Security": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Security.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.36,
+        0.35,
+        1.88
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 96,
+      "triangles_per_object": {
+        "Handle": 96
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "gold": "#F2C230"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Cap_Teal": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Teal.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.36,
+        0.35,
+        1.88
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 88,
+      "triangles_per_object": {
+        "Handle": 88
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Cap_Yellow": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Cap_Yellow.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.36,
+        0.35,
+        1.88
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 88,
+      "triangles_per_object": {
+        "Handle": 88
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_GoldChain": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_GoldChain.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        0.975,
+        0.792,
+        0.105
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 44,
+      "triangles_per_object": {
+        "Handle": 44
+      },
+      "pivot": "BodyFrontAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "gold": "#F2C230"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Hair_Bun": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Hair_Bun.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.32,
+        0.81,
+        1.254
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 108,
+      "triangles_per_object": {
+        "Handle": 108
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "hair_brown": "#5A3A26"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Hood_Shoplifter": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Hood_Shoplifter.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.5,
+        1.37,
+        1.27
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 44,
+      "triangles_per_object": {
+        "Handle": 44
+      },
+      "pivot": "HatAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "slate": "#3A5A70"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named HatAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Mask_Shoplifter": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Mask_Shoplifter.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        1.2,
+        0.3,
+        0.04
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 12,
+      "triangles_per_object": {
+        "Handle": 12
+      },
+      "pivot": "FaceFrontAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named FaceFrontAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_NameBadge": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_NameBadge.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        0.6,
+        0.24,
+        0.062
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 14,
+      "triangles_per_object": {
+        "Handle": 14
+      },
+      "pivot": "BodyFrontAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "offwhite": "#F4F7FB",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Sunglasses": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Sunglasses.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        0.88,
+        0.2,
+        0.06
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 36,
+      "triangles_per_object": {
+        "Handle": 36
+      },
+      "pivot": "FaceFrontAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "gold": "#F2C230"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named FaceFrontAttachment at the Handle's pivot (0, 0, 0)."
+    },
+    "CM_Accessory_Vest_Security": {
+      "file": "Roblox_FBX/Characters/CM_Accessory_Vest_Security.fbx",
+      "category": "npcs",
+      "size_wxhxd": [
+        2.0,
+        1.65,
+        0.052
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 26,
+      "triangles_per_object": {
+        "Handle": 26
+      },
+      "pivot": "BodyFrontAttachment",
+      "fbx_folder": "Roblox_FBX/Characters",
+      "children": [
+        "Handle"
+      ],
+      "colour_slots": {
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70"
+      },
+      "checks_passed": true,
+      "notes": "Roblox Accessory mesh: make it the Handle of an Accessory and add an Attachment named BodyFrontAttachment at the Handle's pivot (0, 0, 0)."
+    },
     "CM_Decor_CheckoutSign": {
       "file": "Roblox_FBX/Interiors/CM_Decor_CheckoutSign.fbx",
       "category": "fixtures",
@@ -1106,9 +1541,9 @@
       "file": "Roblox_FBX/Environment/CM_Ground_Base.fbx",
       "category": "roads",
       "size_wxhxd": [
-        960.0,
+        1200.0,
         0.2,
-        720.0
+        760.0
       ],
       "expected_size_wxhxd": null,
       "size_measured_on": "all objects except Anchor",
@@ -2479,15 +2914,15 @@
       "file": "Roblox_FBX/Environment/CM_Plaza_Pad.fbx",
       "category": "roads",
       "size_wxhxd": [
-        736.0,
+        960.0,
         1.012,
         160.0
       ],
       "expected_size_wxhxd": null,
       "size_measured_on": "all objects except Anchor",
-      "triangles": 160,
+      "triangles": 174,
       "triangles_per_object": {
-        "Paving": 160
+        "Paving": 174
       },
       "pivot": "bottom-centre (0, 0, 0)",
       "fbx_folder": "Roblox_FBX/Environment",
@@ -2502,39 +2937,179 @@
       "checks_passed": true,
       "notes": "Central plaza paving sized by map_layout.json, with a lawn ring around the fountain spot."
     },
-    "CM_Plot_Pad": {
-      "file": "Roblox_FBX/Environment/CM_Plot_Pad.fbx",
-      "category": "roads",
+    "CM_Plot_Pad_CornerStore": {
+      "file": "Roblox_FBX/Environment/CM_Plot_Pad_CornerStore.fbx",
+      "category": "stages",
       "size_wxhxd": [
-        224.0,
-        1.403,
-        176.0
+        288.0,
+        1.009,
+        208.0
       ],
-      "expected_size_wxhxd": null,
+      "expected_size_wxhxd": [
+        288,
+        1.0,
+        208
+      ],
       "size_measured_on": "all objects except Anchor",
-      "triangles": 384,
+      "triangles": 202,
       "triangles_per_object": {
-        "Pad": 128,
-        "OwnerPad": 256
+        "Pad": 202
       },
       "pivot": "bottom-centre (0, 0, 0)",
       "fbx_folder": "Roblox_FBX/Environment",
       "children": [
-        "Pad",
-        "OwnerPad"
+        "Pad"
       ],
       "colour_slots": {
         "asphalt": "#4A5058",
         "concrete": "#D9DEE4",
         "grass": "#7CC46B",
-        "navy": "#12243C",
         "offwhite": "#F4F7FB",
         "paver_sand": "#EAD7B7",
         "teal": "#16AC9B",
         "yellow": "#EFB548"
       },
       "checks_passed": true,
-      "notes": "Player plot foundation sized by map_layout.json. Front (-Y) faces the plaza. Painted outlines show where the store shell and stockroom go; OwnerPad is the claim spot."
+      "notes": "Corner Store plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone."
+    },
+    "CM_Plot_Pad_LuxuryCenter": {
+      "file": "Roblox_FBX/Environment/CM_Plot_Pad_LuxuryCenter.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        288.0,
+        1.009,
+        208.0
+      ],
+      "expected_size_wxhxd": [
+        288,
+        1.0,
+        208
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 150,
+      "triangles_per_object": {
+        "Pad": 150
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Environment",
+      "children": [
+        "Pad"
+      ],
+      "colour_slots": {
+        "asphalt": "#4A5058",
+        "concrete": "#D9DEE4",
+        "grass": "#7CC46B",
+        "offwhite": "#F4F7FB",
+        "paver_sand": "#EAD7B7",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Luxury Shopping Center plot foundation 288 x 208: parking, walkway to the door, loading apron."
+    },
+    "CM_Plot_Pad_MegaMart": {
+      "file": "Roblox_FBX/Environment/CM_Plot_Pad_MegaMart.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        288.0,
+        1.009,
+        208.0
+      ],
+      "expected_size_wxhxd": [
+        288,
+        1.0,
+        208
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 202,
+      "triangles_per_object": {
+        "Pad": 202
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Environment",
+      "children": [
+        "Pad"
+      ],
+      "colour_slots": {
+        "asphalt": "#4A5058",
+        "concrete": "#D9DEE4",
+        "grass": "#7CC46B",
+        "offwhite": "#F4F7FB",
+        "paver_sand": "#EAD7B7",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Mega Mart plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone."
+    },
+    "CM_Plot_Pad_MiniMart": {
+      "file": "Roblox_FBX/Environment/CM_Plot_Pad_MiniMart.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        288.0,
+        1.009,
+        208.0
+      ],
+      "expected_size_wxhxd": [
+        288,
+        1.0,
+        208
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 228,
+      "triangles_per_object": {
+        "Pad": 228
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Environment",
+      "children": [
+        "Pad"
+      ],
+      "colour_slots": {
+        "asphalt": "#4A5058",
+        "concrete": "#D9DEE4",
+        "grass": "#7CC46B",
+        "offwhite": "#F4F7FB",
+        "paver_sand": "#EAD7B7",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Mini Mart plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone."
+    },
+    "CM_Plot_Pad_Supermarket": {
+      "file": "Roblox_FBX/Environment/CM_Plot_Pad_Supermarket.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        288.0,
+        1.009,
+        208.0
+      ],
+      "expected_size_wxhxd": [
+        288,
+        1.0,
+        208
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 250,
+      "triangles_per_object": {
+        "Pad": 250
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Environment",
+      "children": [
+        "Pad"
+      ],
+      "colour_slots": {
+        "asphalt": "#4A5058",
+        "concrete": "#D9DEE4",
+        "grass": "#7CC46B",
+        "offwhite": "#F4F7FB",
+        "paver_sand": "#EAD7B7",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Supermarket plot foundation 288 x 208: parking, walkway to the door, loading apron, and the next stage's footprint painted as an expansion zone."
     },
     "CM_Product_Apple": {
       "file": "Roblox_FBX/Products/CM_Product_Apple.fbx",
@@ -4343,6 +4918,37 @@
       "checks_passed": true,
       "notes": "Broadleaf tree: canopy 10 across, 16 tall overall."
     },
+    "CM_Road_Corner": {
+      "file": "Roblox_FBX/Roads/CM_Road_Corner.fbx",
+      "category": "roads",
+      "size_wxhxd": [
+        24.0,
+        0.403,
+        24.0
+      ],
+      "expected_size_wxhxd": [
+        24.0,
+        0.4,
+        24.0
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 56,
+      "triangles_per_object": {
+        "Road": 56
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Roads",
+      "children": [
+        "Road"
+      ],
+      "colour_slots": {
+        "asphalt": "#4A5058",
+        "offwhite": "#F4F7FB",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "90-degree bend joining a road from -Y to a road toward +X, with curved lane markings."
+    },
     "CM_Road_Crosswalk": {
       "file": "Roblox_FBX/Roads/CM_Road_Crosswalk.fbx",
       "category": "roads",
@@ -4497,6 +5103,125 @@
       "checks_passed": true,
       "notes": "Two-lane segment along Y: dashed yellow centre line, white edge lines."
     },
+    "CM_Road_TJunction": {
+      "file": "Roblox_FBX/Roads/CM_Road_TJunction.fbx",
+      "category": "roads",
+      "size_wxhxd": [
+        24.0,
+        0.403,
+        24.0
+      ],
+      "expected_size_wxhxd": [
+        24.0,
+        0.4,
+        24.0
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 32,
+      "triangles_per_object": {
+        "Road": 32
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Roads",
+      "children": [
+        "Road"
+      ],
+      "colour_slots": {
+        "asphalt": "#4A5058",
+        "dark": "#2A2F36",
+        "offwhite": "#F4F7FB",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "T-junction: the road runs along Y, a branch leaves toward +X (stop line on its inbound lane)."
+    },
+    "CM_Shelf_Double_Aisle": {
+      "file": "Roblox_FBX/Interiors/CM_Shelf_Double_Aisle.fbx",
+      "category": "fixtures",
+      "size_wxhxd": [
+        28.0,
+        7.6,
+        10.0
+      ],
+      "expected_size_wxhxd": [
+        28,
+        7.6,
+        10
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 2890,
+      "triangles_per_object": {
+        "Body": 668,
+        "PriceTag": 44,
+        "PriceTagBack": 44,
+        "Item1": 112,
+        "Item2": 112,
+        "Item3": 112,
+        "Item4": 112,
+        "Item5": 112,
+        "Item6": 112,
+        "Item7": 112,
+        "Item8": 112,
+        "Item9": 112,
+        "Item10": 112,
+        "Item11": 99,
+        "Item12": 99,
+        "Item13": 99,
+        "Item14": 99,
+        "Item15": 99,
+        "Item16": 99,
+        "Item17": 99,
+        "Item18": 99,
+        "Item19": 99,
+        "Item20": 99,
+        "Anchor": 12,
+        "AnchorBack": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "PriceTag",
+        "PriceTagBack",
+        "Item1",
+        "Item2",
+        "Item3",
+        "Item4",
+        "Item5",
+        "Item6",
+        "Item7",
+        "Item8",
+        "Item9",
+        "Item10",
+        "Item11",
+        "Item12",
+        "Item13",
+        "Item14",
+        "Item15",
+        "Item16",
+        "Item17",
+        "Item18",
+        "Item19",
+        "Item20",
+        "Anchor",
+        "AnchorBack"
+      ],
+      "colour_slots": {
+        "chip_gold": "#D4952E",
+        "kiosk_blue": "#4C7BD9",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "pastry": "#E2A23B",
+        "red": "#E67565",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Double-sided gondola 28 x 7.6 x 10: Item1-10 face the front (-Y, chips), Item11-20 face the back (+Y, cereal). Anchor is in front, AnchorBack behind; PriceTag and PriceTagBack likewise."
+    },
     "CM_Shell_Awning": {
       "file": "Roblox_FBX/Buildings/CM_Shell_Awning.fbx",
       "category": "shell",
@@ -4563,6 +5288,37 @@
       "checks_passed": true,
       "notes": "16-wide module with a 14.4 x 12 clear opening (0.8 jambs) for CM_Shell_SlidingDoor."
     },
+    "CM_Shell_DoorFrame_Luxury": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_DoorFrame_Luxury.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        16.0,
+        18.0,
+        1.0
+      ],
+      "expected_size_wxhxd": [
+        16,
+        18,
+        1
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 326,
+      "triangles_per_object": {
+        "Body": 326
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "gold": "#F2C230",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB"
+      },
+      "checks_passed": true,
+      "notes": "Luxury entrance module: gold jambs, same 14.4 x 12 opening as the standard door frame."
+    },
     "CM_Shell_Dumpster": {
       "file": "Roblox_FBX/Buildings/CM_Shell_Dumpster.fbx",
       "category": "shell",
@@ -4597,9 +5353,166 @@
       "checks_passed": true,
       "notes": "Exterior trash container with a separate Lid (hinged at the back)."
     },
-    "CM_Shell_Floor_Store": {
-      "file": "Roblox_FBX/Buildings/CM_Shell_Floor_Store.fbx",
-      "category": "shell",
+    "CM_Shell_EntranceCanopy": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_EntranceCanopy.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        24.0,
+        13.0,
+        10.0
+      ],
+      "expected_size_wxhxd": [
+        24,
+        13,
+        10
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 320,
+      "triangles_per_object": {
+        "Body": 308,
+        "Light": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Body",
+        "Light"
+      ],
+      "colour_slots": {
+        "gold": "#F2C230",
+        "navy": "#12243C",
+        "warm_light": "#FFE9A8"
+      },
+      "checks_passed": true,
+      "notes": "Luxury entrance canopy: 24 wide, projects 10 from the wall (+Y edge mounts on the wall), underside at 12 on two gold columns. Light is the soffit strip."
+    },
+    "CM_Shell_Floor_CornerStore": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Floor_CornerStore.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        54.0,
+        0.402,
+        40.0
+      ],
+      "expected_size_wxhxd": [
+        54,
+        0.4,
+        40
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 132,
+      "triangles_per_object": {
+        "Floor": 132
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Floor"
+      ],
+      "colour_slots": {
+        "floor_tile": "#E3F2EF",
+        "offwhite": "#F4F7FB",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Corner Store floor slab under the whole 54 x 40 shell; 4-stud tiles."
+    },
+    "CM_Shell_Floor_LuxuryCenter": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Floor_LuxuryCenter.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        186.0,
+        0.402,
+        112.0
+      ],
+      "expected_size_wxhxd": [
+        186,
+        0.4,
+        112
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 1256,
+      "triangles_per_object": {
+        "Floor": 1256
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Floor"
+      ],
+      "colour_slots": {
+        "offwhite": "#F4F7FB",
+        "velvet": "#B8344A",
+        "wall_shade": "#E2D0B4"
+      },
+      "checks_passed": true,
+      "notes": "Luxury Shopping Center floor slab under the whole 186 x 112 shell; 4-stud tiles."
+    },
+    "CM_Shell_Floor_MegaMart": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Floor_MegaMart.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        186.0,
+        0.402,
+        104.0
+      ],
+      "expected_size_wxhxd": [
+        186,
+        0.4,
+        104
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 1164,
+      "triangles_per_object": {
+        "Floor": 1164
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Floor"
+      ],
+      "colour_slots": {
+        "floor_tile": "#E3F2EF",
+        "offwhite": "#F4F7FB",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Mega Mart floor slab under the whole 186 x 104 shell; 4-stud tiles."
+    },
+    "CM_Shell_Floor_MiniMart": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Floor_MiniMart.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        90.0,
+        0.402,
+        56.0
+      ],
+      "expected_size_wxhxd": [
+        90,
+        0.4,
+        56
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 300,
+      "triangles_per_object": {
+        "Floor": 300
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Floor"
+      ],
+      "colour_slots": {
+        "floor_tile": "#E3F2EF",
+        "offwhite": "#F4F7FB",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Mini Mart floor slab under the whole 90 x 56 shell; 4-stud tiles."
+    },
+    "CM_Shell_Floor_Supermarket": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Floor_Supermarket.fbx",
+      "category": "stages",
       "size_wxhxd": [
         134.0,
         0.402,
@@ -4626,7 +5539,40 @@
         "teal": "#16AC9B"
       },
       "checks_passed": true,
-      "notes": "Store floor slab under the full 134 x 88 shell (132 x 86 interior + walls); 4-stud tiles."
+      "notes": "Supermarket floor slab under the whole 134 x 88 shell; 4-stud tiles."
+    },
+    "CM_Shell_GlassCurtain": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_GlassCurtain.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        8.0,
+        18.0,
+        1.0
+      ],
+      "expected_size_wxhxd": [
+        8,
+        18,
+        1
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 172,
+      "triangles_per_object": {
+        "Body": 136,
+        "Glass": 36
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Body",
+        "Glass"
+      ],
+      "colour_slots": {
+        "glass": "#CDEFF0",
+        "gold": "#F2C230",
+        "navy": "#12243C"
+      },
+      "checks_passed": true,
+      "notes": "Full-height glass curtain wall module (8 wide) with slim gold mullions; Glass is separate."
     },
     "CM_Shell_Pillar": {
       "file": "Roblox_FBX/Buildings/CM_Shell_Pillar.fbx",
@@ -4734,9 +5680,149 @@
       "checks_passed": true,
       "notes": "Rooftop HVAC unit."
     },
-    "CM_Shell_Roof_Store": {
-      "file": "Roblox_FBX/Buildings/CM_Shell_Roof_Store.fbx",
-      "category": "shell",
+    "CM_Shell_Roof_CornerStore": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Roof_CornerStore.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        52.0,
+        3.6,
+        38.0
+      ],
+      "expected_size_wxhxd": [
+        52,
+        null,
+        38
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 180,
+      "triangles_per_object": {
+        "Roof": 156,
+        "Glass": 24
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Roof",
+        "Glass"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "glass": "#CDEFF0",
+        "metal": "#C9D3DD",
+        "slate": "#3A5A70",
+        "stockroom": "#7F93A8"
+      },
+      "checks_passed": true,
+      "notes": "Corner Store roof; pivot at z = 17.4 inside the walls. Glass is the skylights."
+    },
+    "CM_Shell_Roof_LuxuryCenter": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Roof_LuxuryCenter.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        184.0,
+        3.6,
+        110.0
+      ],
+      "expected_size_wxhxd": [
+        184,
+        null,
+        110
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 584,
+      "triangles_per_object": {
+        "Roof": 488,
+        "Glass": 96
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Roof",
+        "Glass"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "glass": "#CDEFF0",
+        "gold": "#F2C230",
+        "metal": "#C9D3DD",
+        "slate": "#3A5A70"
+      },
+      "checks_passed": true,
+      "notes": "Luxury Shopping Center roof; pivot at z = 17.4 inside the walls. Glass is the skylights."
+    },
+    "CM_Shell_Roof_MegaMart": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Roof_MegaMart.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        184.0,
+        3.6,
+        102.0
+      ],
+      "expected_size_wxhxd": [
+        184,
+        null,
+        102
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 584,
+      "triangles_per_object": {
+        "Roof": 488,
+        "Glass": 96
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Roof",
+        "Glass"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "glass": "#CDEFF0",
+        "metal": "#C9D3DD",
+        "slate": "#3A5A70",
+        "stockroom": "#7F93A8"
+      },
+      "checks_passed": true,
+      "notes": "Mega Mart roof; pivot at z = 17.4 inside the walls. Glass is the skylights."
+    },
+    "CM_Shell_Roof_MiniMart": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Roof_MiniMart.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        88.0,
+        3.6,
+        54.0
+      ],
+      "expected_size_wxhxd": [
+        88,
+        null,
+        54
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 248,
+      "triangles_per_object": {
+        "Roof": 200,
+        "Glass": 48
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Roof",
+        "Glass"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "glass": "#CDEFF0",
+        "metal": "#C9D3DD",
+        "slate": "#3A5A70",
+        "stockroom": "#7F93A8"
+      },
+      "checks_passed": true,
+      "notes": "Mini Mart roof; pivot at z = 17.4 inside the walls. Glass is the skylights."
+    },
+    "CM_Shell_Roof_Supermarket": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Roof_Supermarket.fbx",
+      "category": "stages",
       "size_wxhxd": [
         132.0,
         3.6,
@@ -4748,9 +5834,9 @@
         86
       ],
       "size_measured_on": "all objects except Anchor",
-      "triangles": 560,
+      "triangles": 416,
       "triangles_per_object": {
-        "Roof": 488,
+        "Roof": 344,
         "Glass": 72
       },
       "pivot": "bottom-centre (0, 0, 0)",
@@ -4767,7 +5853,7 @@
         "stockroom": "#7F93A8"
       },
       "checks_passed": true,
-      "notes": "Roof for the 132 x 86 interior; place its pivot at z = 17.4 inside the walls. Separate asset so the game can hide it. Skylight panes are the Glass part."
+      "notes": "Supermarket roof; pivot at z = 17.4 inside the walls. Glass is the skylights."
     },
     "CM_Shell_SignBoard": {
       "file": "Roblox_FBX/Buildings/CM_Shell_SignBoard.fbx",
@@ -4803,6 +5889,41 @@
       },
       "checks_passed": true,
       "notes": "Main store sign. Face is blank (the game draws the store name); Neon is the outline tube."
+    },
+    "CM_Shell_SignBoard_Small": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_SignBoard_Small.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        20.0,
+        3.6,
+        0.4
+      ],
+      "expected_size_wxhxd": [
+        20,
+        3.6,
+        0.4
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 120,
+      "triangles_per_object": {
+        "Body": 60,
+        "Face": 12,
+        "Neon": 48
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Body",
+        "Face",
+        "Neon"
+      ],
+      "colour_slots": {
+        "navy": "#12243C",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Corner-store sign 20 x 3.6; Face is blank, Neon is the outline."
     },
     "CM_Shell_SlidingDoor": {
       "file": "Roblox_FBX/Buildings/CM_Shell_SlidingDoor.fbx",
@@ -5002,6 +6123,38 @@
       },
       "checks_passed": true,
       "notes": "Exterior wall sconce; mount the back (+Y) on the wall. Light is the warm lamp part (set Neon)."
+    },
+    "CM_Shell_Wall_Luxury": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Wall_Luxury.fbx",
+      "category": "stages",
+      "size_wxhxd": [
+        4.0,
+        18.0,
+        1.0
+      ],
+      "expected_size_wxhxd": [
+        4,
+        18,
+        1
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 306,
+      "triangles_per_object": {
+        "Body": 306
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "gold": "#F2C230",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "wall_shade": "#E2D0B4"
+      },
+      "checks_passed": true,
+      "notes": "Luxury 4-wide wall: navy plinth, cream stone field with a gold-framed panel, gold band."
     },
     "CM_Shell_Wall_Solid": {
       "file": "Roblox_FBX/Buildings/CM_Shell_Wall_Solid.fbx",

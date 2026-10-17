@@ -160,6 +160,50 @@ for _n, _s in GONDOLAS.items():
     _register_gondola(_n, _s)
 
 
+@cm.asset("fixtures", "CM_Shelf_Double_Aisle", "Interiors", (28, 7.6, 10), budget="fixture",
+          notes="Double-sided gondola 28 x 7.6 x 10: Item1-10 face the front (-Y, chips), Item11-20 face the "
+                "back (+Y, cereal). Anchor is in front, AnchorBack behind; PriceTag and PriceTagBack likewise.")  # fmt: skip
+def double_aisle(kit):
+    W, H, D = 28, 7.6, 10
+    x1, y1 = W / 2, D / 2
+    up, cap_z = 0.6, H - 1.4
+    xi = x1 - up
+    with kit.part("Body") as b:
+        for s_ in (-1, 1):
+            lo_x, hi_x = sorted((s_ * x1, s_ * xi))
+            b.box((lo_x + 0.02 * (s_ < 0), -y1 + 0.12, 0), (hi_x - 0.02 * (s_ > 0), y1 - 0.12, cap_z), "slate", bevel=0.12)
+            for face in (-1, 1):  # trim strips on both faces of each end
+                ya, yb = sorted((face * y1, face * (y1 - 0.12)))
+                b.box((lo_x + 0.05, ya, 0.3), (hi_x - 0.05, yb, cap_z - 0.2), "teal", bevel=0)
+        b.box((-xi, -y1 + 0.2, 0), (xi, y1 - 0.2, 0.7), "navy", bevel=0.06)
+        b.box((-xi, -0.15, 0.7), (xi, 0.15, cap_z), "teal", bevel=0.04)  # central spine
+        for face in (-1, 1):
+            b.quad([(-xi, face * 0.162, cap_z - 0.9), (xi, face * 0.162, cap_z - 0.9), (xi, face * 0.162, cap_z - 0.7), (-xi, face * 0.162, cap_z - 0.7)][:: -face], "mint")
+            for z in (0.7, 3.45):
+                ya, yb = sorted((face * 0.15, face * (y1 - 0.12)))
+                b.box((-xi, ya, z), (xi, yb, z + 0.25), "offwhite", bevel=0.05)
+                ya, yb = sorted((face * (y1 - 0.12), face * y1))
+                b.box((-xi, ya, z - 0.2), (xi, yb, z + 0.3), "navy", bevel=0.04)
+        b.box((-x1, -y1, cap_z), (x1, y1, cap_z + 0.25), "offwhite", bevel=0.08)
+        b.box((-4.0, -0.15, cap_z + 0.25), (4.0, 0.15, H), "navy", bevel=0.06)  # board spine
+    for name, face in (("PriceTag", -1), ("PriceTagBack", 1)):
+        with kit.part(name) as b:
+            ya, yb = sorted((face * 0.15, face * 0.3))
+            b.box((-3.7, ya, cap_z + 0.45), (3.7, yb, H - 0.15), "yellow", bevel=0.03)
+    inner = 2 * xi - 0.4
+    for i, (x, _, z) in enumerate(slot_positions(10, inner, (0.95, 3.7), -2.4), start=1):
+        with kit.part("Item%d" % i, origin=(x, -2.4, z)) as b:
+            P.chip_bag(b, ridges=False)
+    for i, (x, _, z) in enumerate(slot_positions(10, inner, (0.95, 3.7), 2.4), start=11):
+        with kit.part("Item%d" % i, origin=(x, 2.4, z)) as b:
+            b.at((0, 0, 0), rot_z_deg=180)
+            P.cereal_box(b)
+            b.at()
+    kit.anchor((0, -y1 - 1.2, 3.5))
+    kit.anchor((0, y1 + 1.2, 3.5), name="AnchorBack")
+    return stocked_checks(20)
+
+
 # ---------------------------------------------------------------------------
 # Snack bin
 # ---------------------------------------------------------------------------

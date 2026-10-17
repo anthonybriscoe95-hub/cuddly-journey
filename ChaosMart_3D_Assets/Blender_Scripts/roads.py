@@ -10,6 +10,7 @@ can be changed to match the blueprint without touching this file.
 """
 
 import json
+import math
 import os
 
 import cm_common as cm
@@ -56,6 +57,49 @@ def road_intersection(kit):
         asphalt(b, -h, -h, h, h)
         b.disc((3, 3, ROAD_T + EPS), 1.1, "dark", segments=12, facing="+Z")
         b.disc((3, 3, ROAD_T + 2 * EPS), 0.8, "slate", segments=12, facing="+Z")
+
+
+def arc_strip(b, cx, cy, r, width, a0, a1, colour, z, segments=12, dashed=False):
+    """Flat marking along a circular arc (angles in degrees), optionally dashed."""
+    for k in range(segments):
+        if dashed and k % 2:
+            continue
+        t0 = math.radians(a0 + (a1 - a0) * k / segments)
+        t1 = math.radians(a0 + (a1 - a0) * (k + 1) / segments)
+        ri, ro = r - width / 2, r + width / 2
+        pts = [(cx + ri * math.cos(t0), cy + ri * math.sin(t0), z), (cx + ro * math.cos(t0), cy + ro * math.sin(t0), z),
+               (cx + ro * math.cos(t1), cy + ro * math.sin(t1), z), (cx + ri * math.cos(t1), cy + ri * math.sin(t1), z)]  # fmt: skip
+        if (a1 - a0) < 0:
+            pts.reverse()
+        b.poly(pts, colour)
+
+
+@cm.asset("roads", "CM_Road_Corner", "Roads", (ROAD_W, ROAD_T, ROAD_W), budget="prop",
+          notes="90-degree bend joining a road from -Y to a road toward +X, with curved lane markings.")  # fmt: skip
+def road_corner(kit):
+    h = ROAD_W / 2
+    z = ROAD_T + EPS
+    with kit.part("Road") as b:
+        asphalt(b, -h, -h, h, h)
+        cx, cy = h, -h  # the bend's centre is the inside corner
+        arc_strip(b, cx, cy, h, 0.4, 180, 90, "yellow", z, segments=12, dashed=True)
+        arc_strip(b, cx, cy, h + 10.6, 0.4, 180, 90 + 26, "offwhite", z, segments=10)
+        arc_strip(b, cx, cy, h - 10.6, 0.4, 180, 90, "offwhite", z, segments=6)
+
+
+@cm.asset("roads", "CM_Road_TJunction", "Roads", (ROAD_W, ROAD_T, ROAD_W), budget="prop",
+          notes="T-junction: the road runs along Y, a branch leaves toward +X (stop line on its inbound lane).")  # fmt: skip
+def road_tjunction(kit):
+    h = ROAD_W / 2
+    z = ROAD_T + EPS
+    with kit.part("Road") as b:
+        asphalt(b, -h, -h, h, h)
+        b.top_quad(-10.6 - 0.2, -h, -10.6 + 0.2, h, z, "offwhite")  # far edge line, unbroken
+        for k in range(3):
+            y = -h + 2 + k * 8
+            b.top_quad(-0.2, y, 0.2, y + 4, z, "yellow")
+        b.top_quad(10.5, -10.6, 11.3, -0.3, z, "offwhite")  # stop line on the branch's inbound lane
+        b.disc((-4, 4, z), 1.1, "dark", segments=12, facing="+Z")
 
 
 @cm.asset("roads", "CM_Road_Crosswalk", "Roads", (ROAD_W, ROAD_T, 12), budget="prop",
@@ -144,61 +188,6 @@ def grass_tile(kit):
         for k in range(4):
             x = -h + k * 8
             b.top_quad(x, -h, x + 4, h, 0.6 + EPS, "grass_dark")
-
-
-def plot_dims():
-    p = LAYOUT["plot"]
-    return p["width"], p["depth"]
-
-
-@cm.asset("roads", "CM_Plot_Pad", "Environment", None, budget="shell",
-          notes="Player plot foundation sized by map_layout.json. Front (-Y) faces the plaza. Painted "
-                "outlines show where the store shell and stockroom go; OwnerPad is the claim spot.")  # fmt: skip
-def plot_pad(kit):
-    W, D = plot_dims()
-    x1, y1 = W / 2, D / 2
-    st = LAYOUT["plot"]["store"]  # store footprint (centre and size, plot-local)
-    sr = LAYOUT["plot"]["stockroom"]
-    z = WALK_T + EPS
-    with kit.part("Pad") as b:
-        b.box((-x1, -y1, 0), (x1, y1, WALK_T), "concrete", bevel=0.1)
-        # lawn border on the sides and back
-        b.top_quad(-x1, -y1, -x1 + 4, y1, z, "grass")
-        b.top_quad(x1 - 4, -y1, x1, y1, z, "grass")
-        b.top_quad(-x1 + 4, y1 - 4, x1 - 4, y1, z, "grass")
-
-        def outline(cx, cy, w, d, colour, t=0.5):
-            xa, xb, ya, yb = cx - w / 2, cx + w / 2, cy - d / 2, cy + d / 2
-            b.top_quad(xa, ya, xb, ya + t, z, colour)
-            b.top_quad(xa, yb - t, xb, yb, z, colour)
-            b.top_quad(xa, ya + t, xa + t, yb - t, z, colour)
-            b.top_quad(xb - t, ya + t, xb, yb - t, z, colour)
-
-        outline(st["x"], st["y"], st["w"], st["d"], "teal")
-        outline(sr["x"], sr["y"], sr["w"], sr["d"], "yellow")
-        # parking lot in front of the store: asphalt, bays both sides of an aisle
-        pk = LAYOUT["plot"]["parking"]
-        px0, px1, py0, py1 = pk["x0"], pk["x1"], pk["y0"], pk["y1"]
-        b.top_quad(px0, py0, px1, py1, z, "asphalt")
-        aisle_mid = (py0 + py1) / 2
-        x = px0
-        while x <= px1 + 0.01:  # 9-wide bays either side of a 24-wide aisle
-            if abs(x - st["x"]) > 9.5:
-                xa, xb = max(x - 0.15, px0), min(x + 0.15, px1)
-                b.top_quad(xa, py0 + 1, xb, aisle_mid - 12, z + EPS, "offwhite")
-                b.top_quad(xa, aisle_mid + 12, xb, py1 - 1, z + EPS, "offwhite")
-            x += 9
-        # walkway from the plot front, through the lot, to the store door
-        b.top_quad(st["x"] - 9, -y1, st["x"] + 9, py0, z, "paver_sand")
-        b.top_quad(st["x"] - 9, py0, st["x"] + 9, py1, z + 2 * EPS, "paver_sand")
-        b.top_quad(st["x"] - 9, py1, st["x"] + 9, st["y"] - st["d"] / 2, z, "paver_sand")
-        # loading apron beside the stockroom door
-        b.top_quad(sr["x"] + sr["w"] / 2, sr["y"] - 14, x1 - 4, sr["y"] + 14, z, "asphalt")
-    op = LAYOUT["plot"]["owner_pad"]
-    with kit.part("OwnerPad", origin=(op["x"], op["y"], WALK_T)) as b:
-        b.cylinder((0, 0, 0), 4.0, 0.3, "navy", segments=16, bevel=0.06)
-        b.cylinder((0, 0, 0.3), 3.3, 0.1, "teal", segments=16, bevel=0)
-        b.star((0, 0, 0.4 + EPS), 1.6, "yellow", facing="+Z")
 
 
 @cm.asset("roads", "CM_Plaza_Pad", "Environment", None, budget="shell",

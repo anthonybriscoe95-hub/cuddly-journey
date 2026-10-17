@@ -2,23 +2,23 @@
   "_status": "PROVISIONAL. The overhead blueprint was not supplied, so these numbers are a documented assumption. Edit them to match the blueprint and re-run build_all.py; every map piece and the assembly read from here.",
   "_units": "studs; Blender X/Y ground plane, +Z up. Plot-local coordinates: front (-Y) faces the plaza.",
   "plot": {
-    "width": 224,
-    "depth": 176,
-    "store": {"x": -32, "y": 40, "w": 134, "d": 88},
-    "stockroom": {"x": 68.5, "y": 46, "w": 51, "d": 76},
-    "parking": {"x0": -104, "x1": 31, "y0": -82, "y1": -22},
-    "owner_pad": {"x": -32, "y": -82}
+    "width": 288,
+    "depth": 208,
+    "door_x": -48,
+    "_door_x": "every store stage keeps its entrance here so the crosswalk never moves; must be 16 more than a multiple of 32 for the road grid"
   },
+  "plot_stages": [1, 2, 3, 4, 5, 3],
+  "_plot_stages": "store stage shown on each plot in the map, north row left to right then south row left to right",
   "rows": {
-    "column_x": [-256, 0, 256],
-    "north_row_y": 200,
-    "south_row_y": -200
+    "column_x": [-320, 0, 320],
+    "north_row_y": 216,
+    "south_row_y": -216
   },
-  "plaza": {"width": 736, "depth": 160},
+  "plaza": {"width": 960, "depth": 160},
   "roads": {
     "plaza_road_y": 92,
-    "side_road_x": 380,
+    "side_road_x": 492,
     "segment": 32
   },
-  "ground": {"width": 960, "depth": 720}
+  "ground": {"width": 1200, "depth": 760}
 }

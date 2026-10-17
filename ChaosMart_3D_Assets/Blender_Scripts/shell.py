@@ -265,47 +265,8 @@ def roof_ac(kit):
 
 
 # ---------------------------------------------------------------------------
-# Floor, roof and stockroom
+# Stockroom (floors and roofs are per stage, in stages.py)
 # ---------------------------------------------------------------------------
-
-
-@cm.asset("shell", "CM_Shell_Floor_Store", "Buildings", (134, 0.4, 88), budget="shell",
-          notes="Store floor slab under the full 134 x 88 shell (132 x 86 interior + walls); 4-stud tiles.")  # fmt: skip
-def floor_store(kit):
-    W, D = 134, 88
-    with kit.part("Floor") as b:
-        b.box((-W / 2, -D / 2, 0), (W / 2, D / 2, 0.4), "offwhite", bevel=0)
-        n_x, n_y = 33, 21
-        x_start, y_start = -132 / 2, -86 / 2 + 1
-        for i in range(n_x):
-            for j in range(n_y):
-                if (i + j) % 2 == 0:
-                    x, y = x_start + i * 4, y_start + j * 4
-                    b.top_quad(x, y, x + 4, y + 4, 0.401, "floor_tile")
-        b.top_quad(-12, -D / 2 + 0.6, 12, -D / 2 + 6, 0.402, "teal")  # entrance mat
-
-
-@cm.asset("shell", "CM_Shell_Roof_Store", "Buildings", (132, None, 86), budget="shell",
-          notes="Roof for the 132 x 86 interior; place its pivot at z = 17.4 inside the walls. Separate "
-                "asset so the game can hide it. Skylight panes are the Glass part.")  # fmt: skip
-def roof_store(kit):
-    W, D = 132, 86
-    with kit.part("Roof") as b:
-        b.box((-W / 2, -D / 2, 0), (W / 2, D / 2, 0.6), "stockroom", bevel=0)
-        for x in (-44, 0, 44):  # skylight curbs
-            b.box((x - 5, -6, 0.6), (x + 5, 6, 1.1), "slate", bevel=0.05)
-        for x, y in ((-20, 26), (30, 26), (55, -25)):  # HVAC units
-            b.box((x - 2.5, y - 2, 0.6), (x + 2.5, y + 2, 0.9), "slate", bevel=0)
-            b.box((x - 2.3, y - 1.8, 0.9), (x + 2.3, y + 1.8, 3.2), "metal", bevel=0.1)
-            b.cylinder((x + 1.25, y, 3.2), 0.85, 0.4, "slate", segments=10, bevel=0)
-            b.disc((x + 1.25, y, 3.6), 0.72, "dark", segments=10, facing="+Z")
-        b.box((-60, -40, 0.6), (-57, -37, 1.6), "slate", bevel=0.05)  # roof hatch
-    with kit.part("Glass", material="glass") as b:
-        for x in (-44, 0, 44):
-            b.hexa([(x - 4.6, -5.6, 1.1), (x + 4.6, -5.6, 1.1), (x + 4.6, 5.6, 1.1), (x - 4.6, 5.6, 1.1),
-                    (x - 4.6, -5.6, 1.1), (x + 4.6, -5.6, 1.1), (x + 4.6, 0, 2.4), (x - 4.6, 0, 2.4)], "glass")  # fmt: skip
-            b.hexa([(x - 4.6, 0, 1.1), (x + 4.6, 0, 1.1), (x + 4.6, 5.6, 1.1), (x - 4.6, 5.6, 1.1),
-                    (x - 4.6, 0, 2.4), (x + 4.6, 0, 2.4), (x + 4.6, 5.6, 1.1), (x - 4.6, 5.6, 1.1)], "glass")  # fmt: skip
 
 
 @cm.asset("shell", "CM_Shell_Stockroom", "Buildings", (51, 16, 76), budget="shell",

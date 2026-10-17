@@ -9,15 +9,20 @@ The Developer Bible (PDF), the Overhead Map Blueprint (PNG) and the Map Blueprin
 supplied**. Everything blueprint-dependent lives in `Blender_Scripts/map_layout.json`, marked
 provisional:
 
-- **Plots:** 224 × 176, three per side of the plaza, fronts facing it (north row unrotated, south row
-  turned 180°). Column centres x = −256, 0, 256 and row centres y = ±200.
-- **Store on each plot:** the 132 × 86 interior shell (134 × 88 with walls) at the back, the 51 × 76
-  stockroom beside it with its roll-up door facing a loading apron, and parking with 9-wide bays and a
-  24-wide aisle in front.
-- **Plaza:** 736 × 160 in the middle, a road loop around it (24-wide two-lane roads, 32-long segments),
+- **Plots:** 288 × 208, three per side of the plaza, fronts facing it (north row unrotated, south row
+  turned 180°). Column centres x = −320, 0, 320 and row centres y = ±216. The plot is sized so the
+  largest stage (Luxury Shopping Center) plus its stockroom and loading apron fit.
+- **Store stages:** all five stages share one entrance position (plot-local x = −48) and one back line,
+  and grow sideways and toward the plaza. The stockroom always sits 8 studs to the right of the store,
+  so it moves when the store grows (in game, move it when the player upgrades).
+- **Parking:** two rows of 9-wide bays either side of a 24-wide aisle, the same on every stage, with
+  the walkway to the door running through the lot.
+- **Plaza:** 960 × 160 in the middle, a road loop around it (24-wide two-lane roads, 32-long segments),
   and 8-wide sidewalks on the plot side.
-- **Crosswalks** sit exactly in front of each store entrance, because store x positions are chosen
-  on the 32-stud road grid.
+- **Crosswalks** sit exactly in front of each store entrance, because the entrance x is chosen on the
+  32-stud road grid.
+- **Which stage stands on which plot** in the assembled map is `plot_stages` in `map_layout.json`
+  (it currently shows all five stages, so the map doubles as a progression showcase).
 
 When the blueprint arrives, edit `map_layout.json` and rebuild; the pads, plaza and assembly follow it.
 
@@ -28,7 +33,21 @@ When the blueprint arrives, edit `map_layout.json` and rebuild; the pads, plaza 
 | File names | `CM_Fixture_SnackShelf` etc. | `CM_Shelf_Double_Aisle` etc. | The asset-pack names, because the existing game code expects them. New assets use `CM_<Category>_<Name>` |
 | Folders | `export/` | `ChaosMart_3D_Assets/…` | The master brief's layout |
 | Triangle budgets | items ≤ 150, fixtures ≤ 3,000 | "no arbitrary limits" | Fixtures ≤ 3,000 and shell ≤ 5,000 kept. Standalone products raised to ≤ 300 after owner feedback that products should look clearly designed |
-| NPCs | 6 separate R6 part meshes | prefer standard avatars + accessories | Built the R6 part meshes the game code uses. Roblox Accessory versions are still to do |
+| NPCs | 6 separate R6 part meshes | prefer standard avatars + accessories | Both: the R6 part meshes the game code uses, and every outfit piece as a Roblox accessory mesh (`Handle`, pivot on its attachment point) |
+
+## Store progression stages
+
+| Stage | Store (outer) | Front modules | Inside |
+|---|---|---|---|
+| 1 Corner Store | 54 × 40 | 4 storefronts, door | 1 checkout, 2 gondolas, wall cooler, vending machine |
+| 2 Mini Mart | 90 × 56 | 8 storefronts, door | 2 checkouts, 4 gondolas, 3 coolers, produce stand |
+| 3 Supermarket | 134 × 88 | 12 storefronts, door | 4 checkouts, 6 gondolas, 3 coolers, produce, bakery, candy bin |
+| 4 Mega Mart | 186 × 104 | 16 storefronts, door | 6 checkouts, 3 self-checkouts, service desk, 12 gondolas, 6 end-caps, 5 coolers, 2 freezers, produce, bakery |
+| 5 Luxury Shopping Center | 186 × 112 | glass curtain walls, luxury door, canopy | as Mega Mart with premium shelves, two bakeries, 4 self-checkouts, ad screens; rooftop prestige sign, red carpet and VIP ropes outside |
+
+Every stage is assembled from the same modules and is checked on every build: fixtures stay inside the
+walls, clear of each other and of the entrance aisle, and everything on the lot stays on the plot and
+clear of everything else.
 
 ## Geometry choices
 

@@ -19,6 +19,7 @@ import bpy
 from mathutils import Matrix, Vector
 
 import cm_common as cm
+import stages
 
 LAYOUT = json.load(open(os.path.join(cm.HERE, "map_layout.json")))
 MAP_DIR = os.path.join(cm.ROOT, "Map_Assembly")
@@ -39,7 +40,7 @@ class Placer:
             raise KeyError("asset %s has not been built" % asset)
         m = Matrix.Translation(Vector(loc)) @ Matrix.Rotation(math.radians(rot), 4, "Z")
         for o in src.objects:
-            if cm.part_name(o) == "Anchor":
+            if cm.part_name(o).startswith("Anchor"):
                 continue
             c = o.copy()  # shares the mesh data
             c.matrix_world = m @ o.matrix_world
@@ -58,120 +59,20 @@ def plot_frame(px, py, rot):
     return to_world
 
 
-def build_store(P, to_world, group):
-    """Store shell + stockroom + interior on one plot (plot-local coordinates)."""
-    st = LAYOUT["plot"]["store"]
-    sr = LAYOUT["plot"]["stockroom"]
-    sx, sy, sw, sd = st["x"], st["y"], st["w"], st["d"]
-    x_left, x_right = sx - sw / 2, sx + sw / 2  # outer faces
-    y_front, y_back = sy - sd / 2, sy + sd / 2
+def asset_size(name):
+    """(width, depth) of a built asset's footprint, from its collection."""
+    col = bpy.data.collections[name]
+    objs = [o for o in col.objects if not cm.part_name(o).startswith("Anchor")]
+    lo, hi = cm.world_bbox(objs)
+    return (hi.x - lo.x, hi.y - lo.y)
 
+
+def place_stage(P, to_world, st, group, index):
     def put(asset, x, y, z=0.0, rot=0.0):
         loc, r = to_world(x, y, z, rot)
         P.place(asset, loc, r, group)
 
-    put("CM_Shell_Floor_Store", sx, sy, PAD_TOP)
-
-    # front wall, left to right between the side walls
-    front = ["S", "F", "F", "F", "S", "S", "F", "F", "F", "S", "D", "S", "F", "F", "F", "S", "S", "F", "F", "F", "S"]
-    widths = {"S": 4, "F": 7, "D": 16}
-    names = {"S": "CM_Shell_Wall_Solid", "F": "CM_Shell_Storefront", "D": "CM_Shell_DoorFrame"}
-    assert sum(widths[m] for m in front) == sw - 2, "front modules must fill the wall exactly"
-    x = x_left + 1
-    yf = y_front + 0.5
-    for m in front:
-        cx = x + widths[m] / 2
-        put(names[m], cx, yf, FLOOR_TOP)
-        if m == "D":
-            put("CM_Shell_SlidingDoor", cx, yf, FLOOR_TOP)
-        x += widths[m]
-
-    # back wall (exterior faces +Y): solids with the staff door nearest the stockroom
-    n_back = int((sw - 2 - 8) / 4)
-    staff_at = n_back - 3
-    x = x_left + 1
-    yb = y_back - 0.5
-    for i in range(n_back + 1):
-        if i == staff_at:
-            put("CM_Shell_StaffDoor", x + 4, yb, FLOOR_TOP, 180)
-            x += 8
-        else:
-            put("CM_Shell_Wall_Solid", x + 2, yb, FLOOR_TOP, 180)
-            x += 4
-
-    # side walls run the full depth and own the corners
-    for i in range(int(sd / 4)):
-        y = y_front + 2 + i * 4
-        put("CM_Shell_Wall_Solid", x_left + 0.5, y, FLOOR_TOP, -90)
-        put("CM_Shell_Wall_Solid", x_right - 0.5, y, FLOOR_TOP, 90)
-
-    put("CM_Shell_Roof_Store", sx, sy, FLOOR_TOP + 17.4)
-
-    # facade dressing
-    put("CM_Shell_SignBoard", sx, y_front - 0.2, FLOOR_TOP + 12.9)
-    awning_rise = 0.8 + 6.5 * math.tan(math.radians(16)) + 0.12
-    for run_start in (x_left + 1 + 4, x_left + 1 + 4 + 21 + 8, sx + 8 + 4, sx + 8 + 4 + 21 + 8):
-        for k in range(5):
-            put("CM_Shell_Awning", run_start + 0.5 + 2 + k * 4, y_front - 3.25, FLOOR_TOP + 12 - awning_rise)
-    for x in (x_left + 3, x_left + 1 + 29, x_left + 1 + 56, sx + 10, sx + 37, x_right - 3):  # on solid modules
-        put("CM_Shell_WallLight", x, y_front - 0.45, FLOOR_TOP + 8.6)
-    for s in (-1, 1):
-        put("CM_Shell_Planter", sx + s * 10.5, y_front - 6.5, PAD_TOP)
-
-    # stockroom, door facing the loading apron (+X)
-    put("CM_Shell_Stockroom", sr["x"], sr["y"], PAD_TOP)
-    put("CM_Shell_Dumpster", sr["x"] + sr["w"] / 2 + 6, sr["y"] + 30, PAD_TOP, 90)
-
-    # interior: checkouts by the entrance, gondola aisles, coolers on the back wall
-    yi0, yi1 = y_front + 1, y_back - 1  # interior faces
-    for k in range(4):
-        put("CM_Fixture_CheckoutLane", sx - 54 + k * 9, yi0 + 10, FLOOR_TOP)
-    put("CM_Decor_CheckoutSign", sx - 40.5, yi0 + 16, FLOOR_TOP + 9.5)
-    cols = (sx - 38, sx + 2)
-    rows = (yi0 + 28, yi0 + 44, yi0 + 60)
-    shelves = [["CM_Fixture_SnackShelf", "CM_Fixture_WaterShelf"], ["CM_Fixture_PremiumShelf", "CM_Fixture_ToyShelf"],
-               ["CM_Fixture_SnackShelf", "CM_Fixture_WaterShelf"]]  # fmt: skip
-    for r, y in enumerate(rows):
-        for c, x in enumerate(cols):
-            put(shelves[r][c], x, y, FLOOR_TOP)
-    for x, a in ((sx - 44, "CM_Fixture_DrinkCooler"), (sx - 14, "CM_Fixture_DairyFridge"), (sx + 16, "CM_Fixture_ProduceFridge")):
-        put(a, x, yi1 - 3.1, FLOOR_TOP)
-    put("CM_Fixture_ProduceStand", x_right - 18, yi0 + 30, FLOOR_TOP)
-    put("CM_Fixture_BakeryCase", x_right - 18, yi0 + 50, FLOOR_TOP)
-    put("CM_Fixture_SnackBin", sx + 40, yi0 + 14, FLOOR_TOP)
-
-
-def dress_plot(P, to_world, group, index):
-    """Lot dressing on one plot: banner, cars, pads, delivery, trees (plot-local)."""
-    st = LAYOUT["plot"]["store"]
-    sr = LAYOUT["plot"]["stockroom"]
-    pk = LAYOUT["plot"]["parking"]
-    W, D = LAYOUT["plot"]["width"], LAYOUT["plot"]["depth"]
-    sx = st["x"]
-
-    def put(asset, x, y, z=PAD_TOP, rot=0.0):
-        loc, r = to_world(x, y, z, rot)
-        P.place(asset, loc, r, group)
-
-    put("CM_Prop_PlotBanner", W / 2 - 8, -D / 2 + 6)
-    put("CM_Tycoon_PurchasePad", sx - 20, -13)
-    put("CM_Tycoon_UpgradePad", sx + 20, -13)
-    put("CM_Tycoon_DeliveryStation", sr["x"] + sr["w"] / 2 + 7.5, sr["y"] - 26, rot=90)
-    put("CM_Prop_DeliveryTruck", sr["x"] + sr["w"] / 2 + 7.5, sr["y"] + 4)
-    # parked cars in a few bays (front row noses in toward the aisle)
-    cars = ["CM_Prop_ParkedCar_Red", "CM_Prop_ParkedCar_Blue", "CM_Prop_ParkedCar_Yellow"]
-    aisle_mid = (pk["y0"] + pk["y1"]) / 2
-    bays = [pk["x0"] + 4.5 + 9 * k for k in range(int((pk["x1"] - pk["x0"]) / 9))]
-    bays = [x for x in bays if abs(x - sx) > 10]
-    for k, x in enumerate(bays):
-        if (k * 7 + index * 3) % 5 in (0, 2):
-            put(cars[(k + index) % 3], x, (pk["y0"] + aisle_mid - 12) / 2 + 0.5, rot=180)
-        if (k * 5 + index) % 4 == 1:
-            put(cars[(k + index + 1) % 3], x, (aisle_mid + 12 + pk["y1"]) / 2 - 0.5)
-    for y in range(-70, 81, 30):  # trees on the side lawns
-        put("CM_Prop_Tree_Round" if (y // 30) % 2 else "CM_Prop_Tree_Pine", -W / 2 + 2, y, z=PAD_TOP)
-    for x in (-90, -60, -30, 0, 30):  # hedge along the back lawn, behind the store
-        put("CM_Prop_Bush", x, D / 2 - 2)
+    stages.build_stage(st, put, index)
 
 
 def dress_plaza(P):
@@ -195,7 +96,7 @@ def dress_plaza(P):
     for x in (-300, -230, -100, 100, 230, 300):
         for y in (-55, 55):
             P.place("CM_Prop_Tree_Round" if (x // 100 + y) % 2 else "CM_Prop_Tree_Pine", (x, y, z), 0, "plaza")
-    for x in range(-336, 337, 64):  # street lamps on both plaza edges, arms over the road
+    for x in range(int(-hw + 32), int(hw - 31), 64):  # street lamps on both plaza edges, arms over the road
         P.place("CM_Prop_StreetLamp", (x, hd - 4, z), 180, "plaza")
         P.place("CM_Prop_StreetLamp", (x, -hd + 4, z), 0, "plaza")
     for sx_ in (-1, 1):
@@ -219,8 +120,7 @@ def assemble():
     P.place("CM_Plaza_Pad", (0, 0, 0), group="plaza")
 
     # door x positions (world) decide where the crosswalks go
-    door_xs = {1: [c + LAYOUT["plot"]["store"]["x"] for c in rows["column_x"]],
-               -1: [c - LAYOUT["plot"]["store"]["x"] for c in rows["column_x"]]}  # fmt: skip
+    door_xs = {1: [c + stages.DOOR_X for c in rows["column_x"]], -1: [c - stages.DOOR_X for c in rows["column_x"]]}
 
     for side in (1, -1):  # 1 = north row, -1 = south row
         y_road = side * rd["plaza_road_y"]
@@ -244,13 +144,18 @@ def assemble():
 
     dress_plaza(P)
 
+    problems = []
+    for st in stages.STAGES:
+        problems += stages.check_layout(st, asset_size) + stages.check_lot(st, asset_size)
+    plot_stages = LAYOUT["plot_stages"]
+    k = 0
     for side, row_y in ((1, rows["north_row_y"]), (-1, rows["south_row_y"])):
         rot = 0 if side > 0 else 180
         for i, cx in enumerate(rows["column_x"]):
-            group = "plot_%s%d" % ("N" if side > 0 else "S", i + 1)
-            P.place("CM_Plot_Pad", (cx, row_y, 0), rot, group)
-            build_store(P, plot_frame(cx, row_y, rot), group)
-            dress_plot(P, plot_frame(cx, row_y, rot), group, i + (0 if side > 0 else 3))
+            st = stages.stage(plot_stages[k])
+            group = "plot_%s%d_%s" % ("N" if side > 0 else "S", i + 1, st["name"])
+            place_stage(P, plot_frame(cx, row_y, rot), st, group, k)
+            k += 1
 
     os.makedirs(MAP_DIR, exist_ok=True)
     with open(os.path.join(MAP_DIR, "placements.json"), "w") as f:
@@ -258,50 +163,100 @@ def assemble():
                    "(bottom centre); rotation_z in degrees about +Z. See Documentation/IMPORT_GUIDE.md.",
                    "count": len(P.records), "placements": P.records}, f, indent=1)  # fmt: skip
         f.write("\n")
-    return col, P
+    return col, P, problems
+
+
+def plot_store_box(k):
+    """World bounding box (lo, hi) of plot k's store and its forecourt, and the view direction from the plaza."""
+    rows = LAYOUT["rows"]
+    st = stages.stage(LAYOUT["plot_stages"][k])
+    north = k < 3
+    px = rows["column_x"][k % 3]
+    py = rows["north_row_y"] if north else rows["south_row_y"]
+    fx0, fy0, fx1, fy1 = stages.footprint(st)
+    sx1 = stages.stockroom_centre(st)[0] + stages.STOCK_W / 2
+    corners = [(fx0 - 6, fy0 - 26), (sx1, fy1)]
+    if north:
+        lo = Vector((px + corners[0][0], py + corners[0][1], 0))
+        hi = Vector((px + corners[1][0], py + corners[1][1], 20))
+        view = (-0.4, -1.0, 0.42)  # from the left, so the stockroom stays behind the store
+    else:
+        lo = Vector((px - corners[1][0], py - corners[1][1], 0))
+        hi = Vector((px - corners[0][0], py - corners[0][1], 20))
+        view = (0.4, 1.0, 0.42)
+    return st, lo, hi, view
 
 
 def render_views(col):
-    """Overhead, store-exterior and interior shots of the assembled map."""
-    scene = bpy.context.scene
+    """Overhead, stage lineup, store exterior and interior shots, and night, of the assembled map."""
+    from PIL import Image, ImageDraw
+
     for c in bpy.data.collections:  # only the map is visible
         c.hide_render = c is not col and c.name != "_preview"
     tmp, cam, world = cm._stage(ground_colour="grass")
     out = {}
+    P = lambda name: os.path.join(cm.PREVIEW_DIR, name)  # noqa: E731
 
     lo, hi = cm.world_bbox(list(col.objects))
     cm.frame_camera(cam, lo, hi, (2000, 1500), direction=(0.0, -0.35, 1.0), fill=0.62)
-    out["map_overhead"] = cm._render(os.path.join(cm.PREVIEW_DIR, "map_overhead.png"), (2000, 1500), 128)
+    out["map_overhead"] = cm._render(P("map_overhead.png"), (2000, 1500), 128)
 
-    rows = LAYOUT["rows"]
-    st = LAYOUT["plot"]["store"]
-    sx, sy = rows["column_x"][1] + st["x"], rows["north_row_y"] + st["y"]
-    store_lo = Vector((sx - 75, sy - 44 - 30, 0))
-    store_hi = Vector((sx + 105, sy + 44, 20))
-    cm.frame_camera(cam, store_lo, store_hi, (1920, 1080), direction=(0.45, -1.0, 0.38), fill=0.55)
-    out["map_store_exterior"] = cm._render(os.path.join(cm.PREVIEW_DIR, "map_store_exterior.png"), (1920, 1080), 64)
+    # one exterior per progression stage, then a labelled lineup sheet
+    shots = {}
+    for k, n in enumerate(LAYOUT["plot_stages"]):
+        if n in shots:
+            continue
+        st, lo, hi, view = plot_store_box(k)
+        cm.frame_camera(cam, lo, hi, (1280, 720), direction=view, fill=0.5)
+        shots[n] = (st, cm._render(P("stage_%d_%s.png" % (n, st["name"])), (1280, 720), 64))
+    sheet = Image.new("RGB", (1280 * 2, (720 + 40) * 3), (18, 36, 60))
+    draw = ImageDraw.Draw(sheet)
+    for i, n in enumerate(sorted(shots)):
+        st, path = shots[n]
+        x, y = (i % 2) * 1280, (i // 2) * 760
+        sheet.paste(Image.open(path).convert("RGB"), (x, y))
+        draw.text((x + 16, y + 728), "Stage %d: %s  (%g x %g store)" % (n, st["title"], st["w"], st["depth"]), fill=(244, 247, 251))
+    sheet.save(P("stages_lineup.png"))
+    out["stages_lineup"] = P("stages_lineup.png")
 
-    # interior: hide this store's roofs, look down into the aisles
+    # the supermarket plot for the exterior, interior and close-ups
+    k3 = LAYOUT["plot_stages"].index(3)
+    st, store_lo, store_hi, view = plot_store_box(k3)
+    north = k3 < 3
+    px = LAYOUT["rows"]["column_x"][k3 % 3]
+    py = LAYOUT["rows"]["north_row_y"] if north else LAYOUT["rows"]["south_row_y"]
+    fx0, fy0, fx1, fy1 = stages.footprint(st)
+    sgn = 1 if north else -1
+    sx, sy = px + sgn * stages.DOOR_X, py + sgn * (fy0 + fy1) / 2
+    cm.frame_camera(cam, store_lo, store_hi, (1920, 1080), direction=view, fill=0.55)
+    out["map_store_exterior"] = cm._render(P("map_store_exterior.png"), (1920, 1080), 64)
+
+    hw_, hd_ = st["w"] / 2, st["depth"] / 2
     roofs = [o for o in col.objects if (cm.part_name(o) == "Roof" or (cm.part_name(o) == "Glass" and o.matrix_world.translation.z > 18))
-             and abs(o.matrix_world.translation.x - sx) < 70 and abs(o.matrix_world.translation.y - sy) < 50]  # fmt: skip
+             and abs(o.matrix_world.translation.x - sx) < hw_ + 2 and abs(o.matrix_world.translation.y - sy) < hd_ + 2]  # fmt: skip
     for o in roofs:
         o.hide_render = True
-    cm.frame_camera(cam, Vector((sx - 66, sy - 43, 0)), Vector((sx + 66, sy + 43, 10)), (1920, 1080),
-                    direction=(0.25, -0.75, 1.0), fill=0.5)  # fmt: skip
-    out["map_store_interior"] = cm._render(os.path.join(cm.PREVIEW_DIR, "map_store_interior.png"), (1920, 1080), 64)
+    cm.frame_camera(cam, Vector((sx - hw_, sy - hd_, 0)), Vector((sx + hw_, sy + hd_, 10)), (1920, 1080),
+                    direction=(0.25 * sgn, -0.75 * sgn, 1.0), fill=0.5)  # fmt: skip
+    out["map_store_interior"] = cm._render(P("map_store_interior.png"), (1920, 1080), 64)
 
-    # close-ups from eye level inside the store: a stocked aisle and the checkouts
-    yi0 = sy - st["d"] / 2 + 1
-    ax, ay = sx - 38, yi0 + 28  # first gondola row, left column
-    cm.aim_camera(cam, (ax + 9, ay - 12, 7.5), (ax - 2, ay, FLOOR_TOP + 3.2), lens=30)
-    out["map_aisle"] = cm._render(os.path.join(cm.PREVIEW_DIR, "map_aisle.png"), (1920, 1080), 96)
-    cx, cy = sx - 54 + 13.5, yi0 + 10
-    cm.aim_camera(cam, (cx + 12, cy + 14, 11), (cx - 1, cy - 1, FLOOR_TOP + 3), lens=30)
-    out["map_checkout"] = cm._render(os.path.join(cm.PREVIEW_DIR, "map_checkout.png"), (1920, 1080), 96)
+    # eye-level close-ups: first gondola row (left column) and the checkouts, seen from inside
+    def local(x, y):
+        return (sx + sgn * x, sy + sgn * y)
+
+    yi0 = -hd_ + 1
+    ax, ay = local(-38, yi0 + 28 - 1 + 0.0)
+    ex, ey = local(-38 + 9, yi0 + 28 - 13)
+    cm.aim_camera(cam, (ex, ey, 7.5), (ax - 2 * sgn, ay, FLOOR_TOP + 3.2), lens=30)
+    out["map_aisle"] = cm._render(P("map_aisle.png"), (1920, 1080), 96)
+    cx, cy = local(-40.5, yi0 + 10)
+    ex, ey = local(-40.5 + 12, yi0 + 10 + 14)
+    cm.aim_camera(cam, (ex, ey, 11), (cx, cy, FLOOR_TOP + 3), lens=30)
+    out["map_checkout"] = cm._render(P("map_checkout.png"), (1920, 1080), 96)
     for o in roofs:
         o.hide_render = False
 
-    # night: dark sky, moonlight, every lamp part glowing plus a light at each street lamp
+    # night: dark sky, moonlight, every lamp part glowing plus a light at each lamp
     bg = world.node_tree.nodes["Background"]
     bg.inputs["Color"].default_value = (0.02, 0.03, 0.07, 1.0)
     bg.inputs["Strength"].default_value = 0.6
@@ -310,18 +265,18 @@ def render_views(col):
     for m in bpy.data.materials:
         if m.name.startswith("_glow_"):
             m.node_tree.nodes["Principled BSDF"].inputs["Emission Strength"].default_value = 18.0
-    lamps = []
     for o in col.objects:
         if cm.part_name(o) in ("Light", "LaneLamp") and o.type == "MESH":
             lo, hi = cm.world_bbox([o])
             ld = bpy.data.lights.new("_lamp", "POINT")
             ld.energy, ld.color, ld.shadow_soft_size = 2500 if hi.z > 8 else 300, (1.0, 0.85, 0.6), 1.0
             lamp = bpy.data.objects.new("_lamp", ld)
-            lamp.location = ((lo + hi) / 2) - cm.Vector((0, 0, 0.6))
+            lamp.location = ((lo + hi) / 2) - Vector((0, 0, 0.6))
             tmp.objects.link(lamp)
-            lamps.append(lamp)
-    cm.frame_camera(cam, store_lo, store_hi, (1920, 1080), direction=(0.45, -1.0, 0.38), fill=0.55)
-    out["map_night"] = cm._render(os.path.join(cm.PREVIEW_DIR, "map_night.png"), (1920, 1080), 128)
+    st5 = LAYOUT["plot_stages"].index(5)
+    _, lo, hi, view = plot_store_box(st5)
+    cm.frame_camera(cam, lo, hi, (1920, 1080), direction=view, fill=0.5)
+    out["map_night"] = cm._render(P("map_night.png"), (1920, 1080), 128)
 
     cm._teardown(tmp, world)
     for c in bpy.data.collections:

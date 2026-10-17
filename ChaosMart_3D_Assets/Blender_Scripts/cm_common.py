@@ -359,10 +359,10 @@ def prefixed(collection, name):
     return "%s:%s" % (collection.name, name)
 
 
-def make_anchor(collection, location, material):
+def make_anchor(collection, location, material, name="Anchor"):
     if ANCHOR_MODE == "empty":
-        obj = bpy.data.objects.new(prefixed(collection, "Anchor"), None)
-        obj["cm_name"] = "Anchor"
+        obj = bpy.data.objects.new(prefixed(collection, name), None)
+        obj["cm_name"] = name
         obj.empty_display_type = "PLAIN_AXES"
         obj.empty_display_size = 0.5
         obj.location = location
@@ -371,8 +371,8 @@ def make_anchor(collection, location, material):
     b = MeshBuilder(origin=location)
     s = 0.1
     b.box((-s, -s, -s), (s, s, s), "mint", bevel=0)
-    obj = b.to_object(prefixed(collection, "Anchor"), collection, material)
-    obj["cm_name"] = "Anchor"
+    obj = b.to_object(prefixed(collection, name), collection, material)
+    obj["cm_name"] = name
     return obj
 
 
@@ -439,6 +439,7 @@ class Asset:
         self.notes = notes
         self.checks = []
         self.measure = None  # object names that define the size; default all but Anchor
+        self.pivot = None  # None = bottom centre; otherwise a description of where the pivot is instead
 
     @property
     def objects(self):
@@ -447,7 +448,7 @@ class Asset:
     def sized_objects(self):
         if self.measure:
             return [o for o in self.objects if part_name(o) in self.measure]
-        return [o for o in self.objects if part_name(o) != "Anchor"]
+        return [o for o in self.objects if not part_name(o).startswith("Anchor")]
 
     def check(self, ok, label):
         self.checks.append((bool(ok), label))
@@ -463,10 +464,13 @@ class Asset:
             what = "" if not self.measure else " of " + "+".join(self.measure)
             self.check(ok, "size%s %s (expected %s)" % (what, fmt3(actual), expected))
         centre = (lo + hi) / 2
-        self.check(
-            abs(lo.z) <= SIZE_TOLERANCE and abs(centre.x) <= SIZE_TOLERANCE and abs(centre.y) <= SIZE_TOLERANCE,
-            "pivot at bottom centre (min z %.3f, centre x %.3f, y %.3f)" % (lo.z, centre.x, centre.y),
-        )
+        if self.pivot:
+            self.check(True, "pivot at %s" % self.pivot)
+        else:
+            self.check(
+                abs(lo.z) <= SIZE_TOLERANCE and abs(centre.x) <= SIZE_TOLERANCE and abs(centre.y) <= SIZE_TOLERANCE,
+                "pivot at bottom centre (min z %.3f, centre x %.3f, y %.3f)" % (lo.z, centre.x, centre.y),
+            )
         total = sum(tri_count(o) for o in self.objects)
         self.total_tris = total
         self.check(total <= self.budget, "%d tris (budget %d)" % (total, self.budget))
@@ -495,7 +499,7 @@ class Asset:
             "size_measured_on": self.measure or "all objects except Anchor",
             "triangles": self.total_tris,
             "triangles_per_object": {part_name(o): tri_count(o) for o in self.objects},
-            "pivot": "bottom-centre (0, 0, 0)",
+            "pivot": self.pivot or "bottom-centre (0, 0, 0)",
             "fbx_folder": "Roblox_FBX/" + self.folder,
             "children": [part_name(o) for o in self.objects],
             "colour_slots": {c: palette.HEX[c] for c in colours},
@@ -743,7 +747,7 @@ def render_preview(asset_groups, out_name, resolution=(1600, 900), samples=48, d
         for o in objs:
             moved.append((o, o.location.copy()))
             o.location += shift
-            o.hide_render = part_name(o) == "Anchor"
+            o.hide_render = part_name(o).startswith("Anchor")
         cursor_x += (hi.x - lo.x) + gap
         row_d = max(row_d, hi.y - lo.y)
     bpy.context.view_layer.update()
@@ -771,7 +775,7 @@ def render_contact_sheet(assets, out_name, tile=(420, 320), samples=24, columns=
     tmp, cam, world = _stage()
     paths = []
     for a in assets:
-        restore = _solo([o for o in a.objects if part_name(o) != "Anchor"])
+        restore = _solo([o for o in a.objects if not part_name(o).startswith("Anchor")])
         lo, hi = world_bbox(a.sized_objects())
         frame_camera(cam, lo, hi, tile, direction=(0.35, -1.0, 0.4), fill=1.0)
         png = _render(os.path.join(tile_dir, a.file_name + ".png"), tile, samples)
@@ -802,7 +806,7 @@ def render_contact_sheet(assets, out_name, tile=(420, 320), samples=24, columns=
 REGISTRY = {}  # family -> list of spec dicts
 
 
-def asset(family, file_name, folder, size, budget="prop", notes="", measure=None, category=None, recentre=False):
+def asset(family, file_name, folder, size, budget="prop", notes="", measure=None, category=None, recentre=False, pivot=None):
     """Register a builder `fn(kit)` that creates one exported asset.
 
     `recentre` shifts the whole asset so its bounding box's bottom centre sits on
@@ -811,7 +815,7 @@ def asset(family, file_name, folder, size, budget="prop", notes="", measure=None
     def deco(fn):
         REGISTRY.setdefault(family, []).append(
             dict(fn=fn, file_name=file_name, folder=folder, size=size, budget=budget,
-                 notes=notes, measure=measure, category=category or family, recentre=recentre)
+                 notes=notes, measure=measure, category=category or family, recentre=recentre, pivot=pivot)
         )  # fmt: skip
         return fn
 
@@ -828,8 +832,8 @@ class Kit:
     def part(self, name, origin=(0, 0, 0), material="palette"):
         return _Part(self, name, origin, material)
 
-    def anchor(self, location):
-        return make_anchor(self.collection, location, self.mats["palette"])
+    def anchor(self, location, name="Anchor"):
+        return make_anchor(self.collection, location, self.mats["palette"], name)
 
 
 class _Part:
@@ -860,7 +864,7 @@ def build_family(family, mats, only=None):
         extra = spec["fn"](Kit(col, mats))
         bpy.context.view_layer.update()  # matrix_world of new parts is stale until this
         if spec["recentre"]:
-            objs = [o for o in col.objects if part_name(o) != "Anchor"]
+            objs = [o for o in col.objects if not part_name(o).startswith("Anchor")]
             lo, hi = world_bbox(objs)
             shift = Vector(((lo.x + hi.x) / 2, (lo.y + hi.y) / 2, lo.z))
             for o in col.objects:
@@ -868,6 +872,7 @@ def build_family(family, mats, only=None):
             bpy.context.view_layer.update()
         a = Asset(spec["file_name"], spec["category"], col, spec["size"], BUDGETS[spec["budget"]], spec["notes"], spec["folder"])
         a.measure = spec["measure"]
+        a.pivot = spec["pivot"]
         a.run_checks()
         if callable(extra):  # builders may return a function adding their own checks
             extra(a)
@@ -907,7 +912,7 @@ def validate_exports():
         if tris != entry["triangles"]:
             problems.append("%s: %d tris after import, %d built" % (name, tris, entry["triangles"]))
         measured = entry["size_measured_on"]
-        sized = [o for o in objs if (o.name in measured if isinstance(measured, list) else o.name != "Anchor")]
+        sized = [o for o in objs if (o.name in measured if isinstance(measured, list) else not o.name.startswith("Anchor"))]
         size = wxh_d(*world_bbox(sized))
         if any(abs(a - b) > 0.02 for a, b in zip(size, entry["size_wxhxd"])):
             problems.append("%s: size %s after import, %s built" % (name, fmt3(size), entry["size_wxhxd"]))

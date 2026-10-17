@@ -21,8 +21,7 @@ import bpy  # noqa: E402
 import cm_common as cm  # noqa: E402
 import palette  # noqa: E402
 
-FAMILIES = ["products", "fixtures", "interiors", "shell", "roads", "props", "gameplay", "npcs"]
-MAP_NEEDS = ["fixtures", "shell", "roads", "props", "gameplay"]
+FAMILIES = ["products", "fixtures", "interiors", "shell", "stages", "roads", "props", "gameplay", "npcs"]
 
 
 def parse_args():
@@ -69,8 +68,12 @@ def main():
     if not args.no_map and complete:
         import map_assembly
 
-        col, placer = map_assembly.assemble()
+        col, placer, problems = map_assembly.assemble()
         print("map: %d placements" % len(placer.records))
+        print("store layouts: %d problem(s)" % len(problems))
+        for p in problems:
+            print("   FAIL", p)
+        failures += len(problems)
         if not args.no_render:
             for name, path in map_assembly.render_views(col).items():
                 print("rendered", path)
