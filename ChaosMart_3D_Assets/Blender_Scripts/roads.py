@@ -144,6 +144,16 @@ def walk_slab(b, x0, y0, x1, y1, joints_along="y"):
             y += 4
 
 
+@cm.asset("roads", "CM_Road_ParkingDivider", "Roads", (4, None, 20), budget="prop",
+          notes="Planted island between parking rows: curb, lawn and two clipped shrubs.")  # fmt: skip
+def parking_divider(kit):
+    with kit.part("Body") as b:
+        b.box((-2, -10, 0), (2, 10, 0.6), "metal", bevel=0.12)
+        b.top_quad(-1.6, -9.6, 1.6, 9.6, 0.6 + EPS, "grass")
+        for y in (-5, 5):
+            b.ellipsoid((0, y, 1.5), (1.3, 1.6, 1.1), "shrub", segments=10, rings=5)
+
+
 @cm.asset("roads", "CM_Sidewalk_Straight", "Roads", (WALK_W, WALK_T, SEG_L), budget="prop",
           notes="8 x 32 sidewalk; the curb (lighter, bevelled) is on the -X side facing the road.")  # fmt: skip
 def sidewalk_straight(kit):

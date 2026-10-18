@@ -21,7 +21,7 @@ import bpy  # noqa: E402
 import cm_common as cm  # noqa: E402
 import palette  # noqa: E402
 
-FAMILIES = ["products", "fixtures", "interiors", "shell", "stages", "roads", "props", "gameplay", "npcs"]
+FAMILIES = ["products", "fixtures", "interiors", "lods", "shell", "stages", "roads", "props", "gameplay", "npcs"]
 
 
 def parse_args():

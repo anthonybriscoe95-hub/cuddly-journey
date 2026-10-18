@@ -7,19 +7,19 @@ is its bottom centre. **Parts** are the objects inside the FBX (they become Mesh
 
 | Folder | Assets | Triangles |
 |---|---:|---:|
-| Buildings | 28 | 11,488 |
-| Interiors | 37 | 33,599 |
-| Products | 33 | 4,097 |
-| Roads | 9 | 568 |
-| Environment | 35 | 10,306 |
+| Buildings | 30 | 12,410 |
+| Interiors | 62 | 47,383 |
+| Products | 35 | 4,245 |
+| Roads | 10 | 774 |
+| Environment | 38 | 12,090 |
 | Characters | 29 | 9,459 |
 | Gameplay | 13 | 4,987 |
-| Events | 10 | 1,550 |
-| **Total** | **194** | **76,054** |
+| Events | 13 | 2,286 |
+| **Total** | **230** | **93,634** |
 
 All size, pivot and budget checks passed.
 
-## Buildings (28)
+## Buildings (30)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
@@ -28,6 +28,7 @@ All size, pivot and budget checks passed.
 | `CM_Shell_DoorFrame_Luxury.fbx` | 16 × 18 × 1 | 326 | Body | Luxury entrance module: gold jambs, same 14.4 x 12 opening as the standard door frame. |
 | `CM_Shell_Dumpster.fbx` | 6 × 4.4 × 4 | 138 | Body, Lid | Exterior trash container with a separate Lid (hinged at the back). |
 | `CM_Shell_EntranceCanopy.fbx` | 24 × 13 × 10 | 320 | Body, Light | Luxury entrance canopy: 24 wide, projects 10 from the wall (+Y edge mounts on the wall), underside at 12 on two gold columns. Light is the soffit strip. |
+| `CM_Shell_FacadePanel.fbx` | 4 × 18 × 1 | 346 | Body | Decorative 4-wide feature panel: teal field with off-white fins; tiles with the standard walls. |
 | `CM_Shell_Floor_CornerStore.fbx` | 54 × 0.4 × 40 | 132 | Floor | Corner Store floor slab under the whole 54 x 40 shell; 4-stud tiles. |
 | `CM_Shell_Floor_LuxuryCenter.fbx` | 186 × 0.4 × 112 | 1,256 | Floor | Luxury Shopping Center floor slab under the whole 186 x 112 shell; 4-stud tiles. |
 | `CM_Shell_Floor_MegaMart.fbx` | 186 × 0.4 × 104 | 1,164 | Floor | Mega Mart floor slab under the whole 186 x 104 shell; 4-stud tiles. |
@@ -51,35 +52,60 @@ All size, pivot and budget checks passed.
 | `CM_Shell_WallLight.fbx` | 1 × 1.4 × 0.9 | 112 | Body, Light | Exterior wall sconce; mount the back (+Y) on the wall. Light is the warm lamp part (set Neon). |
 | `CM_Shell_Wall_Luxury.fbx` | 4 × 18 × 1 | 306 | Body | Luxury 4-wide wall: navy plinth, cream stone field with a gold-framed panel, gold band. |
 | `CM_Shell_Wall_Solid.fbx` | 4 × 18 × 1 | 304 | Body | 4-stud solid wall module; exterior -Y with a recessed panel. |
+| `CM_Shell_Wall_Window.fbx` | 8 × 18 × 1 | 576 | Body, Glass | 8-wide wall module with a 5 x 5 window (sill at 5); Glass is separate. For side and back walls. |
 
-## Interiors (37)
+## Interiors (62)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
 | `CM_Decor_CheckoutSign.fbx` | 14 × 3 × 0.5 | 200 | Body, Face, Neon, Rods | Board is 14 x 3 x 0.5 with its bottom at the pivot; Rods rise 4.4 above it. Face is blank. |
 | `CM_Fixture_BakeryCase.fbx` | 22 × 4.6 × 5 | 1,406 | Body, Glass, PriceTag, Anchor, Item1…Item7 | Counter with a sloped glass front; loaves on two stepped decks. |
+| `CM_Fixture_BakeryCase_Far.fbx` | 22 × 4.6 × 5 | 496 | Body, Glass, Anchor | Distant-detail version of CM_Fixture_BakeryCase: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_CheckoutLane.fbx` | 3 × 3.6 × 9 | 464 | Body, Belt, Register, Screen, LanePost, LanePlate, LaneLamp, Anchor | Counter is 3 x 3.6 x 9 along Y; Belt, Register, Screen and LanePost are separate parts. LanePlate is the blank lane-number face; LaneLamp can be set to Neon. |
+| `CM_Fixture_ClothingRack.fbx` | 12 × 6 × 4 | 784 | Body, PriceTag, Anchor, Item1…Item5 | Chrome clothing rail; Item1-5 are shirts on hangers hooked over the rail. |
+| `CM_Fixture_ClothingRack_Far.fbx` | 12 × 6 × 4 | 284 | Body, Anchor | Distant-detail version of CM_Fixture_ClothingRack: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_DairyFridge.fbx` | 22 × 9 × 6 | 1,530 | Body, Glass, LightStrip, PriceTag, Anchor, Item1…Item7 | Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon. |
+| `CM_Fixture_DairyFridge_Far.fbx` | 22 × 9 × 6 | 578 | Body, Glass, Anchor | Distant-detail version of CM_Fixture_DairyFridge: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_DrinkCooler.fbx` | 24 × 9 × 6 | 2,334 | Body, Glass, LightStrip, PriceTag, Anchor, Item1…Item10 | Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon. |
+| `CM_Fixture_DrinkCooler_Far.fbx` | 24 × 9 × 6 | 614 | Body, Glass, Anchor | Distant-detail version of CM_Fixture_DrinkCooler: one Body mesh, stock shown as coloured blocks. |
+| `CM_Fixture_ElectronicsTable.fbx` | 12 × 6.2 × 6 | 1,016 | Body, PriceTag, Anchor, Item1…Item6 | Display table with a raised back riser; Item1-6 are laptops, phones, headphones and controllers. |
+| `CM_Fixture_ElectronicsTable_Far.fbx` | 12 × 6.2 × 6 | 308 | Body, Anchor | Distant-detail version of CM_Fixture_ElectronicsTable: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_Endcap.fbx` | 6 × 7.6 × 5 | 784 | Body, PriceTag, Anchor, Item1…Item4 | End-of-aisle promo display; snaps onto a gondola end. 4 Item slots of cereal. |
+| `CM_Fixture_Endcap_Far.fbx` | 6 × 7.6 × 5 | 436 | Body, Anchor | Distant-detail version of CM_Fixture_Endcap: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_FreezerChest.fbx` | 12 × 3.6 × 5 | 1,562 | Body, Glass, PriceTag, Anchor, Item1…Item6 | Chest freezer with sliding Glass lids; 6 Item slots of ice cream and frozen pizza. |
+| `CM_Fixture_FreezerChest_Far.fbx` | 12 × 3.6 × 5 | 434 | Body, Glass, Anchor | Distant-detail version of CM_Fixture_FreezerChest: one Body mesh, stock shown as coloured blocks. |
+| `CM_Fixture_FreezerUpright.fbx` | 12 × 9 × 6 | 1,862 | Body, Glass, LightStrip, PriceTag, Anchor, Item1…Item6 | Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon. |
+| `CM_Fixture_FreezerUpright_Far.fbx` | 12 × 9 × 6 | 494 | Body, Glass, Anchor | Distant-detail version of CM_Fixture_FreezerUpright: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_PremiumShelf.fbx` | 28 × 7.6 × 5 | 1,622 | Body, PriceTag, Anchor, Item1…Item7 | Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high. |
+| `CM_Fixture_PremiumShelf_Far.fbx` | 28 × 7.6 × 5 | 670 | Body, Anchor | Distant-detail version of CM_Fixture_PremiumShelf: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_ProduceFridge.fbx` | 24 × 9 × 6 | 2,680 | Body, Glass, LightStrip, PriceTag, Anchor, Item1…Item10 | Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon. |
+| `CM_Fixture_ProduceFridge_Far.fbx` | 24 × 9 × 6 | 580 | Body, Glass, Anchor | Distant-detail version of CM_Fixture_ProduceFridge: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_ProduceStand.fbx` | 24 × 3.6 × 5 | 2,866 | Body, PriceTag, Anchor, Item1…Item10 | Wooden stand with crates tilted 12 degrees toward the shopper. |
+| `CM_Fixture_ProduceStand_Far.fbx` | 24 × 3.6 × 5 | 766 | Body, Anchor | Distant-detail version of CM_Fixture_ProduceStand: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_SnackBin.fbx` | 28 × 3.4 × 5 | 2,622 | Body, PriceTag, Anchor, Item1…Item12 | Low open bin, six compartments per row; price board on a raised back rail. |
+| `CM_Fixture_SnackBin_Far.fbx` | 28 × 3.4 × 5 | 606 | Body, Anchor | Distant-detail version of CM_Fixture_SnackBin: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_SnackShelf.fbx` | 28 × 7.6 × 5 | 2,826 | Body, PriceTag, Anchor, Item1…Item10 | Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high. |
+| `CM_Fixture_SnackShelf_Far.fbx` | 28 × 7.6 × 5 | 706 | Body, Anchor | Distant-detail version of CM_Fixture_SnackShelf: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_ToyShelf.fbx` | 28 × 7.6 × 5 | 1,418 | Body, PriceTag, Anchor, Item1…Item7 | Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high. |
+| `CM_Fixture_ToyShelf_Far.fbx` | 28 × 7.6 × 5 | 718 | Body, Anchor | Distant-detail version of CM_Fixture_ToyShelf: one Body mesh, stock shown as coloured blocks. |
 | `CM_Fixture_WaterShelf.fbx` | 28 × 7.6 × 5 | 2,794 | Body, PriceTag, Anchor, Item1…Item12 | Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high. |
+| `CM_Fixture_WaterShelf_Far.fbx` | 28 × 7.6 × 5 | 730 | Body, Anchor | Distant-detail version of CM_Fixture_WaterShelf: one Body mesh, stock shown as coloured blocks. |
 | `CM_Interior_AisleSign.fbx` | 8 × 2.4 × 0.3 | 152 | Body, Face, Rods | Hanging aisle sign; Face is blank on both sides (aisle number / category). Rods rise 3 above. |
+| `CM_Interior_Broom.fbx` | 2 × 5.05 × 1.49 | 108 | Body | Push broom for the cleaner (stand it upright; bristles on the floor). |
 | `CM_Interior_CardboardBox.fbx` | 2 × 1.6 × 1.6 | 48 | Body | Taped shipping box with a blank label. |
+| `CM_Interior_CashRegister.fbx` | 2.2 × 2.1 × 1.51 | 230 | Body | Standalone till: keypad, cash drawer, customer display and receipt printer. |
 | `CM_Interior_CeilingLight.fbx` | 8 × 0.5 × 1.6 | 80 | Body, Light | Linear ceiling light; hang its top at the ceiling. Light is the diffuser (set Neon). |
+| `CM_Interior_ConveyorBelt.fbx` | 2.6 × 3.6 × 8 | 134 | Body | Free-standing belt section (8 long along Y) to extend checkout lanes; belt top at 3.6. |
 | `CM_Interior_DeliveryCrate.fbx` | 3 × 1.6 × 2 | 124 | Body | Stackable plastic produce crate with hand holes. |
 | `CM_Interior_DigitalAdScreen.fbx` | 4 × 7 × 1.6 | 102 | Body, Face | Freestanding digital advert totem; Face is the blank screen for an ImageLabel. |
 | `CM_Interior_EmployeeDesk.fbx` | 6 × 4.6 × 3 | 188 | Body | Office desk with a monitor, keyboard and drawer pedestal. |
+| `CM_Interior_FilingCabinet.fbx` | 2 × 4.5 × 2 | 62 | Body | Three-drawer office filing cabinet. |
+| `CM_Interior_HandScanner.fbx` | 0.36 × 0.94 × 0.84 | 102 | Body | Handheld barcode scanner (pistol grip, red scan window) for cashiers and stockers. |
 | `CM_Interior_MopBucket.fbx` | 2.4 × 4.2 × 1.6 | 224 | Body | Mop bucket with wringer and mop (cleaner prop). |
 | `CM_Interior_OfficeChair.fbx` | 2.2 × 4 × 2.25 | 296 | Body | Swivel office chair facing -Y. |
 | `CM_Interior_Pallet.fbx` | 4 × 0.6 × 4 | 352 | Body | Wooden shipping pallet. |
 | `CM_Interior_PalletStack.fbx` | 4 × 3.46 × 4 | 560 | Body | Pallet loaded with a shrink-wrapped stack of boxes (a delivery). |
+| `CM_Interior_PriceTagHolder.fbx` | 4 × 0.5 × 0.15 | 46 | Body, Face | Shelf-edge price strip; Face is the blank label for a SurfaceGui price. |
 | `CM_Interior_RestroomDoor.fbx` | 4 × 8 × 0.5 | 234 | Body, Door, SignPlate | Restroom door in its frame; SignPlate is blank (draw the icon in-game). Door hinges on the left. |
 | `CM_Interior_SecurityCamera.fbx` | 0.7 × 1 × 1.72 | 120 | Body, Lens | Wall-mounted bullet camera; mount the back plate (+Y) on a wall. Lens is the red LED part. |
 | `CM_Interior_SecurityGate.fbx` | 5 × 5 × 1 | 268 | Body, Alarm | Anti-theft gate pair 4 apart; Alarm is the light bar on top (flash it when a shoplifter passes). |
@@ -93,8 +119,9 @@ All size, pivot and budget checks passed.
 | `CM_Interior_WallDecal.fbx` | 6 × 4 × 0.24 | 78 | Body | Framed wall decoration (fresh-produce motif) for interior walls. |
 | `CM_Interior_WetFloorSign.fbx` | 1.59 × 2.6 × 1.38 | 101 | Body | Yellow A-frame caution sign (Supermarket Cleanup event). |
 | `CM_Shelf_Double_Aisle.fbx` | 28 × 7.6 × 10 | 2,890 | Body, PriceTag, PriceTagBack, Anchor, AnchorBack, Item1…Item20 | Double-sided gondola 28 x 7.6 x 10: Item1-10 face the front (-Y, chips), Item11-20 face the back (+Y, cereal). Anchor is in front, AnchorBack behind; PriceTag and PriceTagBack likewise. |
+| `CM_Shelf_Double_Aisle_Far.fbx` | 28 × 7.6 × 10 | 1,020 | Body, Anchor, AnchorBack | Distant-detail version of CM_Shelf_Double_Aisle: one Body mesh, stock shown as coloured blocks. |
 
-## Products (33)
+## Products (35)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
@@ -119,11 +146,13 @@ All size, pivot and budget checks passed.
 | `CM_Product_HoneyJar.fbx` | 0.78 × 1.03 × 0.78 | 72 | HoneyJar |  |
 | `CM_Product_IceCreamTub.fbx` | 1.43 × 1 × 1.43 | 120 | IceCreamTub |  |
 | `CM_Product_JuiceCarton.fbx` | 0.9 × 1.94 × 0.93 | 74 | JuiceCarton |  |
+| `CM_Product_Laptop.fbx` | 1.9 × 1.3 × 1.3 | 96 | Laptop |  |
 | `CM_Product_Lettuce.fbx` | 1.2 × 1.12 × 1.14 | 136 | Lettuce |  |
 | `CM_Product_MilkCarton.fbx` | 0.9 × 1.94 × 0.93 | 74 | MilkCarton |  |
 | `CM_Product_Orange.fbx` | 0.82 × 0.86 × 0.78 | 136 | Orange |  |
 | `CM_Product_Pastry.fbx` | 1.6 × 0.64 × 0.66 | 112 | Pastry |  |
 | `CM_Product_PremiumGiftBox.fbx` | 1.62 × 1.3 × 1.22 | 112 | PremiumGiftBox |  |
+| `CM_Product_SmartphoneBox.fbx` | 1.1 × 1.5 × 0.36 | 52 | SmartphoneBox |  |
 | `CM_Product_SodaBottle.fbx` | 0.69 × 1.91 × 0.69 | 92 | SodaBottle |  |
 | `CM_Product_SodaCan.fbx` | 0.6 × 0.96 × 0.6 | 136 | SodaCan |  |
 | `CM_Product_TShirtStack.fbx` | 1.6 × 0.64 × 1.11 | 134 | TShirtStack |  |
@@ -132,7 +161,7 @@ All size, pivot and budget checks passed.
 | `CM_Product_WaterBottle.fbx` | 0.58 × 1.7 × 0.58 | 92 | WaterBottle |  |
 | `CM_Prop_ShoppingBag.fbx` | 1.1 × 1.3 × 0.7 | 110 | Bag, Handles | Carried bag 1.1 x 1.3 x 0.7 (Bag); Handles arch above it. |
 
-## Roads (9)
+## Roads (10)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
@@ -140,13 +169,14 @@ All size, pivot and budget checks passed.
 | `CM_Road_Crosswalk.fbx` | 24 × 0.4 × 12 | 32 | Road | 12-long segment with zebra bars and stop lines; put it where shoppers cross to a plot. |
 | `CM_Road_Intersection.fbx` | 24 × 0.41 × 24 | 32 | Road | Plain 24 x 24 junction square with a manhole; joins four straights. |
 | `CM_Road_Parking.fbx` | 32 × 0.75 × 20 | 198 | Road | Asphalt parking strip: four 8 x 18 bays opening to -Y, with wheel stops. |
+| `CM_Road_ParkingDivider.fbx` | 4 × 2.6 × 20 | 206 | Body | Planted island between parking rows: curb, lawn and two clipped shrubs. |
 | `CM_Road_Short.fbx` | 24 × 0.4 × 10 | 18 | Road | 10-long filler: Short + Crosswalk (12) + Short = one 32 segment. |
 | `CM_Road_Straight.fbx` | 24 × 0.4 × 32 | 24 | Road | Two-lane segment along Y: dashed yellow centre line, white edge lines. |
 | `CM_Road_TJunction.fbx` | 24 × 0.4 × 24 | 32 | Road | T-junction: the road runs along Y, a branch leaves toward +X (stop line on its inbound lane). |
 | `CM_Sidewalk_Corner.fbx` | 8 × 1 × 8 | 106 | Sidewalk | 8 x 8 corner with curbs on -X and -Y (the two road sides). |
 | `CM_Sidewalk_Straight.fbx` | 8 × 1 × 32 | 70 | Sidewalk | 8 x 32 sidewalk; the curb (lighter, bevelled) is on the -X side facing the road. |
 
-## Environment (35)
+## Environment (38)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
@@ -165,11 +195,13 @@ All size, pivot and budget checks passed.
 | `CM_Prop_BusStop.fbx` | 12 × 8 × 4 | 272 | Body, Face, Glass | Bus shelter with a glass back (Glass), bench and a blank advert panel (Face). |
 | `CM_Prop_Bush.fbx` | 4 × 2.6 × 3 | 240 | Body | Low clipped hedge bush. |
 | `CM_Prop_DeliveryTruck.fbx` | 8 × 9 × 22 | 536 | Body, RearDoor | Box truck for the Surprise Delivery event; RearDoor is separate so it can roll up. |
+| `CM_Prop_EventStage.fbx` | 30 × 16 × 16 | 628 | Body, Face, Light | Plaza event stage: raised deck with steps, truss frame, speaker stacks, a blank backdrop (Face) and spotlights (Light). |
 | `CM_Prop_Fence.fbx` | 8 × 3 × 0.4 | 274 | Body | 8-long decorative picket fence module; tiles end to end. |
 | `CM_Prop_FlowerPlanter.fbx` | 4 × 2.33 × 4 | 452 | Body | Round planter with flowers; the flower heads are decals on the soil mound. |
 | `CM_Prop_Fountain.fbx` | 26 × 10 × 26 | 820 | Body, Water | Plaza fountain: rim diameter 26 and 2.4 high, centre spire 10 high; Water is separate. |
 | `CM_Prop_LeaderboardStage.fbx` | 40 × 20 × 8.01 | 198 | Body, Board, Face | Leaderboard: 40 x 14 x 1 board on two posts over a low stage; Face is blank for the scores. |
 | `CM_Prop_MiniMartSign.fbx` | 36 × 7 × 1 | 136 | Body, Face, Neon | Rooftop prestige sign 36 x 7 with a star motif; Face blank, Neon is the outline tube. |
+| `CM_Prop_Monument.fbx` | 16 × 15.07 × 16 | 888 | Body, Face | Central plaza monument: tiered plinth carrying a giant golden shopping cart; Face is the blank plaque. |
 | `CM_Prop_ParkedCar_Blue.fbx` | 6 × 4 × 11 | 354 | Body | Stylised compact car, nose toward -Y; colour variant Blue. |
 | `CM_Prop_ParkedCar_Red.fbx` | 6 × 4 × 11 | 354 | Body | Stylised compact car, nose toward -Y; colour variant Red. |
 | `CM_Prop_ParkedCar_Yellow.fbx` | 6 × 4 × 11 | 354 | Body | Stylised compact car, nose toward -Y; colour variant Yellow. |
@@ -177,6 +209,7 @@ All size, pivot and budget checks passed.
 | `CM_Prop_PlazaKiosk_Orange.fbx` | 14 × 7 × 8 | 536 | Body, Face | Plaza booth 14 x 7 x 8, Orange. Face is the blank sign board on the roof. |
 | `CM_Prop_PlazaKiosk_Purple.fbx` | 14 × 7 × 8 | 536 | Body, Face | Plaza booth 14 x 7 x 8, Purple. Face is the blank sign board on the roof. |
 | `CM_Prop_PlazaKiosk_Teal.fbx` | 14 × 7 × 8 | 536 | Body, Face | Plaza booth 14 x 7 x 8, Teal. Face is the blank sign board on the roof. |
+| `CM_Prop_PlazaSign.fbx` | 6 × 8 × 1.2 | 268 | Body, Face | Plaza directory board on two posts; Face is blank for the map or store list. |
 | `CM_Prop_PlotBanner.fbx` | 13.23 × 24 × 1.66 | 142 | Pole, Flag | Plot banner: 24-high pole, Flag 12 x 7 (blank face, hangs toward +X). |
 | `CM_Prop_SpawnArch.fbx` | 48 × 20 × 3 | 424 | Body, Face | Spawn gate: two 3 x 15 x 3 pillars with centres 44 apart and a 48 x 5 x 2 header (Face blank). |
 | `CM_Prop_StreetLamp.fbx` | 1.4 × 12 × 4.05 | 144 | Body, Light | 12-high street lamp; arm reaches toward -Y. Light is the lamp face (set Neon at night). |
@@ -238,17 +271,20 @@ All size, pivot and budget checks passed.
 | `CM_Tycoon_UpgradePreview.fbx` | 8 × 5 × 8 | 352 | Body, Hologram | Ghost marker showing where an upgrade will appear: floor ring plus a Hologram frame (fade it). |
 | `CM_Tycoon_VIPRope.fbx` | 8 × 3.57 × 0.84 | 328 | Body | VIP decoration: two gold stanchions joined by a velvet rope. |
 
-## Events (10)
+## Events (13)
 
 | File | Size (W × H × D) | Tris | Parts | Notes |
 |---|---|---:|---|---|
 | `CM_Event_CashStack.fbx` | 2.07 × 1.05 × 1.13 | 192 | Body | Double Cash collectible: a banded bundle of bills. |
 | `CM_Event_CelebrityStar.fbx` | 4 × 0.12 × 4 | 76 | Body | Floor star marking the Celebrity Shopper's spot. |
+| `CM_Event_Coin.fbx` | 2 × 2 × 0.32 | 204 | Body | Double Cash collectible coin standing on its edge, star on both faces; spin it. |
 | `CM_Event_EmergencyLight.fbx` | 1.4 × 1.35 × 1.45 | 212 | Body, Light | Rotating beacon for Power Outage / Shoplifter Chase; Light is the dome (spin + Neon). |
 | `CM_Event_Generator.fbx` | 4.1 × 6.4 × 2.41 | 174 | Body, Light | Power Outage generator with a work Light on a mast. |
 | `CM_Event_GoldenCart.fbx` | 3.08 × 3.53 × 4.96 | 406 | Body | Golden Shopping Cart event: the standard cart in gold. |
 | `CM_Event_RedCarpet.fbx` | 6 × 0.11 × 20 | 40 | Body | Celebrity Shopper red carpet runner with gold edging. |
 | `CM_Event_SaleBanner.fbx` | 16 × 7.4 × 0.3 | 118 | Body, Face | Hanging Black Friday sale banner with zig-zag edges; Face is blank. |
+| `CM_Event_SaleStandee.fbx` | 3 × 6 × 1.2 | 124 | Body, Face | Black Friday doorbuster standee: red board, yellow burst, blank Face for the deal. |
 | `CM_Event_Spill.fbx` | 4.6 × 0.06 × 3.25 | 48 | Body | Supermarket Cleanup spill puddle: flat, 0.05 high, lay it on the floor. |
 | `CM_Event_SurpriseCrate.fbx` | 3 × 3.45 × 3 | 184 | Body, Lid | Surprise Delivery crate: purple box with star decals; Lid lifts off. |
 | `CM_Event_TrafficCone.fbx` | 1.4 × 2.2 × 1.4 | 100 | Body | Cone for chase barriers and cleanup zones. |
+| `CM_Event_TrashBagPile.fbx` | 3.7 × 2.17 × 2.48 | 408 | Body | Supermarket Cleanup: a pile of three tied rubbish bags. |

@@ -477,5 +477,92 @@ def restroom_door(kit):
         b.box((-0.6, -0.22, 5.2), (0.6, -0.1, 6.4), "offwhite", bevel=0.04)
 
 
+# ---------------------------------------------------------------------------
+# Checkout parts, shelf hardware, office and cleaning extras
+# ---------------------------------------------------------------------------
+
+
+@cm.asset("interiors", "CM_Interior_CashRegister", "Interiors", None, budget="prop", recentre=True,
+          notes="Standalone till: keypad, cash drawer, customer display and receipt printer.")  # fmt: skip
+def cash_register(kit):
+    with kit.part("Body") as b:
+        b.box((-1.1, -0.75, 0), (1.1, 0.75, 0.6), "slate", bevel=0.08)
+        b.front_quad(-0.9, 0.12, 0.9, 0.42, -0.762, "dark")  # cash drawer
+        b.box((-0.25, -0.15, 0.55), (0.25, 0.15, 0.7), "slate", bevel=0)  # drawer handle
+        b.hexa([(-0.9, -0.7, 0.6), (0.9, -0.7, 0.6), (0.9, 0.2, 0.6), (-0.9, 0.2, 0.6),
+                (-0.9, -0.7, 0.7), (0.9, -0.7, 0.7), (0.9, 0.2, 0.9), (-0.9, 0.2, 0.9)], "dark", bevel=0.03)  # keypad deck
+        for i in range(4):
+            for j in range(3):
+                x, y = -0.7 + i * 0.35, -0.55 + j * 0.25
+                z = 0.7 + (y + 0.7) / 0.9 * 0.2 + 0.012
+                b.top_quad(x, y, x + 0.25, y + 0.16, z, "metal" if i < 3 else "teal")
+        b.box((0.4, 0.3, 0.6), (1.0, 0.7, 1.0), "offwhite", bevel=0.04)  # receipt printer
+        b.top_quad(0.5, 0.45, 0.9, 0.5, 1.012, "dark")
+        b.box((-0.1, 0.4, 0.6), (0.1, 0.55, 1.6), "slate", bevel=0)  # display post
+        b.at((0, 0.48, 1.8), rot_x_deg=-15)
+        b.box((-0.7, -0.08, -0.3), (0.7, 0.08, 0.3), "navy", bevel=0.04)
+        b.front_quad(-0.6, -0.22, 0.6, 0.22, -0.092, "kiosk_blue")
+        b.at()
+
+
+@cm.asset("interiors", "CM_Interior_HandScanner", "Interiors", None, budget="item", recentre=True,
+          notes="Handheld barcode scanner (pistol grip, red scan window) for cashiers and stockers.")  # fmt: skip
+def hand_scanner(kit):
+    with kit.part("Body") as b:
+        b.at((0, 0, 0), rot_x_deg=-15)
+        b.box((-0.12, -0.12, 0), (0.12, 0.12, 0.7), "dark", bevel=0.06)  # grip
+        b.at()
+        b.box((-0.18, -0.55, 0.62), (0.18, 0.25, 0.92), "yellow", bevel=0.08)  # head
+        b.front_quad(-0.13, 0.67, 0.13, 0.87, -0.562, "red")  # scan window
+        b.box((-0.05, -0.2, 0.5), (0.05, -0.05, 0.62), "slate", bevel=0)  # trigger
+
+
+@cm.asset("interiors", "CM_Interior_ConveyorBelt", "Interiors", (2.6, 3.6, 8), budget="prop",
+          notes="Free-standing belt section (8 long along Y) to extend checkout lanes; belt top at 3.6.")  # fmt: skip
+def conveyor_belt(kit):
+    with kit.part("Body") as b:
+        for y in (-3.5, 3.5):
+            for x in (-1.0, 1.0):
+                b.box((x - 0.15, y - 0.15, 0), (x + 0.15, y + 0.15, 3.2), "metal", bevel=0)
+        b.box((-1.3, -3.988, 3.1), (1.3, 4, 3.45), "offwhite", bevel=0.05)  # side frame
+        b.box((-1.05, -3.9, 3.45), (1.05, 3.9, 3.588), "dark", bevel=0)  # belt
+        for k in range(8):
+            y = -3.5 + k * 1.0
+            b.top_quad(-1.0, y, 1.0, y + 0.08, 3.6, "slate")
+        b.box((-1.3, -4, 0.3), (1.3, 4, 0.45), "slate", bevel=0)  # lower shelf rail
+        b.front_quad(-1.2, 3.15, 1.2, 3.4, -4.0, "teal")
+
+
+@cm.asset("interiors", "CM_Interior_PriceTagHolder", "Interiors", (4, 0.5, 0.15), budget="item",
+          notes="Shelf-edge price strip; Face is the blank label for a SurfaceGui price.")  # fmt: skip
+def price_tag_holder(kit):
+    with kit.part("Body") as b:
+        b.box((-2, -0.07, 0), (2, 0.075, 0.5), "dark", bevel=0.02)
+    with kit.part("Face") as b:
+        b.front_quad(-0.8, 0.07, 0.8, 0.43, -0.075, "yellow")
+
+
+@cm.asset("interiors", "CM_Interior_FilingCabinet", "Interiors", (2, 4.5, 2), budget="prop",
+          notes="Three-drawer office filing cabinet.")  # fmt: skip
+def filing_cabinet(kit):
+    with kit.part("Body") as b:
+        b.box((-1, -0.976, 0), (1, 1, 4.5), "slate", bevel=0.08)
+        for k in range(3):
+            z0 = 0.25 + k * 1.42
+            b.front_quad(-0.85, z0, 0.85, z0 + 1.25, -0.988, "metal")  # drawer front
+            b.front_quad(-0.3, z0 + 0.85, 0.3, z0 + 0.98, -1.0, "dark")  # handle
+            b.front_quad(-0.25, z0 + 1.02, 0.25, z0 + 1.15, -1.0, "offwhite")  # label slot
+
+
+@cm.asset("interiors", "CM_Interior_Broom", "Interiors", None, budget="item", recentre=True,
+          notes="Push broom for the cleaner (stand it upright; bristles on the floor).")  # fmt: skip
+def broom(kit):
+    with kit.part("Body") as b:
+        b.box((-1.0, -0.2, 0.2), (1.0, 0.2, 0.5), "wood", bevel=0.05)  # head
+        b.box((-0.95, -0.17, 0), (0.95, 0.17, 0.2), "dark", bevel=0)  # bristles
+        b.sweep([(0, 0, 0.5), (0, 0.6, 2.6), (0, 1.2, 4.8)], [0.06, 0.06, 0.06], "kiosk_blue", sides=6)
+        b.cylinder((0, 1.2, 4.75), 0.09, 0.3, "dark", segments=6, bevel=0)
+
+
 def build(mats, only=None):
     return cm.build_family("interiors", mats, only)

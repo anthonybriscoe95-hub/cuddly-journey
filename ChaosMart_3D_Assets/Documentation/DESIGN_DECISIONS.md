@@ -77,6 +77,14 @@ clear of everything else.
   with an offset arm or flag (street lamp, traffic light, signpost, banner, carts, NPCs) are
   re-centred to that point, so the pole base is not exactly at the pivot.
 
+## Performance
+
+- Every MeshPart uses the same 256 × 256 palette texture, so all assets share one texture in memory.
+- Fixtures stay at or under 3,000 triangles with all their stock, and buildings at or under 5,000 per
+  module. The whole map, with 1,300 placements, is built from 92 distinct assets reused across every plot.
+- Stocked fixtures have `_Far` versions (one or two MeshParts, 20–50% of the triangles) for distant
+  stores; see the import guide.
+
 ## Style
 
 - Flat palette colours only, from one atlas (`CM_Palette.png`), with no PBR maps and no text in any

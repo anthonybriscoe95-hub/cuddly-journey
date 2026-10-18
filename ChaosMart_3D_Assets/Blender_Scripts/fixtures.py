@@ -67,6 +67,7 @@ ITEMS = {
     "milk": row_of(P.milk_carton, 2, 1.05, scale=1.35),
     "apples": apples_on_tray,
     "bread": bread_on_board,
+    "frozen": row_of(P.ice_cream_tub, 2, 1.5, scale=1.1),
 }
 
 
@@ -290,6 +291,7 @@ COOLERS = {
     "DrinkCooler": dict(size=(24, 9, 6), items=10, item="soda", shell="navy", accent="red", doors=4),
     "DairyFridge": dict(size=(22, 9, 6), items=7, item="milk", shell="slate", accent="water", doors=4),
     "ProduceFridge": dict(size=(24, 9, 6), items=10, item="apples", shell="navy", accent="leaf_green", doors=3, deluxe=True),
+    "FreezerUpright": dict(size=(12, 9, 6), items=6, item="frozen", shell="kiosk_blue", accent="offwhite", doors=2),
 }
 
 
@@ -386,6 +388,66 @@ def bakery_case(kit):
     add_items(kit, "bread", positions)
     kit.anchor((0, y0 - 1.2, 3.5))
     return stocked_checks(7)
+
+
+# ---------------------------------------------------------------------------
+# Advanced-store merchandise: clothing rack and electronics table
+# ---------------------------------------------------------------------------
+
+
+@cm.asset("fixtures", "CM_Fixture_ClothingRack", "Interiors", (12, 6, 4), budget="fixture",
+          notes="Chrome clothing rail; Item1-5 are shirts on hangers hooked over the rail.")  # fmt: skip
+def clothing_rack(kit):
+    W, H, D = 12, 6, 4
+    rail_z = 5.0
+    with kit.part("Body") as b:
+        for s_ in (-1, 1):
+            x = s_ * 5.8
+            b.box((x - 0.2, -D / 2, 0), (x + 0.2, D / 2, 0.15), "slate", bevel=0.04)  # foot
+            b.cylinder((x, 0, 0.15), 0.08, rail_z - 0.15, "metal", segments=6, bevel=0)  # upright
+        b.sweep([(-5.8, 0, rail_z), (5.8, 0, rail_z)], [0.07, 0.07], "metal", sides=6)  # rail
+        b.cylinder((0, 0, rail_z), 0.05, 0.4, "metal", segments=6, bevel=0)  # sign post
+    with kit.part("PriceTag") as b:
+        b.box((-1.2, -0.06, rail_z + 0.4), (1.2, 0.06, H), "yellow", bevel=0.03)
+    colours = [("teal", "offwhite"), ("red", "yellow"), ("kiosk_blue", "offwhite"), ("yellow", "navy"), ("kiosk_purple", "mint")]
+    for i, x in enumerate((-4.4, -2.2, 0.0, 2.2, 4.4), start=1):
+        with kit.part("Item%d" % i, origin=(x, 0, rail_z)) as b:
+            P.shirt_on_hanger(b, *colours[i - 1])
+    kit.anchor((0, -D / 2 - 1.2, 3.5))
+
+    def check(a):  # shirts hang below the rail, so only count them; the size check bounds them
+        items = [o for o in a.objects if cm.part_name(o).startswith("Item")]
+        a.check(len(items) == 5, "%d item slots (expected 5)" % len(items))
+
+    return check
+
+
+@cm.asset("fixtures", "CM_Fixture_ElectronicsTable", "Interiors", (12, None, 6), budget="fixture",
+          notes="Display table with a raised back riser; Item1-6 are laptops, phones, headphones and controllers.")  # fmt: skip
+def electronics_table(kit):
+    W, D = 12, 6
+    top = 3.0
+    with kit.part("Body") as b:
+        b.box((-W / 2 + 0.4, -D / 2 + 0.4, 0), (W / 2 - 0.4, D / 2 - 0.4, top - 0.3), "offwhite", bevel=0.1)
+        b.box((-W / 2, -D / 2, top - 0.3), (W / 2, D / 2, top), "wood", bevel=0.08)
+        b.front_quad(-W / 2 + 0.6, 0.4, W / 2 - 0.6, 0.7, -D / 2 + 0.388, "teal")
+        b.box((-W / 2 + 0.3, 0.4, top), (W / 2 - 0.3, D / 2 - 0.3, top + 0.6), "offwhite", bevel=0.06)  # riser
+        b.box((-W / 2 + 0.3, D / 2 - 0.3, top), (W / 2 - 0.3, D / 2, top + 3.2), "navy", bevel=0.06)  # backboard
+        b.front_quad(-W / 2 + 0.6, top + 2.6, W / 2 - 0.6, top + 2.75, D / 2 - 0.312, "mint")
+    with kit.part("PriceTag") as b:
+        b.box((-2.5, D / 2 - 0.45, top + 1.6), (2.5, D / 2 - 0.3, top + 2.4), "yellow", bevel=0.03)
+    front = [(P.laptop, 1.0), (P.smartphone_box, 1.3), (P.headphones, 1.2)]
+    back = [(P.game_controller, 1.4), (P.laptop, 1.0), (P.smartphone_box, 1.3)]
+    k = 1
+    for row, (y, z, prods) in enumerate(((-1.4, top, front), (1.5, top + 0.6, back))):
+        for (fn, sc), x in zip(prods, (-3.6, 0.0, 3.6)):
+            with kit.part("Item%d" % k, origin=(x, y, z)) as b:
+                b.at((0, 0, 0), scale=sc)
+                fn(b)
+                b.at()
+            k += 1
+    kit.anchor((0, -D / 2 - 1.2, 3.5))
+    return stocked_checks(6)
 
 
 # ---------------------------------------------------------------------------

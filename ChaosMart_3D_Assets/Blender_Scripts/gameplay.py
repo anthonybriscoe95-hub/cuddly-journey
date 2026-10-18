@@ -391,5 +391,39 @@ def celebrity_star(kit):
         b.star((0, 0, 0.124), 0.9, "yellow", facing="+Z")
 
 
+@cm.asset("gameplay", "CM_Event_Coin", "Events", (2, 2, None), budget="item",
+          notes="Double Cash collectible coin standing on its edge, star on both faces; spin it.")  # fmt: skip
+def coin(kit):
+    with kit.part("Body") as b:
+        b.at((0, 0, 1.0), rot_x_deg=90)
+        b.cylinder((0, 0, -0.15), exact(1.0, 16), 0.3, "gold", segments=16, bevel=0.05)
+        b.at()
+        b.star((0, -0.162, 1.0), 0.55, "chip_gold")
+        b.poly([(0.55 * math.cos(math.pi / 2 + math.pi * i / 5) * (1 if i % 2 == 0 else 0.45), 0.162,
+                 1.0 + 0.55 * math.sin(math.pi / 2 + math.pi * i / 5) * (1 if i % 2 == 0 else 0.45)) for i in range(10)][::-1], "chip_gold")  # back face
+
+
+@cm.asset("gameplay", "CM_Event_TrashBagPile", "Events", None, budget="prop", recentre=True,
+          notes="Supermarket Cleanup: a pile of three tied rubbish bags.")  # fmt: skip
+def trash_pile(kit):
+    with kit.part("Body") as b:
+        for x, y, r, c in ((-0.9, 0.0, 1.0, "dark"), (0.9, 0.2, 0.9, "slate"), (0.0, 0.9, 0.85, "dark")):
+            b.ellipsoid((x, y, r * 0.9), (r, r * 0.9, r * 0.9), c, segments=10, rings=6)
+            b.cylinder((x, y, r * 1.75), 0.15, 0.25, c, segments=6, top_radius=0.05, bevel=0)
+            b.ellipsoid((x, y, r * 2.05), (0.18, 0.1, 0.12), "yellow", segments=4, rings=3)
+
+
+@cm.asset("gameplay", "CM_Event_SaleStandee", "Events", (3, 6, None), budget="prop", recentre=True,
+          notes="Black Friday doorbuster standee: red board, yellow burst, blank Face for the deal.")  # fmt: skip
+def sale_standee(kit):
+    with kit.part("Body") as b:
+        b.box((-1.5, -0.6, 0), (1.5, 0.6, 0.2), "dark", bevel=0.04)
+        b.box((-1.4, -0.08, 0.2), (1.4, 0.08, 6), "red", bevel=0.08)
+        b.star((0, -0.092, 4.6), 1.3, "yellow", inner=0.62, points=12)
+        b.box((-0.15, 0.08, 0.2), (0.15, 0.5, 4.0), "dark", bevel=0)  # back strut
+    with kit.part("Face") as b:
+        b.front_quad(-1.15, 0.8, 1.15, 3.0, -0.092, "offwhite")
+
+
 def build(mats, only=None):
     return cm.build_family("gameplay", mats, only)

@@ -351,7 +351,11 @@ def interior(st):
         mid_y = (y_rows[-1] + 2.5 + yb - 3) / 2
         add("CM_Fixture_ProduceStand", -50, mid_y)
         add("CM_Fixture_BakeryCase", -20, mid_y)
-        add("CM_Fixture_BakeryCase" if lux else "CM_Fixture_SnackBin", 18 if lux else 20, mid_y)
+        if lux:  # fashion and electronics corner
+            add("CM_Fixture_ClothingRack", 14, mid_y)
+            add("CM_Fixture_ElectronicsTable", 32, mid_y)
+        else:
+            add("CM_Fixture_SnackBin", 20, mid_y)
         add("CM_Fixture_ProduceStand", 55, mid_y)
         if lux:
             for s in (-1, 1):

@@ -142,6 +142,42 @@ def staff_door(kit):
         b.box((-1.6, -T - 0.06, 10.6), (1.6, -T + 0.1, 11.6), "yellow", bevel=0.04)
 
 
+@cm.asset("shell", "CM_Shell_Wall_Window", "Buildings", (8, 18, 1), budget="shell",
+          notes="8-wide wall module with a 5 x 5 window (sill at 5); Glass is separate. For side and back walls.")  # fmt: skip
+def wall_window(kit):
+    x0, x1 = -4, 4
+    wx0, wx1, wz0, wz1 = -2.5, 2.5, 5.0, 10.0
+    with kit.part("Body") as b:
+        plinth(b, x0, x1)
+        solid_field(b, x0, x1, 0, wz0)  # below the window
+        for xa, xb in ((x0, wx0), (wx1, x1)):  # either side
+            b.box((xa, -T + 0.1, wz0), (xb, SKIN, wz1), "wall_warm", bevel=0.03)
+            b.box((xa, SKIN, wz0), (xb, T, wz1), "offwhite", bevel=0)
+        b.box((x0, -T + 0.1, wz1), (x1, SKIN, 12), "wall_warm", bevel=0.03)  # above
+        b.box((x0, SKIN, wz1), (x1, T, 12), "offwhite", bevel=0)
+        # frame and sill
+        b.box((wx0 - 0.25, -T, wz0 - 0.35), (wx1 + 0.25, T, wz0), "offwhite", bevel=0.05)
+        b.box((wx0, -0.3, wz1 - 0.25), (wx1, 0.3, wz1), "slate", bevel=0)
+        for xa, xb in ((wx0, wx0 + 0.25), (wx1 - 0.25, wx1), (-0.1, 0.1)):
+            b.box((xa, -0.3, wz0), (xb, 0.3, wz1 - 0.25), "slate", bevel=0)
+        header(b, x0, x1, 12)
+    with kit.part("Glass", material="glass") as b:
+        b.box((wx0 + 0.25, -0.05, wz0), (wx1 - 0.25, 0.05, wz1 - 0.25), "glass", bevel=0)
+
+
+@cm.asset("shell", "CM_Shell_FacadePanel", "Buildings", (4, 18, 1), budget="shell",
+          notes="Decorative 4-wide feature panel: teal field with off-white fins; tiles with the standard walls.")  # fmt: skip
+def facade_panel(kit):
+    with kit.part("Body") as b:
+        plinth(b, -2, 2)
+        b.box((-2, -T + 0.1, 0), (2, SKIN, 12), "teal", bevel=0.03)
+        b.box((-2, SKIN, 0), (2, T, 12), "offwhite", bevel=0)
+        for x in (-1.2, 0.0, 1.2):  # fins
+            b.box((x - 0.12, -T + 0.02, 2.5), (x + 0.12, -T + 0.1, 12), "offwhite", bevel=0)
+        b.star((0, -T + 0.008, 13.9), 0.7, "yellow")
+        header(b, -2, 2, 12)
+
+
 # ---------------------------------------------------------------------------
 # Facade dressing
 # ---------------------------------------------------------------------------

@@ -413,5 +413,77 @@ def shopping_bag(kit):
             b.sweep([(-0.3, y, 1.25), (-0.25, y, 1.6), (0.25, y, 1.6), (0.3, y, 1.25)], [0.035] * 4, "teal", sides=4)
 
 
+@cm.asset("props", "CM_Prop_PlazaSign", "Environment", (6, 8, 1.2), budget="prop",
+          notes="Plaza directory board on two posts; Face is blank for the map or store list.")  # fmt: skip
+def plaza_sign(kit):
+    with kit.part("Body") as b:
+        for x in (-2.6, 2.6):
+            b.box((x - 0.3, -0.3, 0), (x + 0.3, 0.3, 7.0), "navy", bevel=0.06)
+        b.box((-3, -0.6, 0), (3, 0.6, 0.4), "slate", bevel=0.08)
+        b.box((-2.3, -0.2, 2.0), (2.3, 0.2, 7.0), "teal", bevel=0.08)
+        b.box((-3, -0.35, 7.0), (3, 0.35, 7.4), "navy", bevel=0.06)
+        b.at((0, 0, 8.0 - exact(0.3, 10)), rot_x_deg=90)  # medallion on the top bar, top at exactly 8
+        b.cylinder((0, 0, -0.1), exact(0.3, 10), 0.2, "yellow", segments=10, bevel=0)
+        b.at()
+    with kit.part("Face") as b:
+        b.box((-2.0, -0.25, 2.3), (2.0, -0.2, 6.7), "offwhite", bevel=0)
+
+
+@cm.asset("props", "CM_Prop_EventStage", "Environment", (30, 16, 16), budget="prop",
+          notes="Plaza event stage: raised deck with steps, truss frame, speaker stacks, a blank backdrop "
+                "(Face) and spotlights (Light).")  # fmt: skip
+def event_stage(kit):
+    W, D = 30, 16
+    x1, y1 = W / 2, D / 2
+    deck = 1.6
+    with kit.part("Body") as b:
+        b.box((-x1, -y1 + 2.5, 0), (x1, y1, deck), "navy", bevel=0.12)  # deck
+        b.box((-x1, -y1 + 2.5, deck - 0.3), (x1, -y1 + 2.8, deck), "gold", bevel=0)  # nosing
+        for k in range(3):  # front steps
+            z = deck * (k + 1) / 4
+            step = 2.5 / 3
+            y = -y1 + 2.5 - (3 - k) * step
+            b.box((-4, y, 0), (4, y + step, z), "slate", bevel=0.04)
+        for x in (-x1 + 0.6, x1 - 0.6):  # truss towers
+            for y in (-y1 + 3.1, y1 - 0.6):
+                b.box((x - 0.6, y - 0.6, deck), (x + 0.6, y + 0.6, 16), "metal", bevel=0)
+        for y in (-y1 + 3.1, y1 - 0.6):  # top trusses
+            b.box((-x1, y - 0.6, 14.8), (x1, y + 0.6, 16), "metal", bevel=0)
+        for x in (-x1 + 0.6, x1 - 0.6):
+            b.box((x - 0.6, -y1 + 3.1, 14.8), (x + 0.6, y1 - 0.6, 16), "metal", bevel=0)
+        for s_ in (-1, 1):  # speaker stacks
+            x = s_ * (x1 - 3.0)
+            for k in range(2):
+                b.box((x - 1.2, -y1 + 3.6, deck + k * 2.2), (x + 1.2, -y1 + 5.2, deck + k * 2.2 + 2.1), "dark", bevel=0.08)
+                b.disc((x, -y1 + 3.588, deck + k * 2.2 + 1.05), 0.7, "slate", segments=10)
+        b.box((-x1 + 2, y1 - 1.6, deck), (x1 - 2, y1 - 1.2, 14.2), "dark", bevel=0)  # backdrop frame
+    with kit.part("Face") as b:
+        b.box((-x1 + 2.4, y1 - 1.7, deck + 0.4), (x1 - 2.4, y1 - 1.6, 13.8), "kiosk_purple", bevel=0)
+    with kit.part("Light") as b:
+        for x in (-9, -3, 3, 9):
+            b.at((x, -y1 + 3.1, 14.6), rot_x_deg=35)
+            b.cylinder((0, 0, -0.9), 0.45, 0.9, "warm_light", segments=8, bevel=0)
+        b.at()
+
+
+@cm.asset("props", "CM_Prop_Monument", "Environment", (16, None, 16), budget="prop",
+          notes="Central plaza monument: tiered plinth carrying a giant golden shopping cart; Face is the blank plaque.")  # fmt: skip
+def monument(kit):
+    import interiors
+
+    with kit.part("Body") as b:
+        b.cylinder((0, 0, 0), exact(8, 16), 0.8, "paver_brick", segments=16, bevel=0.06)
+        b.cylinder((0, 0, 0.8), exact(6.5, 16), 1.2, "offwhite", segments=16, bevel=0.06)
+        b.box((-4, -4, 2.0), (4, 4, 6.0), "navy", bevel=0.15)
+        b.box((-4.4, -4.4, 6.0), (4.4, 4.4, 6.6), "gold", bevel=0.08)
+        for s_ in (-1, 1):
+            b.star((s_ * 2.6, -4.012, 4.0), 0.6, "gold")
+        b.at((0, 0, 6.6), rot_z_deg=-30, scale=2.4)
+        interiors.cart(b, frame="gold", handle="red", body="gold")
+        b.at()
+    with kit.part("Face") as b:
+        b.front_quad(-1.8, 3.2, 1.8, 4.8, -4.012, "chip_gold")
+
+
 def build(mats, only=None):
     return cm.build_family("props", mats, only)

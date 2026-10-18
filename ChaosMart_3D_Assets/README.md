@@ -5,9 +5,9 @@ Blender Python scripts so any number can be changed and the whole pack rebuilt i
 
 | | |
 |---|---|
-| Assets | 194 FBX files (see [`Documentation/ASSET_INVENTORY.md`](Documentation/ASSET_INVENTORY.md)) |
+| Assets | 230 FBX files (see [`Documentation/ASSET_INVENTORY.md`](Documentation/ASSET_INVENTORY.md)) |
 | Editable source | `Blender_Source/ChaosMart_Assets.blend` (every asset in its own collection) |
-| Assembled map | `Map_Assembly/ChaosMart_Map.blend` + `Map_Assembly/placements.json` (**provisional layout**, see below) |
+| Assembled map | `Map_Assembly/ChaosMart_Map.blend`, `placements.json`, and a Roblox Studio script that builds it (**provisional layout**, see below) |
 | Texture | one 256 × 256 palette atlas, `Textures/CM_Palette.png`, embedded in every FBX |
 | Previews | `Previews/` (per-family sheets, per-asset tiles, map shots by day and night) |
 
@@ -28,7 +28,7 @@ ChaosMart_3D_Assets/
 │   └── Events/            chaos-event props
 ├── Textures/              CM_Palette.png
 ├── Previews/              catalog_<family>.png, preview_<family>.png, map_*.png, tiles/
-├── Map_Assembly/          ChaosMart_Map.blend, placements.json
+├── Map_Assembly/          ChaosMart_Map.blend, placements.json, BuildChaosMartMap.server.lua + ChaosMartPlacements.lua
 └── Documentation/         ASSET_INVENTORY.md, IMPORT_GUIDE.md, DESIGN_DECISIONS.md, asset_manifest.json
 ```
 
@@ -83,6 +83,11 @@ Done and verified in Blender (built, checked, exported, re-imported):
 - 12 R6-proportioned NPCs, and 17 outfit accessories (caps, beanies, aprons, badges, vest, backpack...)
   pivoted on Roblox avatar attachment points so standard avatars can wear them,
 - a double-sided aisle (used in the Mega Mart and Luxury stores), and T-junction and curved road pieces,
+- advanced-store merchandise (clothing rack, electronics table, phones, laptops, upright freezer),
+  checkout and office extras, window and feature-panel wall modules, a parking divider, the plaza
+  monument, event stage and directory sign, and more event props,
+- a `_Far` distant-detail version of every stocked fixture,
+- a Roblox Studio script that builds the whole map from the imported models,
 - the five store progression stages (Corner Store, Mini Mart, Supermarket, Mega Mart, Luxury Shopping
   Center), each built from the modular kit with its own floor, roof and plot pad, and checked for
   overlaps inside and outside the store,
@@ -91,6 +96,5 @@ Done and verified in Blender (built, checked, exported, re-imported):
 Not done yet (next milestones):
 - **The blueprint and Developer Bible were not supplied**, so the map is a documented assumption:
   `map_layout.json` holds every layout number and is marked provisional.
-- LOD (distance) variants for the biggest assets.
 - **Nothing has been imported into Roblox Studio yet** (Studio isn't available in this environment).
   [`Documentation/IMPORT_GUIDE.md`](Documentation/IMPORT_GUIDE.md) lists what to check on the first import.

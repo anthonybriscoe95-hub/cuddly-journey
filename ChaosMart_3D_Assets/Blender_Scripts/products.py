@@ -366,6 +366,42 @@ def premium_gift_box(b):
     b.ellipsoid((0.15, 0, 1.2), (0.18, 0.1, 0.1), "chip_gold", segments=4, rings=3)
 
 
+def smartphone_box(b):
+    """Boxed smartphone: slim box with the phone pictured on the front."""
+    w, h, d = 0.55, 1.5, 0.16
+    b.box((-w, -d, 0), (w, d, h), "offwhite", bevel=0.04)
+    y = -d - 0.012
+    b.front_quad(-0.38, 0.18, 0.38, 1.32, y, "dark")  # phone body
+    b.front_quad(-0.32, 0.26, 0.32, 1.22, y - 0.012, "kiosk_blue")  # screen
+    b.front_quad(-0.32, 0.26, 0.32, 0.5, y - 0.024, "teal")  # app row
+    b.front_quad(-w + 0.05, 1.38, w - 0.05, 1.46, y, "teal")
+
+
+def laptop(b):
+    """Open laptop: keyboard base and a screen tilted back 15 degrees."""
+    b.box((-0.95, -0.65, 0), (0.95, 0.65, 0.1), "metal", bevel=0.03)
+    b.top_quad(-0.8, -0.25, 0.8, 0.5, 0.112, "dark")  # keyboard
+    b.top_quad(-0.3, -0.58, 0.3, -0.32, 0.112, "slate")  # trackpad
+    b.at((0, 0.62, 0.1), rot_x_deg=15)
+    b.box((-0.95, -0.06, 0), (0.95, 0.0, 1.25), "metal", bevel=0.02)
+    b.front_quad(-0.85, 0.08, 0.85, 1.17, -0.072, "kiosk_blue")
+    b.front_quad(-0.85, 0.08, -0.1, 0.5, -0.084, "teal")
+    b.at()
+
+
+def shirt_on_hanger(b, colour="teal", accent="offwhite"):
+    """Shirt hanging from a hanger hook at z = 0 (hangs downward)."""
+    b.sweep([(0, 0, 0.05), (0, 0, -0.18), (0.08, 0, -0.26)], [0.03, 0.03, 0.02], "metal", sides=4)  # hook
+    b.sweep([(-0.75, 0, -0.55), (0, 0, -0.3), (0.75, 0, -0.55)], [0.03, 0.04, 0.03], "wood", sides=4)  # hanger bar
+    b.hexa([(-0.6, -0.12, -2.4), (0.6, -0.12, -2.4), (0.6, 0.12, -2.4), (-0.6, 0.12, -2.4),
+            (-0.72, -0.12, -0.5), (0.72, -0.12, -0.5), (0.72, 0.12, -0.5), (-0.72, 0.12, -0.5)], colour, bevel=0.05)  # fmt: skip
+    for s_ in (-1, 1):  # short sleeves
+        b.hexa([(s_ * 0.66, -0.11, -1.2), (s_ * 1.0, -0.11, -1.0), (s_ * 1.0, 0.11, -1.0), (s_ * 0.66, 0.11, -1.2),
+                (s_ * 0.7, -0.11, -0.55), (s_ * 1.0, -0.11, -0.7), (s_ * 1.0, 0.11, -0.7), (s_ * 0.7, 0.11, -0.55)], colour)  # fmt: skip
+    b.front_quad(-0.2, -0.75, 0.2, -0.6, -0.132, accent)  # collar tag
+    b.front_quad(-0.6, -1.65, 0.6, -1.45, -0.132, accent)  # chest stripe
+
+
 def tshirt_display(b):
     """Folded T-shirt stack for clothing displays."""
     for k, c in enumerate(("teal", "red", "yellow")):
@@ -389,7 +425,7 @@ PRODUCTS = {
     "CoffeeCup": coffee_cup, "ToyBox": toy_box, "Headphones": headphones,
     "GameController": game_controller, "Television": television, "CleaningSpray": cleaning_spray,
     "DetergentJug": detergent_jug, "HoneyJar": honey_jar, "PremiumGiftBox": premium_gift_box,
-    "TShirtStack": tshirt_display,
+    "TShirtStack": tshirt_display, "SmartphoneBox": smartphone_box, "Laptop": laptop,
 }  # fmt: skip
 
 

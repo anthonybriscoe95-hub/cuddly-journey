@@ -46,22 +46,37 @@ No collision meshes are included (the brief handles collision with simple boxes)
 `CollisionFidelity = Box` on everything except walls, floors and pads (`Hull`), and
 `CanCollide = false` on products, glass, decorations and `Anchor`.
 
-## Placing the map
+## Building the map automatically
 
-`Map_Assembly/placements.json` lists every placed asset: the asset name, the position of its pivot
-(bottom centre) in Blender coordinates, and a rotation about the up axis in degrees. With the
-default axis mapping the Roblox equivalents are:
+`Map_Assembly/` contains a ready-made Studio builder, so the 1,300 placements never have to be done by
+hand:
 
-```
-Roblox X = Blender X
-Roblox Y = Blender Z
-Roblox Z = −Blender Y
-CFrame = CFrame.new(x, z, −y) * CFrame.Angles(0, math.rad(rotation_z), 0)
-```
+1. Import the FBX files you need (at least everything named in `ChaosMartPlacements.lua`) and move
+   the imported Models into **ServerStorage > ChaosMartAssets** (sub-folders are fine). Keep each
+   Model's name equal to its file name, e.g. `CM_Fixture_SnackShelf`.
+2. Create a **Script** in ServerScriptService named `BuildChaosMartMap` and paste in
+   `BuildChaosMartMap.server.lua`.
+3. Next to it, create a **ModuleScript** named `ChaosMartPlacements` and paste in
+   `ChaosMartPlacements.lua`.
+4. Press Play once (or run the script). It builds **Workspace > ChaosMartMap** with one folder per plot
+   and area, anchors everything, and warns about any asset it could not find. Stop the game, select
+   `ChaosMartMap`, copy it, and paste it into the edit-mode Workspace to keep it.
 
-Confirm the sign of the rotation on the first plot (the store entrance should face the plaza) before
-scripting the rest. **The layout is provisional** until the overhead blueprint is supplied; see
-`DESIGN_DECISIONS.md`.
+The positions assume the importer maps Blender axes to Roblox the usual way
+(Roblox X = Blender X, Y = Blender Z, Z = −Blender Y). If the first test import showed the assets
+facing the wrong way, fix the FBX axes first (see the top of this guide) and the builder will line up.
+
+`Map_Assembly/placements.json` holds the same data in Blender coordinates (pivot position and a
+rotation about +Z in degrees) for other tools. **The layout is provisional** until the overhead
+blueprint is supplied; see `DESIGN_DECISIONS.md`.
+
+## Distant-detail versions
+
+Every stocked fixture also comes as `<name>_Far.fbx`: the fixture merged into one `Body` mesh (plus
+`Glass`), with each stock slot shown as a single coloured block, at 20–50% of the triangles. Use
+the full-detail model near the player and the `_Far` one beyond about 80 studs. Swap them with a
+distance check or by streaming, or simply use `_Far` for stores the player can only see across the
+plaza. Roblox's own automatic mesh LOD still applies on top of this.
 
 ## NPCs
 
