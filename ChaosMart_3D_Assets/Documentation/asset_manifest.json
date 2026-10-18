@@ -533,6 +533,36 @@
       "checks_passed": true,
       "notes": "Floor star marking the Celebrity Shopper's spot."
     },
+    "CM_Event_Coin": {
+      "file": "Roblox_FBX/Events/CM_Event_Coin.fbx",
+      "category": "gameplay",
+      "size_wxhxd": [
+        2.0,
+        2.0,
+        0.324
+      ],
+      "expected_size_wxhxd": [
+        2,
+        2,
+        null
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 204,
+      "triangles_per_object": {
+        "Body": 204
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Events",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "chip_gold": "#D4952E",
+        "gold": "#F2C230"
+      },
+      "checks_passed": true,
+      "notes": "Double Cash collectible coin standing on its edge, star on both faces; spin it."
+    },
     "CM_Event_EmergencyLight": {
       "file": "Roblox_FBX/Events/CM_Event_EmergencyLight.fbx",
       "category": "gameplay",
@@ -685,6 +715,40 @@
       "checks_passed": true,
       "notes": "Hanging Black Friday sale banner with zig-zag edges; Face is blank."
     },
+    "CM_Event_SaleStandee": {
+      "file": "Roblox_FBX/Events/CM_Event_SaleStandee.fbx",
+      "category": "gameplay",
+      "size_wxhxd": [
+        3.0,
+        6.0,
+        1.2
+      ],
+      "expected_size_wxhxd": [
+        3,
+        6,
+        null
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 124,
+      "triangles_per_object": {
+        "Body": 122,
+        "Face": 2
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Events",
+      "children": [
+        "Body",
+        "Face"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "offwhite": "#F4F7FB",
+        "red": "#E67565",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Black Friday doorbuster standee: red board, yellow burst, blank Face for the deal."
+    },
     "CM_Event_Spill": {
       "file": "Roblox_FBX/Events/CM_Event_Spill.fbx",
       "category": "gameplay",
@@ -776,6 +840,33 @@
       "checks_passed": true,
       "notes": "Cone for chase barriers and cleanup zones."
     },
+    "CM_Event_TrashBagPile": {
+      "file": "Roblox_FBX/Events/CM_Event_TrashBagPile.fbx",
+      "category": "gameplay",
+      "size_wxhxd": [
+        3.7,
+        2.17,
+        2.484
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 408,
+      "triangles_per_object": {
+        "Body": 408
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Events",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "slate": "#3A5A70",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Supermarket Cleanup: a pile of three tied rubbish bags."
+    },
     "CM_Fixture_BakeryCase": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_BakeryCase.fbx",
       "category": "fixtures",
@@ -834,6 +925,47 @@
       "checks_passed": true,
       "notes": "Counter with a sloped glass front; loaves on two stepped decks."
     },
+    "CM_Fixture_BakeryCase_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_BakeryCase_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        22.0,
+        4.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        22,
+        4.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 496,
+      "triangles_per_object": {
+        "Body": 472,
+        "Glass": 12,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Glass",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "bread": "#B87436",
+        "glass": "#CDEFF0",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "warm_light": "#FFE9A8",
+        "wood": "#A97A4E",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_BakeryCase: one Body mesh, stock shown as coloured blocks."
+    },
     "CM_Fixture_CheckoutLane": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_CheckoutLane.fbx",
       "category": "fixtures",
@@ -888,6 +1020,97 @@
       },
       "checks_passed": true,
       "notes": "Counter is 3 x 3.6 x 9 along Y; Belt, Register, Screen and LanePost are separate parts. LanePlate is the blank lane-number face; LaneLamp can be set to Neon."
+    },
+    "CM_Fixture_ClothingRack": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_ClothingRack.fbx",
+      "category": "fixtures",
+      "size_wxhxd": [
+        12.0,
+        6.0,
+        4.0
+      ],
+      "expected_size_wxhxd": [
+        12,
+        6,
+        4
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 784,
+      "triangles_per_object": {
+        "Body": 168,
+        "PriceTag": 44,
+        "Item1": 112,
+        "Item2": 112,
+        "Item3": 112,
+        "Item4": 112,
+        "Item5": 112,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "PriceTag",
+        "Item1",
+        "Item2",
+        "Item3",
+        "Item4",
+        "Item5",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "kiosk_blue": "#4C7BD9",
+        "kiosk_purple": "#9A6FC8",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "red": "#E67565",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "wood": "#A97A4E",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Chrome clothing rail; Item1-5 are shirts on hangers hooked over the rail."
+    },
+    "CM_Fixture_ClothingRack_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_ClothingRack_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        12.0,
+        6.0,
+        4.0
+      ],
+      "expected_size_wxhxd": [
+        12,
+        6,
+        4
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 284,
+      "triangles_per_object": {
+        "Body": 272,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "kiosk_blue": "#4C7BD9",
+        "kiosk_purple": "#9A6FC8",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "red": "#E67565",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_ClothingRack: one Body mesh, stock shown as coloured blocks."
     },
     "CM_Fixture_DairyFridge": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_DairyFridge.fbx",
@@ -947,6 +1170,47 @@
       },
       "checks_passed": true,
       "notes": "Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon."
+    },
+    "CM_Fixture_DairyFridge_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_DairyFridge_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        22.0,
+        9.0,
+        6.0
+      ],
+      "expected_size_wxhxd": [
+        22,
+        9,
+        6
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 578,
+      "triangles_per_object": {
+        "Body": 518,
+        "Glass": 48,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Glass",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "glass": "#CDEFF0",
+        "metal": "#C9D3DD",
+        "milk": "#FFFFFF",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "water": "#9FD4F5",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_DairyFridge: one Body mesh, stock shown as coloured blocks."
     },
     "CM_Fixture_DrinkCooler": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_DrinkCooler.fbx",
@@ -1013,6 +1277,140 @@
       "checks_passed": true,
       "notes": "Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon."
     },
+    "CM_Fixture_DrinkCooler_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_DrinkCooler_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        24.0,
+        9.0,
+        6.0
+      ],
+      "expected_size_wxhxd": [
+        24,
+        9,
+        6
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 614,
+      "triangles_per_object": {
+        "Body": 554,
+        "Glass": 48,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Glass",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "glass": "#CDEFF0",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "red": "#E67565",
+        "slate": "#3A5A70",
+        "soda_red": "#D9473A",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_DrinkCooler: one Body mesh, stock shown as coloured blocks."
+    },
+    "CM_Fixture_ElectronicsTable": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_ElectronicsTable.fbx",
+      "category": "fixtures",
+      "size_wxhxd": [
+        12.0,
+        6.2,
+        6.0
+      ],
+      "expected_size_wxhxd": [
+        12,
+        null,
+        6
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 1016,
+      "triangles_per_object": {
+        "Body": 180,
+        "PriceTag": 44,
+        "Item1": 96,
+        "Item2": 52,
+        "Item3": 276,
+        "Item4": 208,
+        "Item5": 96,
+        "Item6": 52,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "PriceTag",
+        "Item1",
+        "Item2",
+        "Item3",
+        "Item4",
+        "Item5",
+        "Item6",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "kiosk_blue": "#4C7BD9",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "red": "#E67565",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "wood": "#A97A4E",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Display table with a raised back riser; Item1-6 are laptops, phones, headphones and controllers."
+    },
+    "CM_Fixture_ElectronicsTable_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_ElectronicsTable_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        12.0,
+        6.2,
+        6.0
+      ],
+      "expected_size_wxhxd": [
+        12,
+        null,
+        6
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 308,
+      "triangles_per_object": {
+        "Body": 296,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "wood": "#A97A4E",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_ElectronicsTable: one Body mesh, stock shown as coloured blocks."
+    },
     "CM_Fixture_Endcap": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_Endcap.fbx",
       "category": "interiors",
@@ -1060,6 +1458,41 @@
       },
       "checks_passed": true,
       "notes": "End-of-aisle promo display; snaps onto a gondola end. 4 Item slots of cereal."
+    },
+    "CM_Fixture_Endcap_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_Endcap_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        6.0,
+        7.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        6,
+        7.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 436,
+      "triangles_per_object": {
+        "Body": 424,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "red": "#E67565",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_Endcap: one Body mesh, stock shown as coloured blocks."
     },
     "CM_Fixture_FreezerChest": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_FreezerChest.fbx",
@@ -1119,6 +1552,144 @@
       "checks_passed": true,
       "notes": "Chest freezer with sliding Glass lids; 6 Item slots of ice cream and frozen pizza."
     },
+    "CM_Fixture_FreezerChest_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_FreezerChest_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        12.0,
+        3.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        12,
+        3.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 434,
+      "triangles_per_object": {
+        "Body": 398,
+        "Glass": 24,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Glass",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "glass": "#CDEFF0",
+        "kiosk_blue": "#4C7BD9",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "water": "#9FD4F5",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_FreezerChest: one Body mesh, stock shown as coloured blocks."
+    },
+    "CM_Fixture_FreezerUpright": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_FreezerUpright.fbx",
+      "category": "fixtures",
+      "size_wxhxd": [
+        12.0,
+        9.0,
+        6.0
+      ],
+      "expected_size_wxhxd": [
+        12,
+        9,
+        6
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 1862,
+      "triangles_per_object": {
+        "Body": 330,
+        "Glass": 24,
+        "LightStrip": 12,
+        "PriceTag": 44,
+        "Item1": 240,
+        "Item2": 240,
+        "Item3": 240,
+        "Item4": 240,
+        "Item5": 240,
+        "Item6": 240,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Glass",
+        "LightStrip",
+        "PriceTag",
+        "Item1",
+        "Item2",
+        "Item3",
+        "Item4",
+        "Item5",
+        "Item6",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "candy_pink": "#F49AC1",
+        "glass": "#CDEFF0",
+        "kiosk_blue": "#4C7BD9",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon."
+    },
+    "CM_Fixture_FreezerUpright_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_FreezerUpright_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        12.0,
+        9.0,
+        6.0
+      ],
+      "expected_size_wxhxd": [
+        12,
+        9,
+        6
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 494,
+      "triangles_per_object": {
+        "Body": 458,
+        "Glass": 24,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Glass",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "glass": "#CDEFF0",
+        "kiosk_blue": "#4C7BD9",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_FreezerUpright: one Body mesh, stock shown as coloured blocks."
+    },
     "CM_Fixture_PremiumShelf": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_PremiumShelf.fbx",
       "category": "fixtures",
@@ -1171,6 +1742,42 @@
       },
       "checks_passed": true,
       "notes": "Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high."
+    },
+    "CM_Fixture_PremiumShelf_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_PremiumShelf_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        28.0,
+        7.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        28,
+        7.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 670,
+      "triangles_per_object": {
+        "Body": 658,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "chip_gold": "#D4952E",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "wood": "#A97A4E",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_PremiumShelf: one Body mesh, stock shown as coloured blocks."
     },
     "CM_Fixture_ProduceFridge": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_ProduceFridge.fbx",
@@ -1239,6 +1846,47 @@
       "checks_passed": true,
       "notes": "Glass-door cooler: Glass is a separate mesh, LightStrip is the mint strip to set to Neon."
     },
+    "CM_Fixture_ProduceFridge_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_ProduceFridge_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        24.0,
+        9.0,
+        6.0
+      ],
+      "expected_size_wxhxd": [
+        24,
+        9,
+        6
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 580,
+      "triangles_per_object": {
+        "Body": 532,
+        "Glass": 36,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Glass",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "chip_gold": "#D4952E",
+        "glass": "#CDEFF0",
+        "metal": "#C9D3DD",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "wood": "#A97A4E",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_ProduceFridge: one Body mesh, stock shown as coloured blocks."
+    },
     "CM_Fixture_ProduceStand": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_ProduceStand.fbx",
       "category": "fixtures",
@@ -1298,6 +1946,42 @@
       },
       "checks_passed": true,
       "notes": "Wooden stand with crates tilted 12 degrees toward the shopper."
+    },
+    "CM_Fixture_ProduceStand_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_ProduceStand_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        24.0,
+        3.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        24,
+        3.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 766,
+      "triangles_per_object": {
+        "Body": 754,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "bread": "#B87436",
+        "leaf_green": "#5DBB63",
+        "mint": "#8CE0D2",
+        "paver_sand": "#EAD7B7",
+        "wood": "#A97A4E",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_ProduceStand: one Body mesh, stock shown as coloured blocks."
     },
     "CM_Fixture_SnackBin": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_SnackBin.fbx",
@@ -1362,6 +2046,42 @@
       "checks_passed": true,
       "notes": "Low open bin, six compartments per row; price board on a raised back rail."
     },
+    "CM_Fixture_SnackBin_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_SnackBin_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        28.0,
+        3.4,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        28,
+        3.4,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 606,
+      "triangles_per_object": {
+        "Body": 594,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "candy_pink": "#F49AC1",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_SnackBin: one Body mesh, stock shown as coloured blocks."
+    },
     "CM_Fixture_SnackShelf": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_SnackShelf.fbx",
       "category": "fixtures",
@@ -1422,6 +2142,42 @@
       "checks_passed": true,
       "notes": "Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high."
     },
+    "CM_Fixture_SnackShelf_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_SnackShelf_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        28.0,
+        7.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        28,
+        7.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 706,
+      "triangles_per_object": {
+        "Body": 694,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_SnackShelf: one Body mesh, stock shown as coloured blocks."
+    },
     "CM_Fixture_ToyShelf": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_ToyShelf.fbx",
       "category": "fixtures",
@@ -1473,6 +2229,42 @@
       },
       "checks_passed": true,
       "notes": "Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high."
+    },
+    "CM_Fixture_ToyShelf_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_ToyShelf_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        28.0,
+        7.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        28,
+        7.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 718,
+      "triangles_per_object": {
+        "Body": 706,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "kiosk_purple": "#9A6FC8",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "toy_purple": "#8B5CC4",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_ToyShelf: one Body mesh, stock shown as coloured blocks."
     },
     "CM_Fixture_WaterShelf": {
       "file": "Roblox_FBX/Interiors/CM_Fixture_WaterShelf.fbx",
@@ -1536,6 +2328,43 @@
       },
       "checks_passed": true,
       "notes": "Two-tier gondola; the price board fills the top 1.15 studs so the asset stays 7.6 high."
+    },
+    "CM_Fixture_WaterShelf_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Fixture_WaterShelf_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        28.0,
+        7.6,
+        5.0
+      ],
+      "expected_size_wxhxd": [
+        28,
+        7.6,
+        5
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 730,
+      "triangles_per_object": {
+        "Body": 718,
+        "Anchor": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor"
+      ],
+      "colour_slots": {
+        "kiosk_blue": "#4C7BD9",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "water": "#9FD4F5",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Fixture_WaterShelf: one Body mesh, stock shown as coloured blocks."
     },
     "CM_Ground_Base": {
       "file": "Roblox_FBX/Environment/CM_Ground_Base.fbx",
@@ -1661,6 +2490,33 @@
       "checks_passed": true,
       "notes": "Hanging aisle sign; Face is blank on both sides (aisle number / category). Rods rise 3 above."
     },
+    "CM_Interior_Broom": {
+      "file": "Roblox_FBX/Interiors/CM_Interior_Broom.fbx",
+      "category": "interiors",
+      "size_wxhxd": [
+        2.0,
+        5.05,
+        1.49
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 108,
+      "triangles_per_object": {
+        "Body": 108
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "kiosk_blue": "#4C7BD9",
+        "wood": "#A97A4E"
+      },
+      "checks_passed": true,
+      "notes": "Push broom for the cleaner (stand it upright; bristles on the floor)."
+    },
     "CM_Interior_CardboardBox": {
       "file": "Roblox_FBX/Interiors/CM_Interior_CardboardBox.fbx",
       "category": "interiors",
@@ -1691,6 +2547,37 @@
       },
       "checks_passed": true,
       "notes": "Taped shipping box with a blank label."
+    },
+    "CM_Interior_CashRegister": {
+      "file": "Roblox_FBX/Interiors/CM_Interior_CashRegister.fbx",
+      "category": "interiors",
+      "size_wxhxd": [
+        2.2,
+        2.1,
+        1.512
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 230,
+      "triangles_per_object": {
+        "Body": 230
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "kiosk_blue": "#4C7BD9",
+        "metal": "#C9D3DD",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Standalone till: keypad, cash drawer, customer display and receipt printer."
     },
     "CM_Interior_CeilingLight": {
       "file": "Roblox_FBX/Interiors/CM_Interior_CeilingLight.fbx",
@@ -1724,6 +2611,39 @@
       },
       "checks_passed": true,
       "notes": "Linear ceiling light; hang its top at the ceiling. Light is the diffuser (set Neon)."
+    },
+    "CM_Interior_ConveyorBelt": {
+      "file": "Roblox_FBX/Interiors/CM_Interior_ConveyorBelt.fbx",
+      "category": "interiors",
+      "size_wxhxd": [
+        2.6,
+        3.6,
+        8.0
+      ],
+      "expected_size_wxhxd": [
+        2.6,
+        3.6,
+        8
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 134,
+      "triangles_per_object": {
+        "Body": 134
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "metal": "#C9D3DD",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": "Free-standing belt section (8 long along Y) to extend checkout lanes; belt top at 3.6."
     },
     "CM_Interior_DeliveryCrate": {
       "file": "Roblox_FBX/Interiors/CM_Interior_DeliveryCrate.fbx",
@@ -1821,6 +2741,66 @@
       },
       "checks_passed": true,
       "notes": "Office desk with a monitor, keyboard and drawer pedestal."
+    },
+    "CM_Interior_FilingCabinet": {
+      "file": "Roblox_FBX/Interiors/CM_Interior_FilingCabinet.fbx",
+      "category": "interiors",
+      "size_wxhxd": [
+        2.0,
+        4.5,
+        2.0
+      ],
+      "expected_size_wxhxd": [
+        2,
+        4.5,
+        2
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 62,
+      "triangles_per_object": {
+        "Body": 62
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "metal": "#C9D3DD",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70"
+      },
+      "checks_passed": true,
+      "notes": "Three-drawer office filing cabinet."
+    },
+    "CM_Interior_HandScanner": {
+      "file": "Roblox_FBX/Interiors/CM_Interior_HandScanner.fbx",
+      "category": "interiors",
+      "size_wxhxd": [
+        0.36,
+        0.936,
+        0.844
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 102,
+      "triangles_per_object": {
+        "Body": 102
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "red": "#E67565",
+        "slate": "#3A5A70",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Handheld barcode scanner (pistol grip, red scan window) for cashiers and stockers."
     },
     "CM_Interior_MopBucket": {
       "file": "Roblox_FBX/Interiors/CM_Interior_MopBucket.fbx",
@@ -1943,6 +2923,38 @@
       },
       "checks_passed": true,
       "notes": "Pallet loaded with a shrink-wrapped stack of boxes (a delivery)."
+    },
+    "CM_Interior_PriceTagHolder": {
+      "file": "Roblox_FBX/Interiors/CM_Interior_PriceTagHolder.fbx",
+      "category": "interiors",
+      "size_wxhxd": [
+        4.0,
+        0.5,
+        0.15
+      ],
+      "expected_size_wxhxd": [
+        4,
+        0.5,
+        0.15
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 46,
+      "triangles_per_object": {
+        "Body": 44,
+        "Face": 2
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Face"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Shelf-edge price strip; Face is the blank label for a SurfaceGui price."
     },
     "CM_Interior_RestroomDoor": {
       "file": "Roblox_FBX/Interiors/CM_Interior_RestroomDoor.fbx",
@@ -3689,6 +4701,35 @@
       "checks_passed": true,
       "notes": ""
     },
+    "CM_Product_Laptop": {
+      "file": "Roblox_FBX/Products/CM_Product_Laptop.fbx",
+      "category": "products",
+      "size_wxhxd": [
+        1.9,
+        1.302,
+        1.3
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 96,
+      "triangles_per_object": {
+        "Laptop": 96
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Products",
+      "children": [
+        "Laptop"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "kiosk_blue": "#4C7BD9",
+        "metal": "#C9D3DD",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B"
+      },
+      "checks_passed": true,
+      "notes": ""
+    },
     "CM_Product_Lettuce": {
       "file": "Roblox_FBX/Products/CM_Product_Lettuce.fbx",
       "category": "products",
@@ -3815,6 +4856,34 @@
       "colour_slots": {
         "chip_gold": "#D4952E",
         "navy": "#12243C"
+      },
+      "checks_passed": true,
+      "notes": ""
+    },
+    "CM_Product_SmartphoneBox": {
+      "file": "Roblox_FBX/Products/CM_Product_SmartphoneBox.fbx",
+      "category": "products",
+      "size_wxhxd": [
+        1.1,
+        1.5,
+        0.356
+      ],
+      "expected_size_wxhxd": null,
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 52,
+      "triangles_per_object": {
+        "SmartphoneBox": 52
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Products",
+      "children": [
+        "SmartphoneBox"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "kiosk_blue": "#4C7BD9",
+        "offwhite": "#F4F7FB",
+        "teal": "#16AC9B"
       },
       "checks_passed": true,
       "notes": ""
@@ -4184,6 +5253,45 @@
       "checks_passed": true,
       "notes": "Box truck for the Surprise Delivery event; RearDoor is separate so it can roll up."
     },
+    "CM_Prop_EventStage": {
+      "file": "Roblox_FBX/Environment/CM_Prop_EventStage.fbx",
+      "category": "props",
+      "size_wxhxd": [
+        30.0,
+        16.0,
+        16.0
+      ],
+      "expected_size_wxhxd": [
+        30,
+        16,
+        16
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 628,
+      "triangles_per_object": {
+        "Body": 504,
+        "Face": 12,
+        "Light": 112
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Environment",
+      "children": [
+        "Body",
+        "Face",
+        "Light"
+      ],
+      "colour_slots": {
+        "dark": "#2A2F36",
+        "gold": "#F2C230",
+        "kiosk_purple": "#9A6FC8",
+        "metal": "#C9D3DD",
+        "navy": "#12243C",
+        "slate": "#3A5A70",
+        "warm_light": "#FFE9A8"
+      },
+      "checks_passed": true,
+      "notes": "Plaza event stage: raised deck with steps, truss frame, speaker stacks, a blank backdrop (Face) and spotlights (Light)."
+    },
     "CM_Prop_Fence": {
       "file": "Roblox_FBX/Environment/CM_Prop_Fence.fbx",
       "category": "props",
@@ -4358,6 +5466,44 @@
       },
       "checks_passed": true,
       "notes": "Rooftop prestige sign 36 x 7 with a star motif; Face blank, Neon is the outline tube."
+    },
+    "CM_Prop_Monument": {
+      "file": "Roblox_FBX/Environment/CM_Prop_Monument.fbx",
+      "category": "props",
+      "size_wxhxd": [
+        16.0,
+        15.072,
+        16.0
+      ],
+      "expected_size_wxhxd": [
+        16,
+        null,
+        16
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 888,
+      "triangles_per_object": {
+        "Body": 886,
+        "Face": 2
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Environment",
+      "children": [
+        "Body",
+        "Face"
+      ],
+      "colour_slots": {
+        "chip_gold": "#D4952E",
+        "dark": "#2A2F36",
+        "gold": "#F2C230",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "paver_brick": "#D9926A",
+        "red": "#E67565",
+        "slate": "#3A5A70"
+      },
+      "checks_passed": true,
+      "notes": "Central plaza monument: tiered plinth carrying a giant golden shopping cart; Face is the blank plaque."
     },
     "CM_Prop_ParkedCar_Blue": {
       "file": "Roblox_FBX/Environment/CM_Prop_ParkedCar_Blue.fbx",
@@ -4602,6 +5748,41 @@
       },
       "checks_passed": true,
       "notes": "Plaza booth 14 x 7 x 8, Teal. Face is the blank sign board on the roof."
+    },
+    "CM_Prop_PlazaSign": {
+      "file": "Roblox_FBX/Environment/CM_Prop_PlazaSign.fbx",
+      "category": "props",
+      "size_wxhxd": [
+        6.0,
+        8.0,
+        1.2
+      ],
+      "expected_size_wxhxd": [
+        6,
+        8,
+        1.2
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 268,
+      "triangles_per_object": {
+        "Body": 256,
+        "Face": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Environment",
+      "children": [
+        "Body",
+        "Face"
+      ],
+      "colour_slots": {
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Plaza directory board on two posts; Face is blank for the map or store list."
     },
     "CM_Prop_PlotBanner": {
       "file": "Roblox_FBX/Environment/CM_Prop_PlotBanner.fbx",
@@ -5041,6 +6222,37 @@
       "checks_passed": true,
       "notes": "Asphalt parking strip: four 8 x 18 bays opening to -Y, with wheel stops."
     },
+    "CM_Road_ParkingDivider": {
+      "file": "Roblox_FBX/Roads/CM_Road_ParkingDivider.fbx",
+      "category": "roads",
+      "size_wxhxd": [
+        4.0,
+        2.6,
+        20.0
+      ],
+      "expected_size_wxhxd": [
+        4,
+        null,
+        20
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 206,
+      "triangles_per_object": {
+        "Body": 206
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Roads",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "grass": "#7CC46B",
+        "metal": "#C9D3DD",
+        "shrub": "#4E9E5A"
+      },
+      "checks_passed": true,
+      "notes": "Planted island between parking rows: curb, lawn and two clipped shrubs."
+    },
     "CM_Road_Short": {
       "file": "Roblox_FBX/Roads/CM_Road_Short.fbx",
       "category": "roads",
@@ -5222,6 +6434,45 @@
       "checks_passed": true,
       "notes": "Double-sided gondola 28 x 7.6 x 10: Item1-10 face the front (-Y, chips), Item11-20 face the back (+Y, cereal). Anchor is in front, AnchorBack behind; PriceTag and PriceTagBack likewise."
     },
+    "CM_Shelf_Double_Aisle_Far": {
+      "file": "Roblox_FBX/Interiors/CM_Shelf_Double_Aisle_Far.fbx",
+      "category": "lods",
+      "size_wxhxd": [
+        28.0,
+        7.6,
+        10.0
+      ],
+      "expected_size_wxhxd": [
+        28,
+        7.6,
+        10
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 1020,
+      "triangles_per_object": {
+        "Body": 996,
+        "Anchor": 12,
+        "AnchorBack": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Interiors",
+      "children": [
+        "Body",
+        "Anchor",
+        "AnchorBack"
+      ],
+      "colour_slots": {
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "red": "#E67565",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Distant-detail version of CM_Shelf_Double_Aisle: one Body mesh, stock shown as coloured blocks."
+    },
     "CM_Shell_Awning": {
       "file": "Roblox_FBX/Buildings/CM_Shell_Awning.fbx",
       "category": "shell",
@@ -5385,6 +6636,41 @@
       },
       "checks_passed": true,
       "notes": "Luxury entrance canopy: 24 wide, projects 10 from the wall (+Y edge mounts on the wall), underside at 12 on two gold columns. Light is the soffit strip."
+    },
+    "CM_Shell_FacadePanel": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_FacadePanel.fbx",
+      "category": "shell",
+      "size_wxhxd": [
+        4.0,
+        18.0,
+        1.0
+      ],
+      "expected_size_wxhxd": [
+        4,
+        18,
+        1
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 346,
+      "triangles_per_object": {
+        "Body": 346
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Body"
+      ],
+      "colour_slots": {
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "wall_warm": "#F2E6D3",
+        "yellow": "#EFB548"
+      },
+      "checks_passed": true,
+      "notes": "Decorative 4-wide feature panel: teal field with off-white fins; tiles with the standard walls."
     },
     "CM_Shell_Floor_CornerStore": {
       "file": "Roblox_FBX/Buildings/CM_Shell_Floor_CornerStore.fbx",
@@ -6190,6 +7476,44 @@
       },
       "checks_passed": true,
       "notes": "4-stud solid wall module; exterior -Y with a recessed panel."
+    },
+    "CM_Shell_Wall_Window": {
+      "file": "Roblox_FBX/Buildings/CM_Shell_Wall_Window.fbx",
+      "category": "shell",
+      "size_wxhxd": [
+        8.0,
+        18.0,
+        1.0
+      ],
+      "expected_size_wxhxd": [
+        8,
+        18,
+        1
+      ],
+      "size_measured_on": "all objects except Anchor",
+      "triangles": 576,
+      "triangles_per_object": {
+        "Body": 564,
+        "Glass": 12
+      },
+      "pivot": "bottom-centre (0, 0, 0)",
+      "fbx_folder": "Roblox_FBX/Buildings",
+      "children": [
+        "Body",
+        "Glass"
+      ],
+      "colour_slots": {
+        "glass": "#CDEFF0",
+        "mint": "#8CE0D2",
+        "navy": "#12243C",
+        "offwhite": "#F4F7FB",
+        "slate": "#3A5A70",
+        "teal": "#16AC9B",
+        "wall_shade": "#E2D0B4",
+        "wall_warm": "#F2E6D3"
+      },
+      "checks_passed": true,
+      "notes": "8-wide wall module with a 5 x 5 window (sill at 5); Glass is separate. For side and back walls."
     },
     "CM_Sidewalk_Corner": {
       "file": "Roblox_FBX/Roads/CM_Sidewalk_Corner.fbx",

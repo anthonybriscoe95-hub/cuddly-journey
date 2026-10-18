@@ -1,7 +1,7 @@
 {
  "_status": "PROVISIONAL. The overhead blueprint was not supplied, so these numbers are a documented assumption. Edit them to match the blueprint and re-run build_all.py; every map piece and the assembly read from here.",
  "convention": "Blender coordinates; position = asset pivot (bottom centre); rotation_z in degrees about +Z. See Documentation/IMPORT_GUIDE.md.",
- "count": 1288,
+ "count": 1292,
  "placements": [
   {
    "asset": "CM_Ground_Base",
@@ -1552,6 +1552,36 @@
     1.0
    ],
    "rotation_z": 180
+  },
+  {
+   "asset": "CM_Prop_Monument",
+   "group": "plaza",
+   "position": [
+    -170,
+    0,
+    1.0
+   ],
+   "rotation_z": 0
+  },
+  {
+   "asset": "CM_Prop_EventStage",
+   "group": "plaza",
+   "position": [
+    250,
+    0,
+    1.0
+   ],
+   "rotation_z": 270
+  },
+  {
+   "asset": "CM_Prop_PlazaSign",
+   "group": "plaza",
+   "position": [
+    -410.0,
+    40,
+    1.0
+   ],
+   "rotation_z": 90
   },
   {
    "asset": "CM_Prop_PlazaKiosk_Teal",
@@ -10924,10 +10954,20 @@
    "rotation_z": 180.0
   },
   {
-   "asset": "CM_Fixture_BakeryCase",
+   "asset": "CM_Fixture_ClothingRack",
    "group": "plot_S2_LuxuryCenter",
    "position": [
-    30.0,
+    34.0,
+    -290.2,
+    1.4
+   ],
+   "rotation_z": 180.0
+  },
+  {
+   "asset": "CM_Fixture_ElectronicsTable",
+   "group": "plot_S2_LuxuryCenter",
+   "position": [
+    16.0,
     -290.2,
     1.4
    ],
